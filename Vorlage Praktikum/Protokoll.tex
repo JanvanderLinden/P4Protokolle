@@ -1,9 +1,12 @@
 %Ändern: thesisclass -> thesisclass2 und titlepage auskommentieren
 
-\documentclass{include/thesisclass2}
+\documentclass{include/thesisclass}
 
 \SelectLanguage{ngerman}
 \usepackage{float}
+
+
+% Titlepage settings
 \newcommand{\praktikum}{Praktikum moderne Physik}
 \newcommand{\autora}{Jens Schäfer}
 \newcommand{\autorb}{Jan van der Linden}
@@ -12,43 +15,37 @@
 \newcommand{\topic}{Versuch}
 \newcommand{\ptime}{Datum}
 
-\newcommand{\dd}{{\rm d}}
-\newcommand{\D}{\Delta}
-\newcommand{\p}{\partial}
+
+% Shortcuts
 \newcommand{\cc}{\cdot}
+\newcommand{\rk}{\rangle}
+\newcommand{\lk}{\langle}
 \newcommand{\df}{\rightarrow}
+\newcommand{\la}{\lambda}
+\newcommand{\dd}{{\rm d}}
+\newcommand{\ehm}{\mathbbm{1}}
+\newcommand{\p}{\partial}
+\newcommand{\soll}{\overset{!}{=}}
+\newcommand{\D}{\Delta}
+\newcommand{\eps}{\epsilon}
+\newcommand{\vektor}[3]{\begin{pmatrix} #1 \\ #2 \\ #3 \end{pmatrix}}
+\newcommand{\vektorz}[2]{\begin{pmatrix} #1 \\ #2 \end{pmatrix}}
+\newcommand{\Mat}[9]{\begin{pmatrix}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{pmatrix}}
+\newcommand{\Matz}[4]{\begin{pmatrix}#1&#2\\#3&#4\end{pmatrix}}
 
 
 
 \begin{document}
 
-	%\FrontMatter
-    %\input{include/titlepage}
-    \tableofcontents                  
-    \newpage
-	%\MainMatter
+	\FrontMatter
+	\input{include/titlepage}
+	\tableofcontents                  
+	\newpage
+	\MainMatter
 
 %Protokollstart
 
 \chapter{Theoretische Grundlagen}
-hallo
-12345\\
-anderer test. Warum soviele Tests?
-1234 anstatt nix?
-\begin{equation}
-\sqrt{3}+1\pm 1 = \mu - \frac{2}{3}
-\end{equation}
-121121212121
-\begin{table}[H]
-\begin{tabluar}{rr|l}
-\toprule
-1 & 1 & 2
-\midrule
-3 & 2 & 2\\
-1 & 1 & 1
-\end{tabular}
-\caption{wubbalubbadubdub}
-\end{table}
 
 \chapter{Versuchsauswertung}
 
