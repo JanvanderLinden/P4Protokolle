@@ -1,4 +1,16 @@
 \select@language {ngerman}
 \select@language {ngerman}
 \contentsline {chapter}{\numberline {1}Theoretische Grundlagen}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Versuchsauswertung}{3}{chapter.2}
+\contentsline {section}{\numberline {1.1}Ziel des Experiments}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Black Lipid Membran Methode}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Gramicidin A}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Generierung der Membran}{2}{section.1.4}
+\contentsline {section}{\numberline {1.5}Einzelkanal Messungen}{2}{section.1.5}
+\contentsline {section}{\numberline {1.6}Multikanal Messungen}{3}{section.1.6}
+\contentsline {section}{\numberline {1.7}Weitere Analysen}{3}{section.1.7}
+\contentsline {chapter}{\numberline {2}Versuchsablauf}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Lipid membrane preparation}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Measurement of single channels}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Measurement of multiple channels}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Further questions}{6}{section.2.4}
+\contentsline {chapter}{\numberline {3}Versuchsauswertung}{7}{chapter.3}
