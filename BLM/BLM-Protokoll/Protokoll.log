@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.27)  6 MAY 2017 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.27)  7 MAY 2017 12:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2108,11 +2108,11 @@ Package rerunfilecheck Info: File `Protokoll.out' has not changed.
 (rerunfilecheck)             Checksum: 5916FDD3C1D5956C89CD19781146C181;1026.
  ) 
 Here is how much of TeX's memory you used:
- 33281 strings out of 493029
- 643018 string characters out of 6136234
- 761642 words of memory out of 5000000
- 36139 multiletter control sequences out of 15000+600000
- 103386 words of font info for 125 fonts, out of 8000000 for 9000
+ 33275 strings out of 493029
+ 642914 string characters out of 6136234
+ 761618 words of memory out of 5000000
+ 36137 multiletter control sequences out of 15000+600000
+ 103220 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,12n,77p,10433b,823s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2126,7 +2126,7 @@ xmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 nts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
 elvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Protokoll.pdf (10 pages, 372482 bytes).
+Output written on Protokoll.pdf (10 pages, 372498 bytes).
 PDF statistics:
  197 PDF objects out of 1000 (max. 8388607)
  169 compressed objects within 2 object streams
