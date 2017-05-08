@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2016.11.10)  7 MAY 2017 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2016.11.10)  8 MAY 2017 22:19
 entering extended mode
 **./Protokoll.tex
 (Protokoll.tex
@@ -11,13 +11,13 @@ LaTeX Warning: You have requested document class `include/thesisclass3',
 
 Document Class: include/thesisclass 
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbook.cls
-Document Class: scrbook 2016/06/14 v3.21 KOMA-Script document class (book)
+Document Class: scrbook 2017/01/03 v3.22 KOMA-Script document class (book)
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
-Package: scrkbase 2016/06/14 v3.21 KOMA-Script package (KOMA-Script-dependent b
+Package: scrkbase 2017/01/03 v3.22 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
-Package: scrbase 2016/06/14 v3.21 KOMA-Script package (KOMA-Script-independent 
+Package: scrbase 2017/01/03 v3.22 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
@@ -25,14 +25,14 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
-Package: scrlfile 2016/06/14 v3.21 KOMA-Script package (loading files)
+Package: scrlfile 2017/01/03 v3.22 KOMA-Script package (loading files)
 
-Package scrlfile, 2016/06/14 v3.21 KOMA-Script package (loading files)
+Package scrlfile, 2017/01/03 v3.22 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 )))
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.sty
-Package: tocbasic 2016/06/14 v3.21 KOMA-Script package (handling toc-files)
+Package: tocbasic 2017/01/03 v3.22 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box26
 )
@@ -46,7 +46,7 @@ Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `lot' on input line 134.
 Package tocbasic Info: defining new hook before heading of `' on input line 160
-2.
+3.
 Package scrbook Info: You've used standard option `11pt'.
 (scrbook)             This is correct!
 (scrbook)             Internally I'm using `fontsize=11pt'.
@@ -54,15 +54,15 @@ Package scrbook Info: You've used standard option `11pt'.
 (scrbook)             you'd have to use `fontsize=11pt' there
 (scrbook)             instead of `11pt', too.
 Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input li
-ne 2269.
+ne 2270.
 
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize11pt.clo
-File: scrsize11pt.clo 2016/06/14 v3.21 KOMA-Script font size class option (11pt
+File: scrsize11pt.clo 2017/01/03 v3.22 KOMA-Script font size class option (11pt
 )
 ) (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.sty
-Package: typearea 2016/06/14 v3.21 KOMA-Script package (type area)
+Package: typearea 2017/01/03 v3.22 KOMA-Script package (type area)
 
-Package typearea, 2016/06/14 v3.21 KOMA-Script package (type area)
+Package typearea, 2017/01/03 v3.22 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -88,7 +88,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1529.
+(typearea)              on input line 1583.
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -104,13 +104,13 @@ Package typearea Info: These are the values describing the layout:
 \scr@dte@subsubsection@maxnumwidth=\skip51
 \scr@dte@paragraph@maxnumwidth=\skip52
 \scr@dte@subparagraph@maxnumwidth=\skip53
-LaTeX Info: Redefining \textsubscript on input line 4782.
+LaTeX Info: Redefining \textsubscript on input line 4826.
 \abovecaptionskip=\skip54
 \belowcaptionskip=\skip55
 \c@pti@nb@sid@b@x=\box27
 \c@figure=\count87
 \c@table=\count88
-Class scrbook Info: Redefining `\numberline' on input line 5813.
+Class scrbook Info: Redefining `\numberline' on input line 5893.
 \bibindent=\dimen102
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
@@ -606,10 +606,10 @@ LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 )
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx.sty
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
-Package: expl3 2017/03/18 v7019 L3 programming layer (loader) 
+Package: expl3 2017/04/01 L3 programming layer (loader) 
 
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3-code.tex
-Package: expl3 2017/03/18 v7019 L3 programming layer (code)
+Package: expl3 2017/04/01 L3 programming layer (code)
 \c_max_int=\count105
 \l_tmpa_int=\count106
 \l_tmpb_int=\count107
@@ -705,13 +705,13 @@ Package: expl3 2017/03/18 v7019 L3 programming layer (code)
 \l__coffin_scaled_width_dim=\dimen146
 )
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3pdfmode.def
-File: l3pdfmode.def 2017/03/18 v7019 L3 Experimental driver: PDF mode
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count140
 \l__driver_tmp_box=\box45
 ))
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\xparse\xparse.st
 y
-Package: xparse 2017/03/18 v7019 L3 Experimental document command parser
+Package: xparse 2017/04/01 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count141
 \g__xparse_grabber_int=\count142
 \l__xparse_m_args_int=\count143
@@ -729,7 +729,7 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 )
 (C:\Users\Jens\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\l3keys2e\l3keys2
 e.sty
-Package: l3keys2e 2017/03/18 v7019 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2017/04/01 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box46
 \l__siunitx_tmp_dim=\dimen149
@@ -1822,7 +1822,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  (include/titlepage.tex
-<include/kitlogo.pdf, id=66, 196.46399pt x 90.77916pt>
+<include/kitlogo.pdf, id=78, 196.46399pt x 90.77916pt>
 File: include/kitlogo.pdf Graphic file (type pdf)
 
 <use include/kitlogo.pdf>
@@ -1938,14 +1938,14 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 54.
-<images/experiment.png, id=104, 329.73187pt x 181.67876pt>
+<images/experiment.png, id=119, 329.73187pt x 181.67876pt>
 File: images/experiment.png Graphic file (type png)
 
 <use images/experiment.png>
 Package pdftex.def Info: images/experiment.png used on input line 59.
 (pdftex.def)             Requested size: 329.73105pt x 181.6783pt.
 
-<images/lipid-doublelayer.png, id=106, 272.51813pt x 121.45375pt>
+<images/lipid-doublelayer.png, id=121, 272.51813pt x 121.45375pt>
 File: images/lipid-doublelayer.png Graphic file (type png)
 
 <use images/lipid-doublelayer.png>
@@ -2123,49 +2123,133 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 156.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 157.
+<images/Reihe.png, id=157, 6184.10374pt x 1960.32375pt>
+File: images/Reihe.png Graphic file (type png)
+ <use images/Reihe.png>
+Package pdftex.def Info: images/Reihe.png used on input line 161.
+(pdftex.def)             Requested size: 427.43153pt x 135.47186pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 166.
+
+
+LaTeX Warning: Reference `Verzeichung' on page 7 undefined on input line 167.
+
+<images/Verzeichnung.png, id=159, 43.24155pt x 46.4937pt>
+File: images/Verzeichnung.png Graphic file (type png)
+
+<use images/Verzeichnung.png>
+Package pdftex.def Info: images/Verzeichnung.png used on input line 170.
+(pdftex.def)             Requested size: 170.97pt x 183.85805pt.
+
+Overfull \hbox (17.17284pt too wide) in paragraph at lines 171--171
+[][]\T1/lmr/bx/n/10 Abbildung 3.2: |\T1/lmr/m/n/10 (-20) htt-ps://upload.wikime
+dia.org/wikipedia/commons/0/0a/Verzeichnung3.png| 
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 181.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 181.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 181.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 181.
 [7
 
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 159.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
+ <./images/Reihe.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 182.
+
+<images/Perle2.png, id=170, 2830.575pt x 2673.99pt>
+File: images/Perle2.png Graphic file (type png)
+ <use images/Perle2.png>
+Package pdftex.def Info: images/Perle2.png used on input line 195.
+(pdftex.def)             Requested size: 170.97pt x 161.49332pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 201.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 201.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 203.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 203.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 203.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 203.
+
+[8 <./images/Verzeichnung.png> <./images/Perle2.png>]
+<images/measure.png, id=178, 4593.16pt x 3244.12pt>
+File: images/measure.png Graphic file (type png)
+ <use images/measure.png>
+Package pdftex.def Info: images/measure.png used on input line 209.
+(pdftex.def)             Requested size: 427.43153pt x 301.85844pt.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 225.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 225.
+[9 <./images/measure.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
  (Protokoll.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
 Package rerunfilecheck Info: File `Protokoll.out' has not changed.
-(rerunfilecheck)             Checksum: 47A425F63AA61D76E9E77AFA8C5F16F0;1041.
+(rerunfilecheck)             Checksum: 702BE8B5F7A4C1F996D9E84C1DB8E024;1249.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 33989 strings out of 493334
- 663673 string characters out of 3139254
- 823381 words of memory out of 3000000
- 36837 multiletter control sequences out of 15000+200000
- 116840 words of font info for 137 fonts, out of 3000000 for 9000
+ 34073 strings out of 493334
+ 665044 string characters out of 3139254
+ 824683 words of memory out of 3000000
+ 36889 multiletter control sequences out of 15000+200000
+ 136293 words of font info for 149 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,12n,68p,10435b,821s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
+vips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
 .enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
 lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Protokoll.pdf (10 pages, 396977 bytes).
+lic/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
+rw/helvetic/uhvro8a.pfb>
+Output written on Protokoll.pdf (12 pages, 7652297 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 33428 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 37568 words of extra memory for PDF output out of 42996 (max. 10000000)
 

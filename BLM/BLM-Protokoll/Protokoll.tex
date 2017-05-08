@@ -153,7 +153,73 @@ Berechnung des Partikelflusses (=Ionen/Sekunde) durch einen Gramicidin A-kanal
 
 
 
-\chapter{Versuchsauswertung}
+\chapter{Versuchsauswertung Teil 1}
+\section{Membran auftragen}
+Um die BLM zu Präparieren wurde mit einem Teflonstab ein dünner Film der Peptidschicht auf die Kapilare aufgetragen. Die anfangs dicke Schicht wird durch sanftes abstreifen, klopfen oder rühren verjüngt. Durch die Kamera kann man dabei die Ausprägung der newtonschen Ringe beobachten. In Abbildung \ref{Reihe} ist Kapilare mit unterschiedlich dicken Lipidmembranen zu sehen. Links ist die Membran dick genug, um Licht hindurch zu lassen, sie erscheint durchsichtig. Die mittlere ist im Bereich der Wellenlängen von sichtbarem Licht und bildet damit newtonsche Ringe aus. Bei der dritten Aufnahme ist die Membran im Begriff sich auszudünnen, man erkennt die Lichtunterdrückung rechtsseitig und damit die Schwarzfärbung.
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{images/Reihe.png}
+		\caption{Lichtdurchlässige Membran (l), Newtonsche Ringe (m), BLM (r)}
+		\label{Reihe}
+	\end{center}
+\end{figure}
+\section{Membranfläche}
+Um die Fläche der Membran zu bestimmen untersuchen die Kameraaufnahmen. Relevant für die untersuchten Prozesse ist nur jener dünne und schwarze Anteil der Membran. Hierzu dient die Aufnahme \ref{Perle}. Bei der Untersuchung der Verhältnisse aus Pixel/Milimeter für den Kapilaraußen/ und -innendurchmesser fällt auf, dass das Verhältniss mit zunehmendem Abstand von der optischen Achse zunimmt. Dieser Effekt ist der Krümmung der Linse verschuldet und wird in der Optik als kissenförmige Verzeichnung bezeichnet \ref{Verzeichung}.
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{images/Verzeichnung.png}
+		\caption{https://upload.wikimedia.org/wikipedia/commons/0/0a/Verzeichnung3.png}
+		\label{Verzeichnung}
+	\end{center}
+\end{figure}
+Da die Verzeichnung allerdings exponentiel mit dem Abstand zur Bildmitte zunimmt und die Verhältnisse zwischen Außen- und Innenwand nur 5,6\% (\ref{tab-ratio}) betragen, können wir im inneren der Kapilare lineare Verhältnise voraussetzen, insbesondere da die BLM recht zentriert in der Kapilare auftreten.
+Um den Fehler minimal zu halten, rechnet man mit dem Verhältnis des Innendurchmessers um den BLM-Durchmesser zu bestimmen. Die Zahlen sind in Tabelle \ref{tab-ratio} eingetragen.
+\begin{align*}
+	\text{Verhältniss Au\ss en:\qquad} &1345,16\\
+	\text{Verhältniss Innen:\qquad} &1273,91\\
+	\text{Differenz:\qquad} & 71,3 \qquad= \quad 5,59\%
+\end{align*}
+\begin{table}[]
+	\centering
+	\caption{Vermessung von Kapilare und BLM}
+	\label{tab-ratio}
+	\begin{tabular}{llll}
+		& Au\ss en   & Innen     & BLM     \\
+		\O  (Pixel) & 2085    & 1465    & 441     \\
+		\O  (Milimeter)       & 1,55    & 1,15    & $\approx$ 0,346   \\
+		p/mm            & 1345,16 & 1273,91 & $\approx$ 1273,91
+	\end{tabular}
+\end{table}
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{images/Perle2.png}
+		\caption{Vermessung von Kapilare und BLM}
+		\label{Perle}
+	\end{center}
+\end{figure}
+
+\section{Kapazität}
+Bei der Messung der Kapazität wird eine Wechselspannung von $U_{C0}=5mV$ mit $F=50Hz$ an die Elektroden angelegt. Dabei wird die Spannung über der Membran aufgezeichnet und ein Widerstand $R_1=100k\Omega$ in Reihe geschalten. Abbildung \ref{oszi} zeigt die zugehörige Oszilloskopaufnahme, man erkennt darauf, dass die Analogie zum Kondensator sehr gut erfüllt ist. Eingezeichnet wurde die Peakspannung von $U_0 = 7,5$V und die geometrisch konstruierte Strecke von 53 Pixel, die der charakteristischen Zeit $\tau$ entspricht, während der die Spannung auf $U_0/\textit{e}\approx 2,8V$ abfällt.
+\begin{align*}
+\tau = \frac{53}{1250} \cdot 1/50 Hz= 0,84 ms\\
+C=\tau / R_1 = 0,84ms \cdot 100k\Omega = 8,4 nF
+\end{align*}
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{images/measure.png}
+		\caption{Vermessung von Kapilare und BLM}
+		\label{oszi}
+	\end{center}
+\end{figure}
+
+
+
+
+\begin{itemize}
+\end{itemize}
+
+
+
 
 
 \end{document}
