@@ -31,6 +31,7 @@
 \newcommand{\vektorz}[2]{\begin{pmatrix} #1 \\ #2 \end{pmatrix}}
 \newcommand{\Mat}[9]{\begin{pmatrix}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{pmatrix}}
 \newcommand{\Matz}[4]{\begin{pmatrix}#1&#2\\#3&#4\end{pmatrix}}
+\newcommand{\e}[1]{\,\si{#1}}
 
 
 
@@ -101,7 +102,10 @@ mit $I_M$ dem Strom und $\lambda_M$ der Leitfähigkeit durch die Membran, sowie 
 
 \section{Multikanal Messungen}
 Erhöht man die Konzentration des Gramicidin A so öffnen und schließen sich viel mehr Kanäle und eine Vermessung der einzelnen Kanäle ist nicht mehr möglich. Jedoch besteht die Möglichkeit Aussagen über das Öffnen und Schließen der Kanäle, also die Lebenszeit durch eine Autokorrelationsfunktion zu treffen.\\
-Dazu soll ein Stromhistogramm aufgenommen werden und über Autokorrelation verglichen werden. Dazu verschiebt man den Verlauf des Histogramms in der Zeit und berechnet die Korrelation des verschobenen Verlaufs mit dem ursprünglichen Verlauf. Ein hoher Korrelationswert deutet auf eine, sich wiederholende Struktur hin, woraus die Halbwertszeit bestimmt werden kann.
+Dazu soll ein Stromhistogramm aufgenommen werden und über Autokorrelation verglichen werden. Dazu verschiebt man den Verlauf des Histogramms in der Zeit und summiert das Produkt der ursprünglichen und der verschobenen Verteilung binweise auf. Ein hoher ist somit gleichzusetzen mit einer hohen Korrelation der Werte. Der Autokorrelationswert $AC$ einer Funktion $f(t)$ bei einer Verschiebung um $t'$ berechnet sich beispielsweise durch
+\[ AC = \sum_t f(t)*f(t-t') \]
+Hier ist für die Strommessung ein exponentieller Abfall des Autokorrelationswertes mit der Zeitverschiebung zu erwarten, da mit steigender Zeitdifferenz die Wahrscheinlichkeit sinkt, dass ein Kanal zu beiden Zeiten geöffnet ist. Ist ein Kanal zu beiden verglichenen Zeiten geöffnet, so trägt dieser zur Korrelation bei. Die mittlere Lebenszeit $\tau$ eines Kanals wird sich demnach als Zerfallskonstante im exponentiellen Abfall widerspiegeln:
+\[ AC(t') \sim \exp\left( - \frac{t'}{\tau}\right)\]
 
 \section{Weitere Analysen}
 
@@ -110,6 +114,13 @@ Dazu soll ein Stromhistogramm aufgenommen werden und über Autokorrelation vergl
 % Teilchenfluss
 
 
+
+\section{Gausssche Fehlerfortpflanzung}
+Berechnet sich eine Größe $A$ aus mehreren Größen $x_i$ welche eine statistische Unsicherheit $\sigma_i$ besitzen, so propagiert die Unsicherheit der $x_i$ weiter zu einer Unsicherheit $\sigma_A$ in $A$. Diese Fehlerpropagation wird durch die Gaussche Fehlerfortpflanzug ausgedrückt:
+\begin{equation}
+\sigma_A = \sqrt{\sum_i \left( \frac{\p A}{\p x_i} \cc \sigma_i \right)^2 }
+\label{gauss}
+\end{equation}
 
 
 
@@ -251,10 +262,60 @@ Im zweiten Teil des Versuchs sollte der Effekt des Antibiotikums Gramicidin A au
 \section{Stromfluss durch einen einzelnen Kanal}
 Bei einer niedrigen Konzentration an Gramicidin A im Elektrolyt bilden sich in der Membran nur wenige Kanäle, daher ist die Quantisierung des Ionenstroms durch den Kanal gut erkennbar. In Abbildung \ref{singlechannel} ist ein Ausschnitt der Messung des Stroms $I$ über der Zeit dargestellt.
 \begin{figure}[H]
-%\includegraphics[scale=•]{•}
-\caption{}
+\centering
+\includegraphics[scale=0.7]{images/ssingle_channel.pdf}
+\caption{Ausschnitt der Messungen des Durchflussstroms über der Zeit. Zu erkennen sind niedrige und hohe Plateaus, wobei die niedrigen einem Grundstrom von etwa 3 pA entsprechen. Die hohen Plateaus entsprechen der Öffnung eines einzelnen Kanals wodurch etwa 2 pA zusätzlich fließen. Bei $t = 218\e{s}$ sind für kurze Zeit zwei Kanäle geöffnet, der Strom beträgt dort etwa 7 pA.}
 \label{singlechannel}
 \end{figure}
+Insgesamt wurden über $500\e{s}$ mit einer Frequenz von $50\e{Hz}$ Strommmessungen durchgeführt. Für eine genauere Auswertung des Stromflusses durch einen einzelnen Kanal wurden die Stromwerten in Abbildung \ref{singlehist} histogrammiert um die Mittelwerte des Grundstroms, sowie der ersten und zweiten Anregung zu bestimmen.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/single_hist.pdf}
+\caption{Histogrammierung der Stromwerte. Zu sehen sind drei ausgebildete Peaks. Der erste entspricht dem Grundstrom, der zweite entspricht einer Öffnung von einem einzelnen Kanal, der dritte enspricht der Öffnung von zwei Kanälen zur gleichen Zeit. Bei etwa 8 pA ist ein weiterer verlaufener Peak zu sehen, der zur Auswertung jedoch nicht beachtet wurde. Für jeden Peak wurde ein Fit an eine Gaussfunktion durchgeführt und der Mittelwert $\mu$ sowie die Standardabweichung $\sigma$ dargestellt.}
+\label{singlehist}
+\end{figure}
+\begin{table}[H]
+\centering
+\caption{Angepasste Stromwerte}
+\label{singlefits}
+\begin{tabular}{rl}
+\toprule
+Grundstrom $I_0$ & $(2,75 \pm 0.46)\e{pA}$\\
+ein Kanal $I_1$ & $(4.39 \pm 0.57)\e{pA}$\\
+zwei Kanäle $I_2$ & $(6.05\pm 0.46)\e{pA}$\\
+\end{tabular}
+\end{table}
+Der Einzelkanalstrom berechnet sich somit aus der Differenz zweier benachbarter Peaks:
+\[
+I_{Kanal} = \frac{I_1-I_0}{2} + \frac{I_2-I_1}{2} = 1.65\e{pA}\]
+Da die Kanalströme fluktuieren und die Messung der Ströme nur beschrenkt genau möglich ist haben die Peaks in Abbildung \ref{singlehist} eine Breite, charakterisiert durch die Standardabweichungen $\sigma$. Diese Messunsicherheiten pflanzen sich statistisch in $I_{Kanal}$ fort. Mit Gaussscher Fehlerfortpflanzung (vgl. Gleichung \ref{gauss}) berechnet sich somit für $I_{Kanal}$ eine statistische Unsicherheit von $\sigma_{Kanal} = 0.33\e{pA}$.
+
+\section{Einzelkanal-Leitfähigkeit}
+% 50mV als Generator Spannung nicht sicher.
+Durch die Berechnung des Einzelkanal-Stroms $I_{Kanal}$ ist es nun möglich, die Leitfähigkeit $\lambda$ eines Kanals zu bestimmen
+\[ \lambda = \frac{I_{Kanal}}{U_{Gen}}\]
+Für eine Generatorspannung von $50\e{mV}$ erhält man $\lambda = 33,0\e{pS}$.\\
+Da für die Generatorspannung keine statistische Schwankung bekannt ist, propagiert allein die Unsicherheit in $I_{Kanal}$ in $\lambda$. Mit Gaussscher Fehlerfortpflanzung (vgl. Gleichung \ref{gauss}) ergibt dies $\sigma_\lambda = 6.6\e{pS}$.
 
 
+\section{Kanalöffnungszeit - Einzelkanalvermessung}
+
+\section{Kanalöffnungszeit - Multikanalvermessung}
+Durch die Zugabe einer höheren Konzentration Gramicidin A zum Elektrolyt bilden sich mehr Kanäle an der Membran. Damit sind zu jeder Zeit mehrere Kanäle offen und es kann keine Analyse der Öffnungs- und Schließzeiten der einzelnen Kanäle anhand des $I-t$-Diagramms durchgeführt werden. In Abbildung \ref{multi} ist der Stromverlauf über der Zeit aufgetragen.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/multi.pdf}
+\caption{Stromverlauf der Multikanalmessung. Gemessen wurde ein Zeitraum von $320\e{s}$ mit einer Frequenz von $50\e{Hz}$. Bis $t = 250\e{s}$ ist der Verlauf relativ gleichmäßig; der Strom scheint einen gleichmäßgen Mittelwert von etwa $5\e{pA}$ zu haben, was bedeutet, dass zu jedem Zeitpunkt im Mittel gleich viele Kanäle geöffnet sind. Die Schwankungen im diesen Mittelwert entsprechen dem zufälligen Öffnen und Schließen von Kanälen.}
+\label{multi}
+\end{figure}
+Aufgrund von starken Ausreißern am Anfang und einem Abfall des Strom-Mittelwerts am Ende wurde für die weitere Analyse nur der Bereich von $60\e{s}$ bis $250\e{s}$ verwendet. In diesem Intervall ist der Mittelwert relativ konstant $\mu = 5.362\e{pA}$. Um die Autokorrelation durchzuführen wurde der Mittelwert von jedem der Werte abgezogen. In Abbildung \ref{AC} ist der Verlauf der Autokorrelationsfunktion für Zeitverschiebungen von $0\e{s}$ bis $4\e{s}$ dargestellt. Für höhere Zeiten beginnt die Autokorrelation zu fluktuieren, daher wurde nur dieser Bereich für die Auswertung berücksichtigt.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/AC.pdf}
+\caption{Autokorrelationsfunktion und exponentieller Fit.}
+\label{AC}
+\end{figure}
 \end{document}
