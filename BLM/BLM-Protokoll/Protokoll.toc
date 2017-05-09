@@ -17,3 +17,7 @@
 \contentsline {section}{\numberline {3.1}Membran auftragen}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Membranfl\IeC {\"a}che}{7}{section.3.2}
 \contentsline {section}{\numberline {3.3}Kapazit\IeC {\"a}t}{8}{section.3.3}
+\contentsline {section}{\numberline {3.4}Dicke}{9}{section.3.4}
+\contentsline {section}{\numberline {3.5}spezifische Kapazit\IeC {\"a}t}{9}{section.3.5}
+\contentsline {section}{\numberline {3.6}Durchbruchspannung, maximales E-Feld, Aufnahmequalit\IeC {\"a}t}{9}{section.3.6}
+\contentsline {section}{\numberline {3.7}Widerstand}{10}{section.3.7}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2016.11.10)  8 MAY 2017 22:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2016.11.10)  9 MAY 2017 08:41
 entering extended mode
 **./Protokoll.tex
 (Protokoll.tex
@@ -1822,7 +1822,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  (include/titlepage.tex
-<include/kitlogo.pdf, id=78, 196.46399pt x 90.77916pt>
+<include/kitlogo.pdf, id=94, 196.46399pt x 90.77916pt>
 File: include/kitlogo.pdf Graphic file (type pdf)
 
 <use include/kitlogo.pdf>
@@ -1938,14 +1938,14 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 54.
-<images/experiment.png, id=119, 329.73187pt x 181.67876pt>
+<images/experiment.png, id=139, 329.73187pt x 181.67876pt>
 File: images/experiment.png Graphic file (type png)
 
 <use images/experiment.png>
 Package pdftex.def Info: images/experiment.png used on input line 59.
 (pdftex.def)             Requested size: 329.73105pt x 181.6783pt.
 
-<images/lipid-doublelayer.png, id=121, 272.51813pt x 121.45375pt>
+<images/lipid-doublelayer.png, id=141, 272.51813pt x 121.45375pt>
 File: images/lipid-doublelayer.png Graphic file (type png)
 
 <use images/lipid-doublelayer.png>
@@ -2126,7 +2126,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 157.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 157.
-<images/Reihe.png, id=157, 6184.10374pt x 1960.32375pt>
+<images/Reihe.png, id=177, 6184.10374pt x 1960.32375pt>
 File: images/Reihe.png Graphic file (type png)
  <use images/Reihe.png>
 Package pdftex.def Info: images/Reihe.png used on input line 161.
@@ -2139,12 +2139,12 @@ Package babel Info: Redefining ngerman shorthand "~
 
 LaTeX Warning: Reference `Verzeichung' on page 7 undefined on input line 167.
 
-<images/Verzeichnung.png, id=159, 43.24155pt x 46.4937pt>
+<images/Verzeichnung.png, id=179, 43.24155pt x 46.4937pt>
 File: images/Verzeichnung.png Graphic file (type png)
 
 <use images/Verzeichnung.png>
 Package pdftex.def Info: images/Verzeichnung.png used on input line 170.
-(pdftex.def)             Requested size: 170.97pt x 183.85805pt.
+(pdftex.def)             Requested size: 128.23076pt x 137.89726pt.
 
 Overfull \hbox (17.17284pt too wide) in paragraph at lines 171--171
 [][]\T1/lmr/bx/n/10 Abbildung 3.2: |\T1/lmr/m/n/10 (-20) htt-ps://upload.wikime
@@ -2167,7 +2167,7 @@ Package babel Info: Redefining ngerman shorthand "~
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 182.
 
-<images/Perle2.png, id=170, 2830.575pt x 2673.99pt>
+<images/Perle2.png, id=190, 2830.575pt x 2673.99pt>
 File: images/Perle2.png Graphic file (type png)
  <use images/Perle2.png>
 Package pdftex.def Info: images/Perle2.png used on input line 195.
@@ -2177,79 +2177,100 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 203.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 203.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 203.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 203.
+(babel)             in language  on input line 206.
 
 [8 <./images/Verzeichnung.png> <./images/Perle2.png>]
-<images/measure.png, id=178, 4593.16pt x 3244.12pt>
+<images/measure.png, id=199, 4593.16pt x 3244.12pt>
 File: images/measure.png Graphic file (type png)
  <use images/measure.png>
 Package pdftex.def Info: images/measure.png used on input line 209.
-(pdftex.def)             Requested size: 427.43153pt x 301.85844pt.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 \end{itemize}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+(pdftex.def)             Requested size: 299.20076pt x 211.32071pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 225.
+(babel)             in language  on input line 214.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 225.
+(babel)             in language  on input line 214.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 225.
+(babel)             in language  on input line 223.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 225.
-[9 <./images/measure.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
+(babel)             in language  on input line 223.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 227.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 227.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 230.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 230.
+
+<images/Widerstand.png, id=202, 4697.55pt x 2176.13pt>
+File: images/Widerstand.png Graphic file (type png)
+
+<use images/Widerstand.png>
+Package pdftex.def Info: images/Widerstand.png used on input line 233.
+(pdftex.def)             Requested size: 299.20076pt x 138.59778pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 237.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 237.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 237.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 237.
+ [9 <./images/measure.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 248.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 248.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 248.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 248.
+ [10 <./images/Widerstand.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
  (Protokoll.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
 Package rerunfilecheck Info: File `Protokoll.out' has not changed.
-(rerunfilecheck)             Checksum: 702BE8B5F7A4C1F996D9E84C1DB8E024;1249.
+(rerunfilecheck)             Checksum: 9803F420CA7F6EDB6AC0DEC3D66AC9DC;1553.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 34073 strings out of 493334
- 665044 string characters out of 3139254
- 824683 words of memory out of 3000000
- 36889 multiletter control sequences out of 15000+200000
- 136293 words of font info for 149 fonts, out of 3000000 for 9000
+ 34101 strings out of 493334
+ 665418 string characters out of 3139254
+ 825753 words of memory out of 3000000
+ 36898 multiletter control sequences out of 15000+200000
+ 136791 words of font info for 155 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,12n,68p,10435b,821s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
-vips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
-.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
-rw/helvetic/uhvro8a.pfb>
-Output written on Protokoll.pdf (12 pages, 7652297 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fon
+ts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
+.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program 
+Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
+lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on Protokoll.pdf (13 pages, 9984415 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 37568 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 37605 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -167,7 +167,7 @@ Um die BLM zu Präparieren wurde mit einem Teflonstab ein dünner Film der Pepti
 Um die Fläche der Membran zu bestimmen untersuchen die Kameraaufnahmen. Relevant für die untersuchten Prozesse ist nur jener dünne und schwarze Anteil der Membran. Hierzu dient die Aufnahme \ref{Perle}. Bei der Untersuchung der Verhältnisse aus Pixel/Milimeter für den Kapilaraußen/ und -innendurchmesser fällt auf, dass das Verhältniss mit zunehmendem Abstand von der optischen Achse zunimmt. Dieser Effekt ist der Krümmung der Linse verschuldet und wird in der Optik als kissenförmige Verzeichnung bezeichnet \ref{Verzeichung}.
 \begin{figure}[ht]
 	\begin{center}
-		\includegraphics[width=0.4\textwidth]{images/Verzeichnung.png}
+		\includegraphics[width=0.3\textwidth]{images/Verzeichnung.png}
 		\caption{https://upload.wikimedia.org/wikipedia/commons/0/0a/Verzeichnung3.png}
 		\label{Verzeichnung}
 	\end{center}
@@ -199,25 +199,48 @@ Um den Fehler minimal zu halten, rechnet man mit dem Verhältnis des Innendurchm
 \end{figure}
 
 \section{Kapazität}
-Bei der Messung der Kapazität wird eine Wechselspannung von $U_{C0}=5mV$ mit $F=50Hz$ an die Elektroden angelegt. Dabei wird die Spannung über der Membran aufgezeichnet und ein Widerstand $R_1=100k\Omega$ in Reihe geschalten. Abbildung \ref{oszi} zeigt die zugehörige Oszilloskopaufnahme, man erkennt darauf, dass die Analogie zum Kondensator sehr gut erfüllt ist. Eingezeichnet wurde die Peakspannung von $U_0 = 7,5$V und die geometrisch konstruierte Strecke von 53 Pixel, die der charakteristischen Zeit $\tau$ entspricht, während der die Spannung auf $U_0/\textit{e}\approx 2,8V$ abfällt.
+Bei der Messung der Kapazität wird eine Rechteckspannung von $U_{C0}=5mV$ mit $F=50Hz$ an die Elektroden angelegt. Dabei wird ein Widerstand $R_1=100k\Omega$ in Reihe geschalten und die Spannung über der Membran aufgezeichnet. Abbildung \ref{oszi} zeigt die zugehörige Oszilloskopaufnahme, auf der man die Analogie zum Kondensator verifizieren kann. Eingezeichnet wurde die Peakspannung von $U_0 = 7,5$V und die geometrisch konstruierte Strecke von 53 Pixel, die der charakteristischen Zeit $\tau$ entspricht, während der die Spannung auf $U_0/\textit{e}\approx 2,8$ abfällt. Daraus lässt sich die Zeit Tau bestimmen und die Kapazität berechnen:
 \begin{align*}
-\tau = \frac{53}{1250} \cdot 1/50 Hz= 0,84 ms\\
+\tau = \frac{53}{1250} \cdot 1/50 s= 0,84 ms\\
 C=\tau / R_1 = 0,84ms \cdot 100k\Omega = 8,4 nF
 \end{align*}
 \begin{figure}[ht]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{images/measure.png}
-		\caption{Vermessung von Kapilare und BLM}
+		\includegraphics[width=0.7\textwidth]{images/measure.png}
+		\caption{Oszilloskopaufnahme der Entladung der Membran über eine Wechselspannung}
 		\label{oszi}
 	\end{center}
 \end{figure}
+\section{Dicke}
+Die Dicke der Membran bekommt man aus der Analogie zum Plattenkondensator:
+\begin{align*}
+	d&=\epsilon_0\epsilon_M A/C\\
+	&=8,85\cdot 10^{-12}\frac{C}{Vm}\cdot 2\cdot \pi \left(\frac{0,346\cdot 10^{-3}m}{2}\right)^2\cdot 8,4\cdot 10^{-9}F\\
+	&=0,196nm \ll \lambda
+\end{align*}
+Hierbei wurde die Membran aus Abbildung \ref{Perle} untersucht, deren Fläche und Kapazität oben bereits berechnet wurde. 
 
-
-
-
-\begin{itemize}
-\end{itemize}
-
+\section{spezifische Kapazität}
+\begin{align*}
+C_{Spez}=C/A=0,09 \, \frac{\text{F}}{\text{m}^2}
+\end{align*}
+\section{Durchbruchspannung, maximales E-Feld, Aufnahmequalität}
+Aufgrund der schwierigen Bedingungen die an das Labor gestellt werden um eine BLM stabil zu halten, war es vor Ort nicht möglich, alle Messungen durchzuführen. Auch die Aufnahme Abbildung \ref{oszi} konnte in Eile nicht mit höherer Qualität durchgeführt werden, bevor die BLM zerreist.\\
+Um die Durchbruchspannung zu bestimmen, hätte man auf eine BLM eine Wechselspannung von zunehmender stärke angelegt und den Wert für den Durchbruch bestimmt. Das maximale elektrische Feld im Kondensator hätte sich zu $E_{Max}=U_{Durchbruch}/d$ berechnet.
+\section{Widerstand}
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{images/Widerstand.png}
+		\caption{Widerstandsmessung}
+		\label{resistance}
+	\end{center}
+\end{figure}
+Um den Widerstand der Membran zu Messen, wurde eine Gleichspannung von $U_0=15$mV angelegt und der Spannungsabfall $U_M$ über der Membran gemessen \ref{resistance}. Mit geschalten waren der Verstärker V=200 und der Vorwiderstand $R_x=500\text{M}\Omega$
+\begin{align*}
+	U_M&=\frac{105}{577}\cdot 100\text{ mV}= 2,7 \text{ mV}\\
+	R_M&=R_x V U_0/U_M\\
+	R_M&=82,4 \,G\Omega
+\end{align*}
 
 
 
