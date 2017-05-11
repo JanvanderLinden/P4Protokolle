@@ -32,7 +32,7 @@
 \newcommand{\Mat}[9]{\begin{pmatrix}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{pmatrix}}
 \newcommand{\Matz}[4]{\begin{pmatrix}#1&#2\\#3&#4\end{pmatrix}}
 \newcommand{\e}[1]{\,\si{#1}}
-
+ 
 
 
 \begin{document}
@@ -74,7 +74,7 @@ Die Dicke der Leptidschicht kann anhand ihrer optischen Eigenschaften eingeordne
 
 \section{Gramicidin A}
 Gramicidin A ist ein Peptid-Antibiotikum. Diese bestehen in der Regel aus 10 bis 50 Aminosäuren und können mit Zellmembranen interagieren.\\
-Im Körper werden Peptid-Antibiotika selbst generiert und werden benutzt, um infizierte Zellen zu zerstören.  Um dies zu bewerkstelligen integrieren sie sich in die Zellmembran und ermöglichen es somit auf verschiedenen Wegen, Ionen in die Zelle einzudringen. Bei Gramicidin A geschieht dies durch die Bildung von  Kanälen in der Membran Diese haben Durchmesser von etwa $3 - 4~\si{\AA}$. Durch den Fluss von Kationen in die Zelle wird damit ihr elektrochemisches Gleichgewicht gestört und sie stirbt ab.\\
+Im Körper werden Peptid-Antibiotika selbst generiert und werden benutzt, um infizierte Zellen zu zerstören.  Um dies zu bewerkstelligen integrieren sie sich in die Zellmembran und ermöglichen es somit auf verschiedenen Wegen, Ionen in die Zelle einzudringen. Bei Gramicidin A geschieht dies durch die Bildung von  Kanälen in der Membran Diese haben Durchmesser von etwa $3 - 4\e{\AA}$. Durch den Fluss von Kationen in die Zelle wird damit ihr elektrochemisches Gleichgewicht gestört und sie stirbt ab.\\
 In diesem Experiment wird die Penetration der Zelle durch die Lipid Doppelmembran simuliert; nachdem sich die Membran gebildet hat, ist kein Stromfluss mehr durch die Elektroden möglich. Nach Zugabe von Gramicidin A können in der Membran Kanäle gebildet werden, welche Stromfluss ermöglichen. Dies ist gleichbedeutend mit einer erfolgreichen Bekämpfung und Zerstörung einer infizierten Zelle im Körper mittels eines Peptid-Antibiotikums.
 
 
@@ -192,13 +192,13 @@ Um den Fehler minimal zu halten, rechnet man mit dem Verhältnis des Innendurchm
 	\begin{tabular}{llll}
 		& Au\ss en   & Innen     & BLM     \\
 		\O  (Pixel) & 2085    & 1465    & 441     \\
-		\O  (Milimeter)       & 1,55    & 1,15    & $\approx$ 0,346   \\
-		p/mm            & 1345,16 & 1273,91 & $\approx$ 1273,91
+		\O  (Milimeter)       & 1.55    & 1.15    & $\approx$ 0.346   \\
+		p/mm            & 1345.16 & 1273.91 & $\approx$ 1273.91
 	\end{tabular}
 	\begin{tabular}{rll}
-Verhältniss Außen: & 1345,16 & \\
-Verhältniss Innen: & 1273,91 & \\
-Differenz: & 71,3 & =~~5,59\%\\
+Verhältniss Außen: & 1345.16 & \\
+Verhältniss Innen: & 1273.91 & \\
+Differenz: & 71.3 & =~~5,.9\%\\
 \end{tabular}
 	\caption{Vermessung von Kapilare und BLM}
 	\label{tab-ratio}
@@ -213,10 +213,10 @@ Differenz: & 71,3 & =~~5,59\%\\
 \end{figure}
 
 \section{Kapazität}
-Bei der Messung der Kapazität wird eine Rechteckspannung von $U_{C0}=5~\si{mV}$ mit $f=50~\si{Hz}$ an die Elektroden angelegt. Dabei wird ein Widerstand $R_1=100~\si{k\Omega}$ in Reihe geschalten und die Spannung über der Membran aufgezeichnet. Abbildung \ref{oszi} zeigt die zugehörige Oszilloskopaufnahme, auf der man die Analogie zum Kondensator verifizieren kann. Eingezeichnet wurde die Peakspannung von $U_0 = 7,5~\si{V}$ und die geometrisch konstruierte Strecke von 53 Pixel, die der charakteristischen Zeit $\tau$ entspricht, während der die Spannung auf $U_0/\textit{e}\approx 2,8$ abfällt. Daraus lässt sich die Zeit Tau bestimmen und die Kapazität berechnen:
+Bei der Messung der Kapazität wird eine Rechteckspannung von $U_{C0}=5\e{mV}$ mit $f=50\e{Hz}$ an die Elektroden angelegt. Dabei wird ein Widerstand $R_1=100\e{k\Omega}$ in Reihe geschalten und die Spannung über der Membran aufgezeichnet. Abbildung \ref{oszi} zeigt die zugehörige Oszilloskopaufnahme, auf der man die Analogie zum Kondensator verifizieren kann. Eingezeichnet wurde die Peakspannung von $U_0 = 7.5\e{V}$ und die geometrisch konstruierte Strecke von 53 Pixel, die der charakteristischen Zeit $\tau$ entspricht, während der die Spannung auf $U_0/\textit{e}\approx 2.8$ abfällt. Daraus lässt sich die Zeit Tau bestimmen und die Kapazität berechnen:
 \begin{align*}
-\tau = \frac{53}{1250} \cdot 1/50 ~\si{s}= 0,84 ~\si{ms}\\
-C=\tau / R_1 = 0,84~\si{ms} \cdot 100~\si{k\Omega} = 8,4 ~\si{nF}
+\tau = \frac{53}{1250} \cdot 1/50 \e{s}= 0.84 \e{ms}\\
+C=\tau / R_1 = 0.84\e{ms} \cdot 100\e{k\Omega} = 8.4 \e{nF}
 \end{align*}
 \begin{figure}[ht]
 	\begin{center}
@@ -229,14 +229,14 @@ C=\tau / R_1 = 0,84~\si{ms} \cdot 100~\si{k\Omega} = 8,4 ~\si{nF}
 Die Dicke der Membran bekommt man aus der Analogie zum Plattenkondensator:
 \begin{align*}
 	d&=\epsilon_0\epsilon_M \frac{A}{C}\\
-	&=8,85\cdot 10^{-12}~\si{\frac{C}{Vm}}\cdot 2 \pi \left(\frac{0,346\cdot 10^{-3}~\si{m}}{2}\right)^2\cdot 8,4\cdot 10^{-9}~\si{F}\\
-	&=0,196~\si{nm} \ll \lambda
+	&=8.85\cdot 10^{-12}\e{\frac{C}{Vm}}\cdot 2 \pi \left(\frac{0.346\cdot 10^{-3}\e{m}}{2}\right)^2\cdot 8.4\cdot 10^{-9}\e{F}\\
+	&=0.196\e{nm} \ll \lambda
 \end{align*}
 Hierbei wurde die Membran aus Abbildung \ref{Perle} untersucht, deren Fläche und Kapazität oben bereits berechnet wurde. 
 
 \section{spezifische Kapazität}
 \begin{align*}
-C_{Spez}=C/A=0,09~\si{\frac{F}{m^2}}
+C_{Spez}=C/A=0.09\e{\frac{F}{m^2}}
 \end{align*}
 \section{Durchbruchspannung, maximales E-Feld, Aufnahmequalität}
 Aufgrund der schwierigen Bedingungen die an das Labor gestellt werden um eine BLM stabil zu halten, war es vor Ort nicht möglich, alle Messungen durchzuführen. Auch die Aufnahme Abbildung \ref{oszi} konnte in Eile nicht mit höherer Qualität durchgeführt werden, bevor die BLM zerreist.\\
@@ -249,11 +249,11 @@ Um die Durchbruchspannung zu bestimmen, hätte man auf eine BLM eine Wechselspan
 		\label{resistance}
 	\end{center}
 \end{figure}
-Um den Widerstand der Membran zu Messen, wurde eine Gleichspannung von $U_0=15~\si{mV}$ angelegt und der Spannungsabfall $U_M$ über der Membran gemessen \ref{resistance}. Mit geschalten waren der Verstärker V=200 und der Vorwiderstand $R_x=500\text{M}\Omega$
+Um den Widerstand der Membran zu Messen, wurde eine Gleichspannung von $U_0=15\e{mV}$ angelegt und der Spannungsabfall $U_M$ über der Membran gemessen \ref{resistance}. Mit geschalten waren der Verstärker V=200 und der Vorwiderstand $R_x=500\text{M}\Omega$
 \begin{align*}
-	U_M&=\frac{105}{577}\cdot 100~\si{mV}= 2,7 ~\si{mV}\\
+	U_M&=\frac{105}{577}\cdot 100\e{mV}= 2.7 \e{mV}\\
 	R_M&=R_x V U_0/U_M\\
-	R_M&=82,4~\si{G\Omega}
+	R_M&=82.4\e{G\Omega}
 \end{align*}
 
 \chapter{Versuchsauswertung Teil 2}
@@ -264,49 +264,65 @@ Bei einer niedrigen Konzentration an Gramicidin A im Elektrolyt bilden sich in d
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{images/ssingle_channel.pdf}
-\caption{Ausschnitt der Messungen des Durchflussstroms über der Zeit. Zu erkennen sind niedrige und hohe Plateaus, wobei die niedrigen einem Grundstrom von etwa 3 pA entsprechen. Die hohen Plateaus entsprechen der Öffnung eines einzelnen Kanals wodurch etwa 2 pA zusätzlich fließen. Bei $t = 218\e{s}$ sind für kurze Zeit zwei Kanäle geöffnet, der Strom beträgt dort etwa 7 pA.}
+\caption{Ausschnitt der Messungen des Durchflussstroms über der Zeit. Zu erkennen sind niedrige und hohe Plateaus, wobei die niedrigen einem Grundstrom von etwa 3 pA entsprechen. Zur besseren Identifizierung der hohen und niedrigen Plateaus wurden die Messdaten über 20 Messpunkte geglättet. Die hohen Plateaus entsprechen der Öffnung eines einzelnen Kanals wodurch etwa 2 pA zusätzlich fließen. Bei $t = 218\e{s}$ sind für kurze Zeit zwei Kanäle geöffnet, der Strom beträgt dort etwa 6 pA.}
 \label{singlechannel}
 \end{figure}
-Insgesamt wurden über $500\e{s}$ mit einer Frequenz von $50\e{Hz}$ Strommmessungen durchgeführt. Für eine genauere Auswertung des Stromflusses durch einen einzelnen Kanal wurden die Stromwerten in Abbildung \ref{singlehist} histogrammiert um die Mittelwerte des Grundstroms, sowie der ersten und zweiten Anregung zu bestimmen.
+Insgesamt wurden über einen Zeitraum von $500\e{s}$ mit einer Frequenz von $50\e{Hz}$ Strommmessungen durchgeführt. Für eine genauere Auswertung des Stromflusses durch einen einzelnen Kanal wurden die Stromwerten in Abbildung \ref{singlehist} histogrammiert um die Mittelwerte des Grundstroms, sowie der ersten und zweiten Anregung zu bestimmen.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{images/single_hist.pdf}
-\caption{Histogrammierung der Stromwerte. Zu sehen sind drei ausgebildete Peaks. Der erste entspricht dem Grundstrom, der zweite entspricht einer Öffnung von einem einzelnen Kanal, der dritte enspricht der Öffnung von zwei Kanälen zur gleichen Zeit. Bei etwa 8 pA ist ein weiterer verlaufener Peak zu sehen, der zur Auswertung jedoch nicht beachtet wurde. Für jeden Peak wurde ein Fit an eine Gaussfunktion durchgeführt und der Mittelwert $\mu$ sowie die Standardabweichung $\sigma$ dargestellt.}
+\caption{Histogrammierung der Stromwerte. Zu sehen sind drei ausgebildete Peaks. Der erste entspricht dem Grundstrom, der zweite entspricht einer Öffnung von einem einzelnen Kanal, der dritte enspricht der Öffnung von zwei Kanälen zur gleichen Zeit. Bei etwa 8 pA ist ein weiterer verlaufener Peak zu sehen, der zur Auswertung jedoch nicht beachtet wurde. Für jeden Peak wurde ein Fit an eine Gaussfunktion durchgeführt und der Mittelwert $\mu$ sowie die Standardabweichung $\sigma$ dargestellt und in Tabelle \ref{singlefits} zusammengefasst. Für jeden Bin wurde ein poissonverteilter Fehler angenommen.}
 \label{singlehist}
 \end{figure}
 \begin{table}[H]
 \centering
-\caption{Angepasste Stromwerte}
+\caption{Ergebnisse der Fits der Gaussverteilungen für die verschiedenen Anregungen.}
 \label{singlefits}
 \begin{tabular}{rl}
 \toprule
-Grundstrom $I_0$ & $(2,75 \pm 0.46)\e{pA}$\\
+Grundstrom $I_0$ & $(2.75 \pm 0.47)\e{pA}$\\
 ein Kanal $I_1$ & $(4.39 \pm 0.57)\e{pA}$\\
 zwei Kanäle $I_2$ & $(6.05\pm 0.46)\e{pA}$\\
+\bottomrule
 \end{tabular}
 \end{table}
 Der Einzelkanalstrom berechnet sich somit aus der Differenz zweier benachbarter Peaks:
 \[
 I_{Kanal} = \frac{I_1-I_0}{2} + \frac{I_2-I_1}{2} = 1.65\e{pA}\]
-Da die Kanalströme fluktuieren und die Messung der Ströme nur beschrenkt genau möglich ist haben die Peaks in Abbildung \ref{singlehist} eine Breite, charakterisiert durch die Standardabweichungen $\sigma$. Diese Messunsicherheiten pflanzen sich statistisch in $I_{Kanal}$ fort. Mit Gaussscher Fehlerfortpflanzung (vgl. Gleichung \ref{gauss}) berechnet sich somit für $I_{Kanal}$ eine statistische Unsicherheit von $\sigma_{Kanal} = 0.33\e{pA}$.
+Da die Kanalströme fluktuieren und die Messung der Ströme nur beschränkt genau möglich ist haben die Peaks in Abbildung \ref{singlehist} eine Breite, charakterisiert durch die Standardabweichungen $\sigma$. Diese Messunsicherheiten pflanzen sich statistisch in $I_{Kanal}$ fort. Mit Gauss'scher Fehlerfortpflanzung (vgl. Gleichung \ref{gauss}) berechnet sich somit für $I_{Kanal}$ eine statistische Unsicherheit von $\sigma_{Kanal} = 0.33\e{pA}$. Zusammenfassend beträgt der Strom durch einen einzelnen Gramicidin A Kanal somit
+\[ I_{Kanal} = (1.65 \pm 0.33)\e{pA}\]
 
 \section{Einzelkanal-Leitfähigkeit}
 % 50mV als Generator Spannung nicht sicher.
-Durch die Berechnung des Einzelkanal-Stroms $I_{Kanal}$ ist es nun möglich, die Leitfähigkeit $\lambda$ eines Kanals zu bestimmen
+Durch die Berechnung des Einzelkanal-Stroms $I_{Kanal}$ kann die Leitfähigkeit $\lambda$ eines Kanals bestimmen werden:
 \[ \lambda = \frac{I_{Kanal}}{U_{Gen}}\]
-Für eine Generatorspannung von $50\e{mV}$ erhält man $\lambda = 33,0\e{pS}$.\\
-Da für die Generatorspannung keine statistische Schwankung bekannt ist, propagiert allein die Unsicherheit in $I_{Kanal}$ in $\lambda$. Mit Gaussscher Fehlerfortpflanzung (vgl. Gleichung \ref{gauss}) ergibt dies $\sigma_\lambda = 6.6\e{pS}$.
+Für eine Generatorspannung von $50\e{mV}$ errechnet sich eine Leitfähigkeit von $\lambda = 33.0\e{pS}$.\\
+Da für die Generatorspannung keine statistische Schwankung bekannt ist, propagiert allein die Unsicherheit von $I_{Kanal}$ nach $\lambda$. Mit Gauss'scher Fehlerfortpflanzung (vgl. Gleichung \ref{gauss}) ergibt dies $\sigma_\lambda = 6.6\e{pS}$. Zusammenfassend beträgt die Leitfähigkeit eines Gramicidin A Kanals somit
+\[\lambda = (33.0 \pm 6.6)\e{pS}\]
+
 
 
 \section{Kanalöffnungszeit - Einzelkanalvermessung}
+Bei einer niedrigen Konzentration an Gramicidin A ist es möglich, die Lebensdauer eines einzelnen Kanals aus dem Stromdiagramm zu bestimmen, da die Quantisierung der Stromwerte deutlich sichtbar ist. In Abbildung \ref{quant} ist dies verstärkt dargestellt.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/quantisierung.pdf}
+\caption{Geglätteter Stromverlauf für die Einzelkanalmessung im Bereich $80\e{s}$ bis $220\e{s}$. Aus den  Ergebnissen aus Tabelle \ref{singlefits} wurden die Messdaten quantisiert dargestellt. Aus diesen quantisierten Daten konnte die Lebenszeit eines Kanals approximativ über die Breite eines Plateaus bestimmt werden.}
+\label{quant}
+\end{figure}
+Eine Mittelung aller berechneten Kanallebensdauern des in Abbildung \ref{quant} dargestellten Bereichs ergab eine mittlere Lebenszeit von $\tau = (1.11\pm 0.77)\e{s}$.\\
+Die Verteilung der berechneten Lebensdauern wies keinerlei Tendenz zu einem Mittelwert auf, die Werte waren mehr oder weniger gleichverteilt in einem Intervall von $0.4\e{s}$ bis $2.5\e{s}$ mit einigen Ausreißern in beide Richtungen.\\
+Generell wird diese Methode der Bestimmung der Lebenszeit als sehr ungenau und fehleranfällig eingeschätzt, da Schwankungen im Strom als Öffnen oder Schließen eines Kanals fehlinterpretiert werden können und bei der Häufung mehrerer offener Kanäle keine Aussage gemacht werden kann, welcher Kanal sich zuerst schließt. 
+
 
 \section{Kanalöffnungszeit - Multikanalvermessung}
-Durch die Zugabe einer höheren Konzentration Gramicidin A zum Elektrolyt bilden sich mehr Kanäle an der Membran. Damit sind zu jeder Zeit mehrere Kanäle offen und es kann keine Analyse der Öffnungs- und Schließzeiten der einzelnen Kanäle anhand des $I-t$-Diagramms durchgeführt werden. In Abbildung \ref{multi} ist der Stromverlauf über der Zeit aufgetragen.
+Durch die Zugabe einer höheren Konzentration Gramicidin A zum Elektrolyt bilden sich mehr Kanäle an der Membran. Damit sind zu jeder Zeit mehrere Kanäle offen und es kann keine Analyse der Öffnungs- und Schließzeiten der einzelnen Kanäle anhand des $I-t-$Diagramms durchgeführt werden. \\In Abbildung \ref{multi} ist der Stromverlauf für eine hohe Gramicidin A Konzentration über der Zeit aufgetragen.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{images/multi.pdf}
-\caption{Stromverlauf der Multikanalmessung. Gemessen wurde ein Zeitraum von $320\e{s}$ mit einer Frequenz von $50\e{Hz}$. Bis $t = 250\e{s}$ ist der Verlauf relativ gleichmäßig; der Strom scheint einen gleichmäßgen Mittelwert von etwa $5\e{pA}$ zu haben, was bedeutet, dass zu jedem Zeitpunkt im Mittel gleich viele Kanäle geöffnet sind. Die Schwankungen im diesen Mittelwert entsprechen dem zufälligen Öffnen und Schließen von Kanälen.}
+\caption{Stromverlauf der Multikanalmessung. Gemessen wurde ein Zeitraum von $320\e{s}$ mit einer Frequenz von $50\e{Hz}$. Bis $t = 250\e{s}$ ist der Verlauf relativ gleichmäßig; der Strom scheint einen gleichmäßgen Mittelwert von etwa $5\e{pA}$ zu haben, was bedeutet, dass zu jedem Zeitpunkt im Mittel gleich viele Kanäle geöffnet sind. Die Schwankungen um diesen Mittelwert entsprechen dem zufälligen Öffnen und Schließen von Kanälen. Für die weitere Analyse wurde für die Stromwerte ein Fehler von $5 \%$ angenommen.}
 \label{multi}
 \end{figure}
 Aufgrund von starken Ausreißern am Anfang und einem Abfall des Strom-Mittelwerts am Ende wurde für die weitere Analyse nur der Bereich von $60\e{s}$ bis $250\e{s}$ verwendet. In diesem Intervall ist der Mittelwert relativ konstant $\mu = 5.362\e{pA}$. Um die Autokorrelation durchzuführen wurde der Mittelwert von jedem der Werte abgezogen. In Abbildung \ref{AC} ist der Verlauf der Autokorrelationsfunktion für Zeitverschiebungen von $0\e{s}$ bis $4\e{s}$ dargestellt. Für höhere Zeiten beginnt die Autokorrelation zu fluktuieren, daher wurde nur dieser Bereich für die Auswertung berücksichtigt.
@@ -315,7 +331,9 @@ Aufgrund von starken Ausreißern am Anfang und einem Abfall des Strom-Mittelwert
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{images/AC.pdf}
-\caption{Autokorrelationsfunktion und exponentieller Fit.}
+\caption{Autokorrelationsfunktion und exponentieller Fit. Zu sehen ist, dass der Verlauf der Autokorrelationsfunktion nicht exakt einem exponentiellen Zerfall entspricht, was möglicherweise auf systematische Unsicherheiten der Messung zurückzuführen ist. Die statistischen Unsicherheiten der Autokorrelationsfunktion propagierten durch Gauss'sche Fehlerfortpflanzung aus den Strommessungen dargestellt in Abbildung \ref{multi}. }
 \label{AC}
 \end{figure}
+Aus dem exponentiellen Fit der Autokorrelationsfunktion wurde die mittlere Lebensdauer (Zerfallskonstante) eines Kanals zu $\tau = p_1 = (1.09 \pm 0.01)\e{s}$ berechnet.\\
+Im Vergleich dieses Ergebnisses mit dem Ergebnis der Einzelkanalvermessung fällt die Unsicherheit viel geringer aus, da die Messstatistik durch die Erhöhung der Kanalmenge stark steigt. Dadurch erzielt diese Messmethode ein genaueres Ergebnis und beruht nicht auf der Abmessung einzelner Plateaubreiten im $I-t-$Diagramm. Dennoch haben beide Ergebnisse die gleiche Größenordnung, was zusätzlich zu einer Vailidierung der Ergebnisse führt.
 \end{document}
