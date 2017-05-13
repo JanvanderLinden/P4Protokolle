@@ -7,15 +7,14 @@
 \contentsline {section}{\numberline {1.4}Generierung der Membran}{2}{section.1.4}
 \contentsline {section}{\numberline {1.5}Einzelkanal Messungen}{3}{section.1.5}
 \contentsline {section}{\numberline {1.6}Multikanal Messungen}{3}{section.1.6}
-\contentsline {section}{\numberline {1.7}Weitere Analysen}{3}{section.1.7}
-\contentsline {section}{\numberline {1.8}Gausssche Fehlerfortpflanzung}{3}{section.1.8}
+\contentsline {section}{\numberline {1.7}Gausssche Fehlerfortpflanzung}{3}{section.1.7}
 \contentsline {chapter}{\numberline {2}Versuchsauswertung Teil 1}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Auftragen der Membran}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Membranfl\IeC {\"a}che}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Kapazit\IeC {\"a}t}{6}{section.2.3}
 \contentsline {section}{\numberline {2.4}Dicke}{7}{section.2.4}
 \contentsline {section}{\numberline {2.5}spezifische Kapazit\IeC {\"a}t}{7}{section.2.5}
-\contentsline {section}{\numberline {2.6}Durchbruchspannung, maximales E-Feld, Aufnahmequalit\IeC {\"a}t}{7}{section.2.6}
+\contentsline {section}{\numberline {2.6}Durchbruchspannung, maximales E-Feld, Aufnahmequalit\IeC {\"a}t}{8}{section.2.6}
 \contentsline {section}{\numberline {2.7}Widerstand}{8}{section.2.7}
 \contentsline {chapter}{\numberline {3}Versuchsauswertung Teil 2}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Stromfluss durch einen einzelnen Kanal}{9}{section.3.1}
