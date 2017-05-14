@@ -82,8 +82,8 @@ In diesem Experiment wird die Penetration der Zelle durch die Lipid Doppelmembra
 
 
 \section{Generierung der Membran}
-Als erster Versuchsschritt soll eine Membran generiert werden. Dazu wird eine geringe Menge an Glycerol Monooleat in Tetradecan auf die Öffnung gebracht. Dadurch wird eine Lipide Doppelmembran generiert. Dies soll optisch beobachtet werden; die Farbe der Membran verändert sich, je nach Dicke bis sie komplett schwarz wird.\\
-Für die fertige Membran kann die Leitfähigkeit sowie die Kapazität und die Dicke bestimmt werden. \\Die Leitfähigkeit $G$ kann über den gemessenen Strom durch die Membran und die angelegte Spannung bestimmt werden über $G = \frac{I}{U}$. \\Um die Kapazität zu bestimmen kann angenommen werden, dass die Doppelmembran  sich im Stromkreislauf wie ein Plattenkondenstator verhält. Daher ist der übliche Zusammenhang für einen Plattenkondensator gültig:
+Als erster Versuchsschritt soll eine Membran generiert werden. Dazu wird eine geringe Menge an Glycerol Monooleat in Tetradecan auf die Öffnung gebracht, dadurch wird eine Lipide Doppelmembran generiert. Dies soll optisch beobachtet werden; die Farbe der Membran verändert sich, je nach Dicke bis sie komplett schwarz wird.\\
+Für die fertige Membran kann Kapazität sowie die Dicke bestimmt werden.\\Um die Kapazität zu bestimmen kann angenommen werden, dass die Doppelmembran  sich im Stromkreislauf wie ein Plattenkondenstator verhält. Daher ist der übliche Zusammenhang für einen Plattenkondensator gültig:
 \begin{equation}
 C = e_0e_m \frac{A}{d}
 \end{equation}
@@ -102,7 +102,7 @@ mit $I_M$ dem Strom und $\lambda_M$ der Leitfähigkeit durch die Membran, sowie 
 
 \section{Multikanal Messungen}
 Erhöht man die Konzentration des Gramicidin A so öffnen und schließen sich viel mehr Kanäle und eine Vermessung der einzelnen Kanäle ist nicht mehr möglich. Jedoch besteht die Möglichkeit Aussagen über das Öffnen und Schließen der Kanäle, also die Lebenszeit durch eine Autokorrelationsfunktion zu treffen.\\
-Dazu soll ein Stromhistogramm aufgenommen werden und über Autokorrelation verglichen werden. Dazu verschiebt man den Verlauf des Histogramms in der Zeit und summiert das Produkt der ursprünglichen und der verschobenen Verteilung binweise auf. Ein hoher ist somit gleichzusetzen mit einer hohen Korrelation der Werte. Der Autokorrelationswert $AC$ einer Funktion $f(t)$ bei einer Verschiebung um $t'$ berechnet sich beispielsweise durch
+Dazu soll ein Stromhistogramm aufgenommen werden und über Autokorrelation verglichen werden. Dazu verschiebt man den Verlauf des Histogramms in der Zeit und summiert das Produkt der ursprünglichen und der verschobenen Verteilung binweise auf. Ein hoher Wert ist somit gleichzusetzen mit einer hohen Korrelation der Werte. Der Autokorrelationswert $AC$ einer Funktion $f(t)$ bei einer Verschiebung um $t'$ berechnet sich beispielsweise durch
 \[ AC = \frac{1}{T}\sum_t^T f(t)\cc f(t-t') \]
 Hier ist für die Strommessung ein exponentieller Abfall des Autokorrelationswertes mit der Zeitverschiebung zu erwarten, da mit steigender Zeitdifferenz die Wahrscheinlichkeit sinkt, dass ein Kanal zu beiden Zeiten geöffnet ist. Ist ein Kanal zu beiden verglichenen Zeiten geöffnet, so trägt dieser zur Korrelation bei. Die mittlere Lebenszeit $\tau$ eines Kanals wird sich demnach als Zerfallskonstante im exponentiellen Abfall widerspiegeln:
 \[ AC(t') \sim \exp\left( - \frac{t'}{\tau}\right)\]
@@ -119,7 +119,7 @@ Berechnet sich eine Größe $A$ aus mehreren Größen $x_i$ welche eine statisti
 
 \chapter{Versuchsauswertung Teil 1}
 \section{Auftragen der Membran}
-Um die BLM zu Präparieren wurde mit einem Teflonstab ein dünner Film der Peptidschicht auf die Kapilare aufgetragen. Die anfangs dicke Schicht wird durch sanftes abstreifen, klopfen oder rühren verjüngt. Durch die Kamera kann dabei die Ausprägung der newtonschen Ringe beobachten werden. In Abbildung \ref{Reihe} ist Kapilare mit unterschiedlich dicken Lipidmembranen zu sehen. Links ist die Membran dick genug, um Licht hindurch zu lassen, sie erscheint durchsichtig. Die mittlere ist im Bereich der Wellenlängen von sichtbarem Licht und bildet damit newtonsche Ringe aus. Bei der dritten Aufnahme ist die Membran im Begriff sich auszudünnen, man erkennt die Lichtunterdrückung rechtsseitig und damit die Schwarzfärbung.
+Um die BLM zu präparieren wurde mit einem Teflonstab ein dünner Film der Peptidschicht auf die Kapilare aufgetragen. Die anfangs dicke Schicht wird durch sanftes abstreifen, klopfen oder rühren verjüngt. Durch die Kamera kann dabei die Ausprägung der newtonschen Ringe beobachten werden. In Abbildung \ref{Reihe} ist Kapilare mit unterschiedlich dicken Lipidmembranen zu sehen. Links ist die Membran dick genug, um Licht hindurch zu lassen, sie erscheint durchsichtig. Die mittlere ist im Bereich der Wellenlängen von sichtbarem Licht und bildet damit newtonsche Ringe aus. Bei der dritten Aufnahme ist die Membran im Begriff sich auszudünnen, man erkennt die Lichtunterdrückung rechtsseitig und damit die Schwarzfärbung.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{images/Reihe.png}
@@ -128,7 +128,7 @@ Um die BLM zu Präparieren wurde mit einem Teflonstab ein dünner Film der Pepti
 	\end{center}
 \end{figure}
 \section{Membranfläche}
-Um die Fläche der Membran zu bestimmen wurden die Kameraaufnahmen untersucht. Relevant für die untersuchten Prozesse ist nur jener dünne und schwarze Anteil der Membran. Hierzu dient die Aufnahme \ref{Perle}. Bei der Untersuchung der Verhältnisse aus Pixel/Milimeter für den Kapilaraußen/ und -innendurchmesser fällt auf, dass das Verhältniss mit zunehmendem Abstand von der optischen Achse zunimmt. Dieser Effekt ist der Krümmung der Linse verschuldet und wird in der Optik als kissenförmige Verzeichnung bezeichnet \ref{Verzeichung}.
+Um die Fläche der Membran zu bestimmen wurden die Kameraaufnahmen untersucht. Relevant für die untersuchten Prozesse ist nur jener dünne und schwarze Anteil der Membran. Hierzu dient die Aufnahme \ref{Perle}. Bei der Untersuchung der Verhältnisse aus Pixel/Milimeter für den Kapilaraußen/ und -innendurchmesser fällt auf, dass das Verhältniss mit zunehmendem Abstand von der optischen Achse zunimmt. Dieser Effekt ist der Krümmung der Linse verschuldet und wird in der Optik als kissenförmige Verzeichnung bezeichnet (Abbildung \ref{Verzeichnung}).
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.3\textwidth]{images/Verzeichnung.png}
@@ -164,16 +164,16 @@ Abweichung: & 71.3 & =~~5.59\%\\
 		\label{Perle}
 	\end{center}
 \end{figure}
-Wir gehen also von einem Verhältnis V = (1273.91 $\pm$ 5,59\%) p/mm und einem Durchmesser von (441 $\pm$ 0)p aus. Die Pixel kann mit entsprechender Analysesoftware exakt abzählen. Die Fläche der BLM berechnet sich wie folgt. Der Fehler berechnet sich mit Gau\ss'scher Fehlerfortpflanzung \ref{gauss}:
+Wir gehen also von einem Verhältnis V = $(1273.91 \pm 5.59\%)\e{p/mm}$ und einem Durchmesser von $(441 \pm 0)\e{p}$ aus. Die Pixel können mit entsprechender Analysesoftware exakt abgezählt. Die Fläche der BLM berechnet sich wie folgt. Der Fehler berechnet sich mit Gau\ss'scher Fehlerfortpflanzung (vgl. \ref{gauss}):
 \begin{equation}
-A=\frac{\pi}{4}\cdot 441p/ V=0.0941\e{mm^2}
+A=\frac{\pi}{4}\cdot 441\frac{p}{V}=0.094\e{mm^2}
 \end{equation}
 \begin{equation}
-\Delta A=0.00526\e{mm^2}
+\Delta A=0.005\e{mm^2}
 \end{equation}
 
 \section{Kapazität}
-Bei der Messung der Kapazität wird eine Rechteckspannung von $U_{C0}=5\e{mV}$ mit $f=50\e{Hz}$ an die Elektroden angelegt. Dabei wird ein Widerstand $R_1=100\e{k\Omega}$ in Reihe geschalten und die Spannung über der Membran aufgezeichnet. Abbildung \ref{oszi} zeigt die zugehörige Oszilloskopaufnahme, auf der man die Analogie zum Kondensator verifizieren kann. Eingezeichnet wurde die Peakspannung von $U_0 = 7.5\e{V}$ und die geometrisch konstruierte Strecke von 53 Pixel (hier schätzen wir den Fehler auf $\pm$ 20\%), die der charakteristischen Zeit $\tau$ entspricht, während der die Spannung auf $U_0/\textit{e}\approx 2.8$ abfällt. Daraus lässt sich die Zeit Tau bestimmen und die Kapazität berechnen. Dazu benützen wir das Verhältnis V aus Pixel über Spannung mit V=(1250$\pm$7\%)p/0.02s. Den Fehler auf das Pixelverhältnis haben wir hier höher geschätzt als es aus Abbildung \ref{Perle} ersichtlich wäre, da wir hier keine Referenzwerte zur Abmessung haben. Vorgeschalten wurde der Widerstand R$_1=100\e{k\Omega}$.
+Bei der Messung der Kapazität wird eine Rechteckspannung von $U_{C0}=5\e{mV}$ mit $f=50\e{Hz}$ an die Elektroden angelegt. Dabei wird ein Widerstand $R_1=100\e{k\Omega}$ in Reihe geschalten und die Spannung über der Membran aufgezeichnet. Abbildung \ref{oszi} zeigt die zugehörige Oszilloskopaufnahme, auf der man die Analogie zum Kondensator verifizieren kann. Eingezeichnet wurde die Peakspannung von $U_0 = 7.5\e{V}$ und die geometrisch konstruierte Strecke von 53 Pixel (hier wird der Fehler auf $\pm$ 20\% geschätzt), die der charakteristischen Zeit $\tau$ entspricht. Während dieser Zeit fällt die Spannung auf $U_0/\textit{e}\approx 2.8$ ab. Daraus lässt sich die Zeit $\tau$ bestimmen und die Kapazität berechnen. Dazu wurde das Verhältnis $V$ aus Pixel über Spannung mit $V=(1250\pm7\%)\e{p}/0.02\e{s}$. Den Fehler auf das Pixelverhältnis wurde hier höher geschätzt als es aus Abbildung \ref{perle} ersichtlich wäre, da hier keine Referenzwerte zur Abmessung bekannt sind. Vorgeschalten wurde der Widerstand R$_1=100\e{k\Omega}$.
 \begin{align}
 C=\tau/ R_1 = 0.02\e{s}\cdot 53 V/R_1 = (8.48 \pm 1.8)\e{nF}
 \end{align}
@@ -186,12 +186,12 @@ C=\tau/ R_1 = 0.02\e{s}\cdot 53 V/R_1 = (8.48 \pm 1.8)\e{nF}
 \end{figure}
 
 \section{Dicke}
-Die Dicke der Membran bekommt man aus der Analogie zum Plattenkondensator:
+Die Dicke der Membran errechnet sich aus der Analogie zum Plattenkondensator:
 \begin{align*}
 	d&=\epsilon_0\epsilon_M \frac{A}{C}\\
 	d&=(196.5 \pm 43)\e{nm} \ll \lambda
 \end{align*}
-Hierbei wurde die Membran aus Abbildung \ref{Perle} untersucht, deren Fläche und Kapazität oben bereits berechnet wurde. 
+Hierbei wurde die Membran aus Abbildung \ref{Perle} untersucht, deren Fläche und Kapazität vorher bereits berechnet wurde. 
 
 \section{spezifische Kapazität}
 \begin{align}
@@ -210,7 +210,7 @@ Um die Durchbruchspannung zu bestimmen, hätte man auf eine BLM eine Wechselspan
 \end{figure}
 Um den Widerstand der Membran zu Messen, wurde eine Gleichspannung von $U_0=(15 \pm 10\%)\e{mV}$ angelegt und der Spannungsabfall $U_M$ über der Membran gemessen \ref{resistance}. Mit geschalten waren der Verstärker V=200 und der Vorwiderstand $R_x=500\text{M}\Omega$. Es wird wieder mit dem Verhältnis V$_p=5.77 \pm 7\% \e{\frac{p}{mV}}$ gerechnet.
 \begin{align*}
-	U_M&= 105\e{p}/V_p= 2.7 e{mV}\\
+	U_M&= 105\e{p}/V_p= 2.7 \e{mV}\\
 	R_M&=R_x V U_0 /U_M\\
 	R_M&=(82.4 \pm 10.1)\e{G\Omega}
 \end{align*}
