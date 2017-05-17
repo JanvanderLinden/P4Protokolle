@@ -174,13 +174,22 @@ A=\frac{\pi}{4}\cdot 441\frac{p}{V}=0.094\e{mm^2}
 \end{equation}
 
 \section{Kapazität}
-Bei der Messung der Kapazität wird eine Rechteckspannung von $U_{C0}=5\e{mV}$ mit $f=50\e{Hz}$ an die Elektroden angelegt. Dabei wird ein Widerstand $R_1=100\e{k\Omega}$ in Reihe geschaltet und die Spannung über der Membran aufgezeichnet. Abbildung \ref{oszi} zeigt die zugehörige Oszilloskopaufnahme, auf der man die Analogie zum Kondensator verifizieren kann. Eingezeichnet wurde die Peakspannung von $U_0 = 7.5\e{V}$ und die geometrisch konstruierte Strecke von 53 Pixel (hier wird der Fehler auf $\pm$ 20\% geschätzt), die der charakteristischen Zeit $\tau$ entspricht. Während dieser Zeit fällt die Spannung auf $U_0/\textit{e}\approx 2.8$ ab. Daraus lässt sich die Zeit $\tau$ bestimmen und die Kapazität berechnen. Dazu wurde das Verhältnis $V$ aus Pixel über Spannung mit $V=(1250\pm7\%)\e{p}/0.02\e{s}$. Den Fehler auf das Pixelverhältnis wurde hier höher geschätzt als es aus Abbildung \ref{perle} ersichtlich wäre, da hier keine Referenzwerte zur Abmessung bekannt sind. Vorgeschalten wurde der Widerstand R$_1=100\e{k\Omega}$.
+Bei der Messung der Kapazität wird eine Rechteckspannung von $U_{C0}=5\e{mV}$ mit $f=50\e{Hz}$ an die Elektroden angelegt. Dabei wird ein Widerstand $R_1=100\e{k\Omega}$ in Reihe geschaltet und die Spannung über der Membran abgegriffen. Abbildung \ref{oszi} zeigt die zugehörige Oszilloskopaufnahme, auf der man die Analogie zum Kondensator verifizieren kann. Da die BLM eine sehr kurze Lebensdauer hat, war es nicht möglich, eine schärfere Aufnahme des Oszilloskops zu erstellen. Es wurde im zweiten Channel zusätzlich das Eingangssignal also eine Rechtecksspannung von $5\e{mV}$ aufgetragen. Der Channel der Membranspannung hatte eine 1000-fach größere Skalierung, dies wurde genutzt um an der Abbildung das Verhälntis aus Pixeln über Spannung zu bestimmen. Für die Zeitachse ist die Skalierung ebenfalls eindeutig, da eine Periode mit $50\e{Hz}$ genau $0.02\e{s}$ entspricht. Da dies gut abgelesen werden kann, wird ein Fehler von $\pm 5 \%$ angenommen. Die Verhältnisse ergeben sich nun als folgende:
 \begin{align}
-C=\tau/ R_1 = 0.02\e{s}\cdot 53 V/R_1 = (8.48 \pm 1.8)\e{nF}
+\text{Spannung über Pixel:} \qquad &V_U= \frac{10}{513}\frac{\e{V}}{\e{pix}}  \\
+\text{Zeit über Pixel:}\qquad & V_t= \left(\frac{0.02}{1225}\pm 5\%\right)\frac{\e{s}}{\e{pix}}	
 \end{align}
-\begin{figure}[ht]
+Vom Oszilloskop wurde weiter die Peakspannung von $U_0 = 7.5\e{V}$ abgelesen. Mit $V_U$ entspricht dies 385 Pixeln was in der Abbildung klar erkennbar gut trifft. Gesucht ist nun die charakteristische Zeit  $\tau$, die Verstreicht, während die Spannung über der Membran auf $U_1=U_0/\textit{e}\approx 2.759\e{V}\,\hat{=}\,141.5 \e{pix}$ abfällt. Diese 141.5 Pixel wurden in \ref{oszi} abgetragen und abgeschätzt, wo die Spannungskurve nun auf den Wert $U_1$ abfällt. Mit dieser eher groben Methode der Zeitbestimmung wurden 47 Pixel bestimmt, es wird ein großzügiger Fehler von $\pm 20\%$ angenommen. Somit ergibt sich die charakteristische Zeit zu:
+\begin{align}
+	\tau = ░(47\pm 20\%)\e{pix} \cdot V_t=\left(0.75 \pm 0.16\right)\e{ms}
+\end{align}
+Hiermit kann nun die Capazität der Membran berechnet werden:
+\begin{align}
+C=\tau/ R_1 = (7.5\pm 1.6)\e{nF}
+\end{align}
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.7\textwidth]{images/measure.png}
+		\includegraphics[width=0.7\textwidth]{images/measure2.png}
 		\caption{Oszilloskopaufnahme der Entladung der Membran über eine Wechselspannung}
 		\label{oszi}
 	\end{center}
@@ -190,13 +199,12 @@ C=\tau/ R_1 = 0.02\e{s}\cdot 53 V/R_1 = (8.48 \pm 1.8)\e{nF}
 Die Dicke der Membran errechnet sich aus der Analogie zum Plattenkondensator:
 \begin{align*}
 	d&=\epsilon_0\epsilon_M \frac{A}{C}\\
-	d&=(196.5 \pm 43)\e{nm} \ll \lambda
+	d&=(0.22\pm 0.05)\e{nm} \ll \lambda
 \end{align*}
 Hierbei wurde die Membran aus Abbildung \ref{Perle} untersucht, deren Fläche und Kapazität vorher bereits berechnet wurde. 
-
 \section{spezifische Kapazität}
 \begin{align}
-C_{Spez}=C/A=(9.01 \pm 1.97)\e{\frac{\mu F}{cm^2}}
+C_{Spez}=C/A=(7.99 \pm 1.72)\e{\frac{\mu F}{cm^2}}
 \end{align}
 \section{Durchbruchspannung, maximales E-Feld, Aufnahmequalität}
 Aufgrund der hohen Ansprüche, die an das Labor gestellt werden, um eine BLM stabil zu halten, war es vor Ort nicht möglich, alle Messungen durchzuführen. Auch die Aufnahme Abbildung \ref{oszi} konnte in Eile nicht mit höherer Qualität durchgeführt werden, bevor die BLM zusammenbrach.\\
