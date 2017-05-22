@@ -49,7 +49,7 @@
 
 \section{Ziel des Experiments}
 
-In dem Experiment des Quantenradierers werden quantenmechanische Eigenschaften wie die Aufenthaltswarscheinlichkeit anschaulich dargestellt. Hierzu werden kohärente Photonen zur Interferenz im Mach-Zehnder-Interferometer gebracht, wobei die herkömmliche Wellenmechanik an ihre Grenzen stößt. 
+In diesem Experiment werden quantenmechanische Eigenschaften wie die Aufenthaltswarscheinlichkeit von Teilchen anschaulich dargestellt. Hierzu werden kohärente Photonen zur Interferenz im Mach-Zehnder-Interferometer gebracht. Der Quantenradierer ermöglicht hierbei die entstehung eines Interferenzpattern wobei dies mit der herkömmlichen Wellenmechanik nicht erklärbar wäre.
 
 \section{Durchführung}
 \begin{figure}[H]
@@ -60,7 +60,7 @@ In dem Experiment des Quantenradierers werden quantenmechanische Eigenschaften w
 	\end{center}
 \end{figure}
 
-In Abbildung \ref{Mach-Zehnder} ist ein Mach-Zehnder-Interferometer dargestellt. Ein Lichtstrahl wird dabei durch einen ersten Beamsplitter aufgeteilt. Der erste Strahl verläuft geradlinig weiter, der zweite wird durch zwei Spiegeln auf einen um $\Delta z/2$ längeren Umweg geführt. Nach dem Umweg werden die Teilstrahlen durch einen zweiten Beamsplitter wieder zusammengeführt und verlaufen weiter in gemeinsamer Bahn. Als Lichtquelle wird ein Laser verwendet, somit sind die Teilstrahlen kohärent und gut fokusiert. Nach dem zweiten Beamsplitter bilden sich zwei Richtungen für die rekombinierten Strahlen aus, beide werden auf seperaten Schirmen abgebildet, wie in Abb. \ref{Aufbau} ersichtlich. 
+In Abbildung \ref{Mach-Zehnder} ist ein Mach-Zehnder-Interferometer dargestellt. Ein Lichtstrahl wird dabei durch einen ersten Beamsplitter aufgeteilt. Der erste Strahl verläuft geradlinig weiter, der Zweite wird durch zwei Spiegel auf einen um $\Delta z/2$ längeren Umweg geführt. Nach dem Umweg werden die Teilstrahlen durch einen zweiten Beamsplitter wieder zusammengeführt, sodass sie fortan in einer Bahn weiter laufen. Als Lichtquelle wird ein Laser verwendet, somit sind die Teilstrahlen kohärent und gut fokusiert. Nach dem zweiten Beamsplitter bilden sich zwei Richtungen für die rekombinierten Strahlen aus, beide werden auf seperaten Schirmen abgebildet, wie in Abb. \ref{Aufbau} ersichtlich. 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{images/Aufbau.png}
@@ -73,41 +73,36 @@ Die Photonendichte ist proportional zur Lichtintensität und gegeben mit:
 \begin{equation}
 n_{ph}(z,t)=\frac{I(\vec{x},t)}{\hbar \omega}=\frac{\vert \vec{E}\vert ^2}{\hbar \omega}
 \end{equation}
-Geht man von idealen Bedingungen aus, sollte klassisch gesehen die Teilchendichte sich nach aufteilen und wieder zusammenführen eines Strahls nicht verändern. Bei dem Interferometer haben wir aber einen Gangunterschied in den Teilstrahlen, welcher wie folgt erfasst werden kann:
+Geht man von idealen Bedingungen aus, sollte klassisch gesehen die Teilchendichte sich nach aufteilen und wieder zusammenführen eines Strahls nicht verändern. Sei $\vec{E}_0$ die Feldstärke der Quelle. Bei dem Interferometer haben wir einen Gangunterschied zwischen den Teilstrahlen, welcher hinter dem zweiten Beamsplit wie folgt erfasst werden kann:
 \begin{align}
 \si{Strahl\, A}\quad \vec{E}_A(z,t)&=\frac{1}{4}\vec{E_0}e^{i(k_z z-\omega t)}\\
 \si{Strahl\, B}\quad \vec{E}_B(z,t)&=\frac{1}{4}\vec{E_0}e^{i(k_z (z+\Delta z)-\omega t)}
 \end{align}
-Hierbei ist die Feldstärke auf ein Viertel abgesunken, da sie bei zwei Beamsplittern jeweils halbiert wurde. Nach zusammenführen der Teilstrahlen bekommt man die überlagerte Welle als Superpossition:
+Hierbei ist die Feldstärke eines jeden Teilstrahls auf ein Viertel abgesunken, da sie bei zwei Beamsplittern jeweils halbiert wurde. Nach zusammenführen der Teilstrahlen bekommt man die überlagerte Welle als Superpossition:
 \begin{equation}
-\vec{E}_{ges}(z,t)= \vec{E}_1+\vec{E}_2=\frac{1}{4}\vec{E_0}(e^{ik_z z}+e^{ik_z (z+\Delta z)})e^{i\omega t}
+\vec{E}_{ges}(z,t)= \vec{E}_A+\vec{E}_B=\frac{1}{4}\vec{E_0}(e^{ik_z z}+e^{ik_z (z+\Delta z)})e^{i\omega t}
 \end{equation}
-Daraus ergibt sich die Photonendichte für einen der beiden resultierenden Teilstrahlen hinter dem zweiten Beamsplitter zu:
+Daraus ergibt sich die Photonendichte für einen der beiden rekombiniertenbeiden Strahlen hinter dem zweiten Beamsplitter zu:
 \begin{equation}
 n_{ph}(z,t)=\frac{\vert \vec{E}_{ges} \vert ^2}{\hbar \omega}=\frac{\vert \vec{E}_0\vert ^2}{4\hbar\omega}(1+\cos(k_z\Delta z))\label{n}
 \end{equation}
-Klassisch ist der $(1+\cos(k_z z))$-Term nicht erklärbar, das Ergebnis der Photonendichte wäre $\frac{\vert \vec{E}_0\vert}{2\hbar \omega}$ also gerade die Hälfte des Ausgangswertes, da nach dem zweiten Beamsplit der Grundstrahl effektiv in Zwei geteilt wurde. 
+Klassisch ist der Interferenzterm $(1+\cos(k_z z))$ nicht erklärbar, das Ergebnis der Photonendichte wäre $\frac{\vert \vec{E}_0\vert}{2\hbar \omega}$ also gerade die Hälfte der Quelle und das Maximum von \ref{n}, da nach dem zweiten Beamsplit der Grundstrahl effektiv halbiert wurde. 
 \section{Quantenradierer}
 Im Experiment wird nun das Mach-Zehnder-Interferomenter wie in Abb. \ref{Mach-Zehnder} dargestellt, mit einen Polarisationsfilter pro Strahlgang ausgebaut. Geht man von einer in X-Richtung polarisierten Quelle aus und polarisiert die Strahlen in $\pm 45^\circ$ bekommt man für die Teilstrahlen hinter dem zweiten Beamsplitter:
 \begin{align}
-\vec{E}_A&=\frac{E_0}{2}e^{i(k_z z - \omega t)} \cdot\frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ 1 \end{array}\right)\\
-\vec{E}_B&=\frac{E_0}{2}e^{i(k_z (z+\Delta z) - \omega t)}\cdot \frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ -1 \end{array}\right)
+\vec{E}_A&=\frac{E_0}{4}e^{i(k_z z - \omega t)} \cdot\frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ 1 \end{array}\right)\\
+\vec{E}_B&=\frac{E_0}{4}e^{i(k_z (z+\Delta z) - \omega t)}\cdot \frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ -1 \end{array}\right)
 \end{align}
-Berechnet man nun für den rekombinierten Strahl die Photonendichte nach \ref{n}, so verschwindet durch die Orthogonalität der Teilstrahlen das Betragsquadrat. Damit fällt Teilchendichte auf Null und auf beiden Schirmen kann keine Intensität festgestellt werden.\\
-Nun wird zwischen den zweiten Splitter und einem Schirmen S1 ein zusätzlicher Polarisator, der Quantenradierer positioniert. Dieser Polarisator wird mit $0^\circ$ respektive zur Polarisation der Quelle eingestellt. Hierdurch werden die Teilstrahle erneut rotiert und mit einem Faktor $\frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ 0 \end{array}\right)$ multipliziert. Das Resultat lautet dann:
+Berechnet man nun für den rekombinierten Strahl die Photonendichte nach \ref{n}, so verschwindet durch die Orthogonalität der Teilstrahlen der Interferenzterm. Damit fällt die Teilchendichte auf die Hälfte. Da der Interferenzterm verantwortlich für das Erscheinen des Interferenzmusters ist, wird mit den Polfiltern auf keinem der beiden Schirmen ein Solches festgestellt werden.\\
+Nun wird zwischen den zweiten Splitter und einem Schirm S1 ein zusätzlicher Polarisator, der Quantenradierer positioniert. Dieser Polarisator wird mit $0^\circ$ respektive zur Polarisation der Quelle eingestellt. Hierdurch werden die Teilstrahle auf diese Polarisation projeziert was mathematisch erneut als Drehung mit einem Faktor $\frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ 0 \end{array}\right)$ berechnet werden kann. Die Wellen haben hinter dem Quantenradierer dann die folgende Gestallt:
 \begin{align}
-\vec{E}_A&=\frac{E_0}{4}e^{i(k_z z - \omega t)} \cdot\left(\begin{array}{c} 1 \\ 0 \end{array}\right)\\
-\vec{E}_B&=\frac{E_0}{4}e^{i(k_z (z+\Delta z) - \omega t)}\cdot \left(\begin{array}{c} 1 \\ 0 \end{array}\right)
+\vec{E}_A&=\frac{E_0}{8}e^{i(k_z z - \omega t)} \cdot\left(\begin{array}{c} 1 \\ 0 \end{array}\right)\\
+\vec{E}_B&=\frac{E_0}{8}e^{i(k_z (z+\Delta z) - \omega t)}\cdot \left(\begin{array}{c} 1 \\ 0 \end{array}\right)
 \end{align}
 Diese lineare Ausrichtung kann nun miteinander interferieren und für die Photonendichte ergibt sich:
 \begin{equation}
 n_{ph}(z,t)=\frac{\vert \vec{E}_0\vert ^2}{8\hbar\omega}(1+\cos(k_z\Delta z))
 \end{equation}
+Somit kann wieder ein Interferenzbild wahrgenommen werden.
 
-\section{Gausssche Fehlerfortpflanzung}
-Berechnet sich eine Größe $A$ aus mehreren Größen $x_i$ welche eine statistische Unsicherheit $\sigma_i$ besitzen, so propagiert die Unsicherheit der $x_i$ weiter zu einer Unsicherheit $\sigma_A$ in $A$. Diese Fehlerpropagation wird durch die Gaussche Fehlerfortpflanzug ausgedrückt:
-\begin{equation}
-\sigma_A = \sqrt{\sum_i \left( \frac{\p A}{\p x_i} \cc \sigma_i \right)^2 }
-\label{gauss}
-\end{equation}
 \end{document}
