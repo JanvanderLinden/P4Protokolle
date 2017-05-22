@@ -49,7 +49,7 @@
 
 \section{Ziel des Experiments}
 
-In diesem Experiment werden quantenmechanische Eigenschaften wie die Aufenthaltswarscheinlichkeit von Teilchen anschaulich dargestellt. Hierzu werden kohärente Photonen zur Interferenz im Mach-Zehnder-Interferometer gebracht. Der Quantenradierer ermöglicht hierbei die entstehung eines Interferenzpattern wobei dies mit der herkömmlichen Wellenmechanik nicht erklärbar wäre.
+In diesem Experiment werden quantenmechanische Eigenschaften wie die Aufenthaltswarscheinlichkeit von Teilchen anschaulich dargestellt. Hierzu werden kohärente Photonen zur Interferenz im Mach-Zehnder-Interferometer gebracht. Der Quantenradierer ermöglicht hierbei ein Interferenzmuster wobei dies mit der herkömmlichen Wellenmechanik nicht erklärbar wäre.
 
 \section{Durchführung}
 \begin{figure}[H]
@@ -73,12 +73,12 @@ Die Photonendichte ist proportional zur Lichtintensität und gegeben mit:
 \begin{equation}
 n_{ph}(z,t)=\frac{I(\vec{x},t)}{\hbar \omega}=\frac{\vert \vec{E}\vert ^2}{\hbar \omega}
 \end{equation}
-Geht man von idealen Bedingungen aus, sollte klassisch gesehen die Teilchendichte sich nach aufteilen und wieder zusammenführen eines Strahls nicht verändern. Sei $\vec{E}_0$ die Feldstärke der Quelle. Bei dem Interferometer haben wir einen Gangunterschied zwischen den Teilstrahlen, welcher hinter dem zweiten Beamsplit wie folgt erfasst werden kann:
+Geht man von idealen Bedingungen aus, sollte sich klassisch gesehen die Teilchendichte nach aufteilen und wieder zusammenführen eines Strahls nicht verändern. Bei dem Interferometer gibt es einen Phasenunterschied zwischen den Teilstrahlen, welcher durch den Gangunterschied $\Delta z$ parametrisiert ist. Hinter dem zweiten Beamsplitter werden die zwei Strahlen wieder vereint, wobei $\vec{E_0}$ die Feldstärke der Quelle ist:
 \begin{align}
 \si{Strahl\, A}\quad \vec{E}_A(z,t)&=\frac{1}{4}\vec{E_0}e^{i(k_z z-\omega t)}\\
 \si{Strahl\, B}\quad \vec{E}_B(z,t)&=\frac{1}{4}\vec{E_0}e^{i(k_z (z+\Delta z)-\omega t)}
 \end{align}
-Hierbei ist die Feldstärke eines jeden Teilstrahls auf ein Viertel abgesunken, da sie bei zwei Beamsplittern jeweils halbiert wurde. Nach zusammenführen der Teilstrahlen bekommt man die überlagerte Welle als Superpossition:
+Hierbei ist die Feldstärke eines jeden Teilstrahls auf ein Viertel abgesunken, da sie bei zwei Beamsplittern jeweils halbiert wurde. Die Superposition der zusammengeführten Teilstrahlen ergibt sich somit zu:
 \begin{equation}
 \vec{E}_{ges}(z,t)= \vec{E}_A+\vec{E}_B=\frac{1}{4}\vec{E_0}(e^{ik_z z}+e^{ik_z (z+\Delta z)})e^{i\omega t}
 \end{equation}
@@ -88,13 +88,13 @@ n_{ph}(z,t)=\frac{\vert \vec{E}_{ges} \vert ^2}{\hbar \omega}=\frac{\vert \vec{E
 \end{equation}
 Klassisch ist der Interferenzterm $(1+\cos(k_z z))$ nicht erklärbar, das Ergebnis der Photonendichte wäre $\frac{\vert \vec{E}_0\vert}{2\hbar \omega}$ also gerade die Hälfte der Quelle und das Maximum von \ref{n}, da nach dem zweiten Beamsplit der Grundstrahl effektiv halbiert wurde. 
 \section{Quantenradierer}
-Im Experiment wird nun das Mach-Zehnder-Interferomenter wie in Abb. \ref{Mach-Zehnder} dargestellt, mit einen Polarisationsfilter pro Strahlgang ausgebaut. Geht man von einer in X-Richtung polarisierten Quelle aus und polarisiert die Strahlen in $\pm 45^\circ$ bekommt man für die Teilstrahlen hinter dem zweiten Beamsplitter:
+Im Experiment wird nun das Mach-Zehnder-Interferomenter wie in Abb. \ref{Mach-Zehnder} dargestellt, mit einen Polarisationsfilter pro Strahlgang ausgebaut. Geht man von einer, in X-Richtung polarisierten Quelle aus und polarisiert die Strahlen in $\pm 45^\circ$ betragen die Felder der Teilstrahlen hinter dem zweiten Beamsplitter:
 \begin{align}
 \vec{E}_A&=\frac{E_0}{4}e^{i(k_z z - \omega t)} \cdot\frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ 1 \end{array}\right)\\
 \vec{E}_B&=\frac{E_0}{4}e^{i(k_z (z+\Delta z) - \omega t)}\cdot \frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ -1 \end{array}\right)
 \end{align}
-Berechnet man nun für den rekombinierten Strahl die Photonendichte nach \ref{n}, so verschwindet durch die Orthogonalität der Teilstrahlen der Interferenzterm. Damit fällt die Teilchendichte auf die Hälfte. Da der Interferenzterm verantwortlich für das Erscheinen des Interferenzmusters ist, wird mit den Polfiltern auf keinem der beiden Schirmen ein Solches festgestellt werden.\\
-Nun wird zwischen den zweiten Splitter und einem Schirm S1 ein zusätzlicher Polarisator, der Quantenradierer positioniert. Dieser Polarisator wird mit $0^\circ$ respektive zur Polarisation der Quelle eingestellt. Hierdurch werden die Teilstrahle auf diese Polarisation projeziert was mathematisch erneut als Drehung mit einem Faktor $\frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ 0 \end{array}\right)$ berechnet werden kann. Die Wellen haben hinter dem Quantenradierer dann die folgende Gestallt:
+Berechnet man nun für den rekombinierten Strahl die Photonendichte nach \ref{n}, so verschwindet durch die Orthogonalität der Teilstrahlen der Interferenzterm. Damit fällt die Teilchendichte auf die Hälfte. Da der Interferenzterm verantwortlich für das Erscheinen des Interferenzmusters ist, sollte mit den Polfiltern auf keinem der beiden Schirmen Interferenz festgestellt werden können.\\
+Nun wird vor einen der Schirme ein zusätzlicher Polarisator, der Quantenradierer positioniert. Dieser Polarisator wird mit $0^\circ$ respektive zur Polarisation der Quelle eingestellt. Hierdurch werden die Teilstrahlen auf diese Polarisation projiziert, was mathematisch einer Drehung mit einem Faktor $\frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ 0 \end{array}\right)$ entspricht. Die Wellen haben hinter dem Quantenradierer dann folgende Gestallt:
 \begin{align}
 \vec{E}_A&=\frac{E_0}{8}e^{i(k_z z - \omega t)} \cdot\left(\begin{array}{c} 1 \\ 0 \end{array}\right)\\
 \vec{E}_B&=\frac{E_0}{8}e^{i(k_z (z+\Delta z) - \omega t)}\cdot \left(\begin{array}{c} 1 \\ 0 \end{array}\right)
@@ -104,5 +104,34 @@ Diese lineare Ausrichtung kann nun miteinander interferieren und für die Photon
 n_{ph}(z,t)=\frac{\vert \vec{E}_0\vert ^2}{8\hbar\omega}(1+\cos(k_z\Delta z))
 \end{equation}
 Somit kann wieder ein Interferenzbild wahrgenommen werden.
+
+\chapter{Durchführung}
+\section{Justierung}
+Zu Beginn des Experiments wurde das Interferometer aufgebaut (Abbildung \ref{aufbau}) und mit einem fokussierten Laser so justiert, dass die Strahlengänge beider Teilstrahlen hinter dem zweiten Strahlteiler wieder zusammenfallen. Durch eine Aufweitung des Ursprungsstrahls und weitere Feinjustierung konnte dann auf den Schirmen das gewünschte Interferenzmuster sichtbar gemacht werden (Abbildung \ref{interferenz}). Quantenmechanisch entspricht dies dem Verlust der Information, auf welchem Weg ein Photon zum Schirm gelangt, weshalb die Wahrscheinlichkeitsamplituden der Teilstrahlen miteinander interferieren.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.1]{images/eigener-aufbau.jpg}
+\caption{Verwendeter Aufbau des Interferometers. Der Laser befindet sich in der unteren linken Ecke, direkt davor befindet sich eine Linse zur Aufweitung des Strahls. Der Strahlrichtung folgend, befindet sich dahinter ein Strahlteiler, welcher den Ursprungsstrahl gerade durch lässt und nach oben ablenkt. Im Stahlengang der beiden Teilstrahlen befinden sich je ein Ploarisator mit relativen Polarisationswinklen von $90^\circ$ zueinander. Die beiden Teilstrahlen werden beim Strahlteiler in der Mitte wieder vereint und auf die beiden weißen Schirme projiziert. Ebenso zu Sehen ist ein weiterer Polarisationsfilter unter dem oberen Schirm, der Quantenradierer. Dieser hat zu den beiden vorherigen Polarisatoren eine relative Ausrichtung von je $45^\circ$.}
+\label{aufbau}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.1]{images/interferenz.jpg}
+\caption{Interferenzmuster des aufgeweiteten Laserstrahls an einem der Schirme. Durch den kontinuierlichen Gangunterschied der beiden Teilstrahlen entsteht im Idealfall ein Ringmuster.}
+\label{interferenz}
+\end{figure}
+\section{Auflösen der Interferenz}
+Durch die Positionierung je eines Polarisators in die beiden Teilstrahlen mit relativen Polarisationswinkeln von $90^\circ$ (auch Abbildung \ref{aufbau}) konnte das Interferenzmuster erfolgreich aufgelöst werden. Quantenmechanisch existiert durch die Polarisatoren eine Weginformation, es kann eine Aussage getroffen werden, auf welchem der beiden Wege ein Photon den Schrim erreicht.
+
+\section{Der Quantenradierer}
+Durch die Positionierung eines weiteren Polarisationsfilters  mit einer Ausrichtung von $45^\circ$ relativ zu den beiden anderen Polarisatoren (auch Abbildung \ref{aufbau}) vor einen der beiden Schirme konnte erneut ein Interferenzmuster beobachtet werden (Abbildung \ref{qrazge}).
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.1]{images/radiert.jpg}
+\caption{Aufnahme der beiden Auswertungsschirme bei Betrieb des Interferometers mit allen drei Polarisatoren. Auf dem rechten Schirm ist keine Interferenz zu erkennen, auf dem linken Schirm jedoch schon. Im Strahlengang des Musters des linken Schirms steht der Quantenradierer.}
+\label{qrazge}
+\end{figure}
+Durch die Positionierung des Quantenradierers wird die Weg-Information der einfallenden Teilstrahlen gelöscht, da die resultierende Polarisation für beide Teilstrahlen gleich ist. Durch diesen Verlust der Weg-Information kann auf quantenmechanischer Ebene erneut Interferenz stattfinden.
 
 \end{document}
