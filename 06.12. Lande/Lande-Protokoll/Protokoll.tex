@@ -1,0 +1,101 @@
+
+\documentclass{include/thesisclass3}
+
+\SelectLanguage{ngerman}
+\usepackage{float}
+
+
+% Titlepage settings
+\newcommand{\praktikum}{Praktikum moderne Physik}
+\newcommand{\autora}{Jens Schäfer}
+\newcommand{\autorb}{Jan van der Linden}
+\newcommand{\maila}{ugecd@student.kit.edu}
+\newcommand{\mailb}{jan.vdlinden95@gmail.com}
+\newcommand{\topic}{Landé factor of the muon}
+\newcommand{\ptime}{12. Juni 2017}
+
+
+% Shortcuts
+\newcommand{\cc}{\cdot}
+\newcommand{\rk}{\rangle}
+\newcommand{\lk}{\langle}
+\newcommand{\df}{\rightarrow}
+\newcommand{\la}{\lambda}
+\newcommand{\dd}{{\rm d}}
+\newcommand{\ehm}{\mathbbm{1}}
+\newcommand{\p}{\partial}
+\newcommand{\soll}{\overset{!}{=}}
+\newcommand{\D}{\Delta}
+\newcommand{\eps}{\epsilon}
+\newcommand{\vektor}[3]{\begin{pmatrix} #1 \\ #2 \\ #3 \end{pmatrix}}
+\newcommand{\vektorz}[2]{\begin{pmatrix} #1 \\ #2 \end{pmatrix}}
+\newcommand{\Mat}[9]{\begin{pmatrix}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{pmatrix}}
+\newcommand{\Matz}[4]{\begin{pmatrix}#1&#2\\#3&#4\end{pmatrix}}
+\newcommand{\e}[1]{\,\si{#1}}
+ 
+
+
+\begin{document}
+
+	\FrontMatter
+	\input{include/titlepage}
+	\tableofcontents                  
+	\newpage
+	\MainMatter
+
+%Protokollstart
+
+\chapter{Theoretical Background}
+
+In this experiment the lifetime of a muon is to be determined, as well as its Landé factor.
+\todo{...}
+
+\section{Cosmic muons}
+Primary cosmic radiation consists mainly of protons (85\%), $\alpha$ particles and photons.
+When entering the atmosphere secondary particles are induced by interacting with the matter in the atmoshpere.
+A strong interaction with air molecules induces the production of pions, protons and neutrons.
+Due to the short halflife of pions, they do not reach the earth, but rather convert either into a pair of photons (in the case of the neutral pion) or into a charged lepton and its corresponding neutrino ($\pi^\pm ~\df~ \mu^\pm + \nu_\mu/\bar{\nu}_\mu$).
+The muons have a higher range in comparison with the electrons, because they are far heavier.
+Also, due to the high energies of the cosmic radiation, also the muons have very high energies and are therefore ultrarelativistic.
+As the mean lifetime of a muon is approximately $\tau = 2.2\cc10^{-6}\e{s}$ they should in gerneral not be able to reach earth.
+The muons are however ultrarelativistic, which enables them to reach earth, because the lifetime holds for the restframe of the muon, which translates to $\tau_E = \gamma \tau$ in an observers frame.
+Therefore even muons with energies of $10\e{GeV}$ are able to travel over $60\e{km}$ or more.
+
+In matter, high energy muons lose energy mainly by bremsstrahlung; the emission of photons.
+In lower energy ranges (under GeV) they also lose notable amounts of energy from ionization processes or coulomb interaction.
+Furthermore, negative muons $\mu^-$ get caught by atoms and get absorbed into the nucleus by interacting via the weak force.
+Thus, the lifetime of $\mu^-$ reduces a lot when passing through matter, which results in the main part of the cosmic muon radiation to consist of positive muons $\mu^+$.
+
+%At low energies, the positive muons catch electrons from atom shells and transition in a bound state $\e^-\mu^+$ called muonium.
+At the end of the lifetime of the positive muons they usually convert into positrons via $\mu^+ ~\df~e^+ + \mu_e + \bar{\nu}_\mu$.
+
+\section{Muon polarization}
+In certain energy intervals, the momentum of muons is polarized, because of the parity violation of the weak interaction.
+As pions carry spin $0$ and the neutrino must have negative chirality due to its velocity/vanishing mass, the muon is emitted in the wrong chirality, namely positive (maximum parity violation of weak interaction only permits particles of negative chirality).
+
+Now, the muons also have different energies, depending on the direction of emission from the pion.
+If the muon is emitted in the direction of travel in the rest frame of the decaying pion, it has a higher mass than the muons emitted in the opposite direction.
+For a muon emitted against the direction of travel, a negative polarization is expected, whereas a positive polarization is expected for the muons emitted in the direction of travel.
+Therefore, there will be a polarization of approximately $P=-\frac{1}{3}$ observable, if a energy sensitive measurement will be performed at purpendicular incidence angle.
+
+\section{Evidence of muon decay}
+To measure a decaying muon the conversion into a positron $e^+$ and two invisible neutrinos has to be observed.
+The double differential cross section for this process is given by
+\[ \frac{\dd N}{\dd \eps \dd \Omega} = \frac{\eps}{2\pi} \left[ (3-2\eps) - P(1-2\eps)\cos\theta\right] \equiv a(1 + b \cos\theta)\]
+Here, $\eps$ denotes the relative energy $\eps = E/E_{max}$, where $E_{max} = m_\mu/2$, and $\theta$ denotes the angle between the spin of the incident muon and the momentum of the positron. 
+The polarization of the muon is called $P$.
+
+\section{Landé factor of the muon}
+With a magnetic field applied, the muon precess around the direction of $B$ with frequency $\omega = \gamma B$ where $\gamma$ is the gyromagnetic ratio
+\[ \gamma = g \frac{\mu_B}{\hbar}, ~~~\mu_B = \frac{e\hbar}{2m}\]
+For the muon, the Bohr magneton is equivalent to $\mu_B = 4.5\cc10^{-26}\e{\frac{J}{T}}$ and $g$ is the Landé factor of the muon.
+This factor can be measured through measurement of the precession frequency of a free particle in a magnetic field, such that
+\[ g = \frac{\hbar \omega}{\mu_B B}\]
+
+\section{Principle of measurement}
+
+
+
+\chapter{Experiment and Analysis}
+
+\end{document}
