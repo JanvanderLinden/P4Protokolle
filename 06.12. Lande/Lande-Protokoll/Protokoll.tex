@@ -48,13 +48,13 @@
 \chapter{Theoretical Background}
 
 In this experiment the lifetime of a muon is to be determined, as well as its Landé factor.
-\todo{...}
+\todo{...}% what is dat?
 
 \section{Cosmic muons}
 Primary cosmic radiation consists mainly of protons (85\%), $\alpha$ particles and photons.
 When entering the atmosphere secondary particles are induced by interacting with the matter in the atmoshpere.
 A strong interaction with air molecules induces the production of pions, protons and neutrons.
-Due to the short halflife of pions, they do not reach the earth, but rather convert either into a pair of photons (in the case of the neutral pion) or into a charged lepton and its corresponding neutrino ($\pi^\pm ~\df~ \mu^\pm + \nu_\mu/\bar{\nu}_\mu$).
+Due to the short halflife of pions, they do not reach the earth, but rather convert either into a pair of photons (in the case of the neutral pion) or into a charged lepton and its corresponding anti-neutrino ($\pi^\pm ~\df~ \mu^\pm + \nu_\mu/\bar{\nu}_\mu$).
 The muons have a higher range in comparison with the electrons, because they are far heavier.
 Also, due to the high energies of the cosmic radiation, also the muons have very high energies and are therefore ultrarelativistic.
 As the mean lifetime of a muon is approximately $\tau = 2.2\cc10^{-6}\e{s}$ they should in gerneral not be able to reach earth.
@@ -66,22 +66,18 @@ In lower energy ranges (under GeV) they also lose notable amounts of energy from
 Furthermore, negative muons $\mu^-$ get caught by atoms and get absorbed into the nucleus by interacting via the weak force.
 Thus, the lifetime of $\mu^-$ reduces a lot when passing through matter, which results in the main part of the cosmic muon radiation to consist of positive muons $\mu^+$.
 
-%At low energies, the positive muons catch electrons from atom shells and transition in a bound state $\e^-\mu^+$ called muonium.
-At the end of the lifetime of the positive muons they usually convert into positrons via $\mu^+ ~\df~e^+ + \mu_e + \bar{\nu}_\mu$.
-
+At the end of the lifetime of the positive muons they usually convert into positrons via $\mu^+ ~\df~e^+ + \mu_e + \bar{\nu}_\mu$. 
 \section{Muon polarization}
-In certain energy intervals, the momentum of muons is polarized, because of the parity violation of the weak interaction.
-As pions carry spin $0$ and the neutrino must have negative chirality due to its velocity/vanishing mass, the muon is emitted in the wrong chirality, namely positive (maximum parity violation of weak interaction only permits particles of negative chirality).
-
+%In certain energy intervals, the momentum of muons is polarized, because of the parity violation of the weak interaction.
+As pions carry spin $0$ and the neutrino must have negative chirality due to its velocity/vanishing mass the antimuon is forced by conservation of spin and momentum to have negative chirality aswell (maximum parity violation of weak interaction only permits particles of negative and antiparticles of possitive chirality).
 Now, the muons also have different energies, depending on the direction of emission from the pion.
-If the muon is emitted in the direction of travel in the rest frame of the decaying pion, it has a higher mass than the muons emitted in the opposite direction.
-For a muon emitted against the direction of travel, a negative polarization is expected, whereas a positive polarization is expected for the muons emitted in the direction of travel.
-Therefore, there will be a polarization of approximately $P=-\frac{1}{3}$ observable, if a energy sensitive measurement will be performed at purpendicular incidence angle.
+If the muon is emitted in the direction of travel in the rest frame of the decaying pion, it has a higher energy than the muons emitted in the opposite direction. For a muon emitted against the direction of travel, a negative polarization is expected, whereas a positive polarization is expected for the muons emitted in the direction of travel.
+Observing a certain energy interval there are muons with equal energys but different polarization depending if it was emitted by low-energy pions in direction of travel or by high-energy pions in opposite direction. In a matter of fact there is a non-equal distribution of pions in different energy scales. Therefore, there will be a polarization of approximately $P=-\frac{1}{3}$ observable, if a energy sensitive measurement will be performed at purpendicular incidence angle.
 
 \section{Evidence of muon decay}
 To measure a decaying muon the conversion into a positron $e^+$ and two invisible neutrinos has to be observed.
 The double differential cross section for this process is given by
-\[ \frac{\dd N}{\dd \eps \dd \Omega} = \frac{\eps}{2\pi} \left[ (3-2\eps) - P(1-2\eps)\cos\theta\right] \equiv a(1 + b \cos\theta)\]
+$ \frac{\d N}{\d \eps \d \Omega} = \frac{\eps}{2\pi} \left[ (3-2\eps) - P(1-2\eps)\cos\theta\right] \equiv a(1 + b \cos\theta) $
 Here, $\eps$ denotes the relative energy $\eps = E/E_{max}$, where $E_{max} = m_\mu/2$, and $\theta$ denotes the angle between the spin of the incident muon and the momentum of the positron. 
 The polarization of the muon is called $P$.
 
@@ -93,9 +89,16 @@ This factor can be measured through measurement of the precession frequency of a
 \[ g = \frac{\hbar \omega}{\mu_B B}\]
 
 \section{Principle of measurement}
+By observing the differenz in time of the muon decellerating in the observer and the appearence of the positron the mean lifetime can be calculated
+\begin{equation}
+N(t)=N_0\,e^{-t/\tau}
+\end{equation}
+Therefore three szintillators are layerd with a cupper absorber inbetween the last two. Each layer is about 2.5cm thick. With trigger hardware only muons passing through layer 1 and 2 but not through 3 are counted. 
+For the Landé factor the precission frequency has to be measuered. Therefore the absober material is penetrated with the magnetic field B and again the mean lifetime gets observed but just on a decent ancle $\theta$. The ratio of decaying myons is now modulated by the precission and the ancle transforms into $\omega t$ therefore the mean lifetime goes to 
+\begin{equation}
+N(t)=K\cdot e^{ -t/\tau } \cdot [ 1+\bar A \cdot \cos(\omega t + \delta )]
+\end{equation}
 
-
-
-\chapter{Experiment and Analysis}
+%\chapter{Experiment and Analysis}
 
 \end{document}

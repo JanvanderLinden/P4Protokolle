@@ -49,7 +49,7 @@
 
 \section{Ziel des Experiments}
 
-In diesem Experiment werden quantenmechanische Eigenschaften wie die Aufenthaltswarscheinlichkeit von Teilchen anschaulich dargestellt. Hierzu werden kohärente Photonen zur Interferenz im Mach-Zehnder-Interferometer gebracht. Der Quantenradierer ermöglicht hierbei ein Interferenzmuster wobei dies mit der herkömmlichen Wellenmechanik nicht erklärbar wäre.
+In diesem Experiment werden quantenmechanische Eigenschaften wie die Aufenthaltswarscheinlichkeit von Teilchen anschaulich dargestellt. Hierzu werden kohärente Photonen zur Interferenz im Mach-Zehnder-Interferometer gebracht. 
 
 \section{Durchführung}
 \begin{figure}[H]
@@ -73,7 +73,7 @@ Die Photonendichte ist proportional zur Lichtintensität und gegeben mit:
 \begin{equation}
 n_{ph}(z,t)=\frac{I(\vec{x},t)}{\hbar \omega}=\frac{\vert \vec{E}\vert ^2}{\hbar \omega}
 \end{equation}
-Geht man von idealen Bedingungen aus, sollte sich klassisch gesehen die Teilchendichte nach aufteilen und wieder zusammenführen eines Strahls nicht verändern. Bei dem Interferometer gibt es einen Phasenunterschied zwischen den Teilstrahlen, welcher durch den Gangunterschied $\Delta z$ parametrisiert ist. Hinter dem zweiten Beamsplitter werden die zwei Strahlen wieder vereint, wobei $\vec{E_0}$ die Feldstärke der Quelle ist:
+Geht man von idealen Bedingungen aus, sollte sich klassisch gesehen die Teilchendichte nach Aufteilen und wieder Zusammenführen eines Strahls nicht verändern. Bei dem Interferometer gibt es einen Phasenunterschied zwischen den Teilstrahlen, welcher durch den Gangunterschied $\Delta z$ parametrisiert ist. Hinter dem zweiten Beamsplitter werden die zwei Strahlen wieder vereint, wobei $\vec{E_0}$ die Feldstärke der Quelle ist:
 \begin{align}
 \si{Strahl\, A}\quad \vec{E}_A(z,t)&=\frac{1}{4}\vec{E_0}e^{i(k_z z-\omega t)}\\
 \si{Strahl\, B}\quad \vec{E}_B(z,t)&=\frac{1}{4}\vec{E_0}e^{i(k_z (z+\Delta z)-\omega t)}
@@ -82,19 +82,19 @@ Hierbei ist die Feldstärke eines jeden Teilstrahls auf ein Viertel abgesunken, 
 \begin{equation}
 \vec{E}_{ges}(z,t)= \vec{E}_A+\vec{E}_B=\frac{1}{4}\vec{E_0}(e^{ik_z z}+e^{ik_z (z+\Delta z)})e^{i\omega t}
 \end{equation}
-Daraus ergibt sich die Photonendichte für einen der beiden rekombiniertenbeiden Strahlen hinter dem zweiten Beamsplitter zu:
+Daraus ergibt sich die Photonendichte für einen der beiden rekombinierten Strahlen hinter dem zweiten Beamsplitter zu:
 \begin{equation}
 n_{ph}(z,t)=\frac{\vert \vec{E}_{ges} \vert ^2}{\hbar \omega}=\frac{\vert \vec{E}_0\vert ^2}{4\hbar\omega}(1+\cos(k_z\Delta z))\label{n}
 \end{equation}
-Klassisch ist der Interferenzterm $(1+\cos(k_z z))$ nicht erklärbar, das Ergebnis der Photonendichte wäre $\frac{\vert \vec{E}_0\vert}{2\hbar \omega}$ also gerade die Hälfte der Quelle und das Maximum von \ref{n}, da nach dem zweiten Beamsplit der Grundstrahl effektiv halbiert wurde. 
+Klassisch ist der Interferenzterm $(1+\cos(k_z z))$ nicht erklärbar, das Ergebnis der Photonendichte wäre $\frac{\vert \vec{E}_0\vert}{2\hbar \omega}$ also gerade die Hälfte der Quelle und das Maximum von \ref{n}, da nach dem zweiten Beamsplitter der Grundstrahl effektiv halbiert wurde. 
 \section{Quantenradierer}
-Im Experiment wird nun das Mach-Zehnder-Interferomenter wie in Abb. \ref{Mach-Zehnder} dargestellt, mit einen Polarisationsfilter pro Strahlgang ausgebaut. Geht man von einer, in X-Richtung polarisierten Quelle aus und polarisiert die Strahlen in $\pm 45^\circ$ betragen die Felder der Teilstrahlen hinter dem zweiten Beamsplitter:
+Im Experiment wird nun das Mach-Zehnder-Interferomenter wie in Abb. \ref{Aufbau} dargestellt, mit einen Polarisationsfilter pro Strahlgang ausgebaut. Geht man von einer, in X-Richtung polarisierten Quelle aus und polarisiert die Strahlen in $\pm 45^\circ$ betragen die Felder der Teilstrahlen hinter dem zweiten Beamsplitter:
 \begin{align}
 \vec{E}_A&=\frac{E_0}{4}e^{i(k_z z - \omega t)} \cdot\frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ 1 \end{array}\right)\\
 \vec{E}_B&=\frac{E_0}{4}e^{i(k_z (z+\Delta z) - \omega t)}\cdot \frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ -1 \end{array}\right)
 \end{align}
 Berechnet man nun für den rekombinierten Strahl die Photonendichte nach \ref{n}, so verschwindet durch die Orthogonalität der Teilstrahlen der Interferenzterm. Damit fällt die Teilchendichte auf die Hälfte. Da der Interferenzterm verantwortlich für das Erscheinen des Interferenzmusters ist, sollte mit den Polfiltern auf keinem der beiden Schirmen Interferenz festgestellt werden können.\\
-Nun wird vor einen der Schirme ein zusätzlicher Polarisator, der Quantenradierer positioniert. Dieser Polarisator wird mit $0^\circ$ respektive zur Polarisation der Quelle eingestellt. Hierdurch werden die Teilstrahlen auf diese Polarisation projiziert, was mathematisch einer Drehung mit einem Faktor $\frac{1}{\sqrt{2}}\left(\begin{array}{c} 1 \\ 0 \end{array}\right)$ entspricht. Die Wellen haben hinter dem Quantenradierer dann folgende Gestallt:
+Nun wird vor einen der Schirme ein zusätzlicher Polarisator, der Quantenradierer positioniert. Dieser Polarisator wird mit $0^\circ$ respektive zur Polarisation der Quelle eingestellt und hat somit eine relative Polarisation von $\pm 45^{\circ}$ zu den einfallenden Teilstrahlen. Hierdurch werden die Teilstrahlen auf diese Polarisation projiziert, was mathematisch einer Drehung des Polarisationsvektors um $\pm 45^{\circ}$ entspricht. Dazu wird der Vektor des elektrischen Feldes wieder mit der Drehmatrix für 2D-Drehungen multipliziert. Die Wellen haben hinter dem Quantenradierer dann folgende Gestallt:
 \begin{align}
 \vec{E}_A&=\frac{E_0}{8}e^{i(k_z z - \omega t)} \cdot\left(\begin{array}{c} 1 \\ 0 \end{array}\right)\\
 \vec{E}_B&=\frac{E_0}{8}e^{i(k_z (z+\Delta z) - \omega t)}\cdot \left(\begin{array}{c} 1 \\ 0 \end{array}\right)
@@ -111,7 +111,7 @@ Zu Beginn des Experiments wurde das Interferometer aufgebaut (Abbildung \ref{auf
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{images/eigener-aufbau.jpg}
-\caption{Verwendeter Aufbau des Interferometers. Der Laser befindet sich in der unteren linken Ecke, direkt davor befindet sich eine Linse zur Aufweitung des Strahls. Der Strahlrichtung folgend, befindet sich dahinter ein Strahlteiler, welcher den Ursprungsstrahl gerade durch lässt und nach oben ablenkt. Im Stahlengang der beiden Teilstrahlen befinden sich je ein Ploarisator mit relativen Polarisationswinklen von $90^\circ$ zueinander. Die beiden Teilstrahlen werden beim Strahlteiler in der Mitte wieder vereint und auf die beiden weißen Schirme projiziert. Ebenso zu Sehen ist ein weiterer Polarisationsfilter unter dem oberen Schirm, der Quantenradierer. Dieser hat zu den beiden vorherigen Polarisatoren eine relative Ausrichtung von je $45^\circ$.}
+\caption{Verwendeter Aufbau des Interferometers. Der Laser befindet sich in der unteren linken Ecke, direkt davor befindet sich eine Linse zur Aufweitung des Strahls. Der Strahlrichtung folgend, befindet sich dahinter ein Strahlteiler, welcher den Ursprungsstrahl gerade durch lässt und nach oben ablenkt. Im Stahlengang der beiden Teilstrahlen befinden sich jeh ein Polarisator mit relativen Polarisationswinkeln von $90^\circ$ zueinander. Die beiden Teilstrahlen werden beim Strahlteiler in der Mitte wieder vereint und auf die beiden weißen Schirme projiziert. Ebenso zu Sehen ist ein weiterer Polarisationsfilter unter dem oberen Schirm, der Quantenradierer. Dieser hat zu den beiden vorherigen Polarisatoren eine relative Ausrichtung von je $45^\circ$.}
 \label{aufbau}
 \end{figure}
 
