@@ -96,8 +96,25 @@ N(t)=N_0\,e^{-t/\tau}
 Therefore three szintillators are layerd with a cupper absorber inbetween the last two. Each layer is about 2.5cm thick. With trigger hardware only muons passing through layer 1 and 2 but not through 3 are counted. 
 For the Landé factor the precission frequency has to be measuered. Therefore the absober material is penetrated with the magnetic field B and again the mean lifetime gets observed but just on a decent ancle $\theta$. The ratio of decaying myons is now modulated by the precission and the ancle transforms into $\omega t$ therefore the mean lifetime goes to 
 \begin{equation}
-N(t)=K\cdot e^{ -t/\tau } \cdot [ 1+\bar A \cdot \cos(\omega t + \delta )]
+N(t)=K\cdot e^{ -t/\tau } \cdot [ 1+\bar A \cdot \cos(\omega t + \delta )]\label{n(t)}
 \end{equation}
+
+\section{Analysis}
+The data used to calculate are measurements taken over the last two years. After adding them all together a rawdata is build
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=1.2]{images/plot.pdf}
+		\caption{Rawdata and three fits via the second methond are displayed aswell as the fitted functions and parameters}
+		\label{method2}
+	\end{center}
+\end{figure}
+To fit the function \ref{n(t)} it is possible to do a fit with six parameters (first methode) but also to seperate the Data into two sets where the first set clearly behaves exponential and the second linear. By fitting each section itself single Parameter could be extracted more certain. \\
+The division took place after 0.7$\e{\mu s}$. The second area gives a linear function, its lowest point is interpreted as the offset, originated by random noises in the detector. With knowledge of this offset the next fit in exponential shape could be done. Therefore the first area is used and the parameters K and $\e{\tau}$ were calculated. After these steps K, $\e{\tau}$ and the offset are known and \ref{n(t)} reduces to three unknown parameters. The last step fits the remaining ones over the whole dataset. All fits and results are deployed in image \ref{method2}. The errors inside the image are results of the fitting methode and the datarange missing the uncertainity in the other parameters aswell as in time. To calculate the real error an errorpropagation has to be made wich results in a slightly different result in $\tau$ and the same error in $\omega$:
+\begin{align}
+&\e{Lifetime} &\tau=(0.1997\pm 0.0012)\e{\mu s}\\
+&\e{Landé-factor} &g=(a\pm b)
+\end{align}
 
 %\chapter{Experiment and Analysis}
 
