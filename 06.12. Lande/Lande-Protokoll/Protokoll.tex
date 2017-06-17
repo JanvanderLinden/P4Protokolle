@@ -86,7 +86,7 @@ With a magnetic field applied, the muon precess around the direction of $B$ with
 \[ \gamma = g \frac{\mu_B}{\hbar}, ~~~\mu_B = \frac{e\hbar}{2m}\]
 For the muon, the Bohr magneton is equivalent to $\mu_B = 4.5\cc10^{-26}\e{\frac{J}{T}}$ and $g$ is the Landé factor of the muon.
 This factor can be measured through measurement of the precession frequency of a free particle in a magnetic field, such that
-\[ g = \frac{\hbar \omega}{\mu_B B}\]
+\[ g = \frac{\hbar \omega}{\mu_B B}\]\label{lande}
 
 \section{Principle of measurement}
 By observing the differenz in time of the muon decellerating in the observer and the appearence of the positron the mean lifetime can be calculated
@@ -100,21 +100,49 @@ N(t)=K\cdot e^{ -t/\tau } \cdot [ 1+\bar A \cdot \cos(\omega t + \delta )]\label
 \end{equation}
 
 \section{Analysis}
-The data used to calculate are measurements taken over the last two years. After adding them all together a rawdata is build
-
-\begin{figure}[ht]
+\begin{figure}[hb]
 	\begin{center}
-		\includegraphics[scale=1.2]{images/plot.pdf}
+		\includegraphics[width=0.75\textwidth]{images/raw.pdf}
+		\caption{Rawdata, counted muons over time, data collected since octobre 2014}
+		\label{raw}
+	\end{center}
+\end{figure}
+The data used to calculate are measurements taken over the last two years. After adding them together the rawdata is plottet in image \ref{raw}.
+
+To fit the function \ref{n(t)} it is possible to do a fit with six parameters (first methode) but also to split the data by time into two sets where the first set clearly behaves exponential and the second one linear. By fitting each section itself single Parameter could be extracted more certain. 
+\subsection{Methode one}
+%space just for u <3
+\subsection{Methode two}
+\begin{figure}[hb]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{images/plot.pdf}
 		\caption{Rawdata and three fits via the second methond are displayed aswell as the fitted functions and parameters}
 		\label{method2}
 	\end{center}
 \end{figure}
-To fit the function \ref{n(t)} it is possible to do a fit with six parameters (first methode) but also to seperate the Data into two sets where the first set clearly behaves exponential and the second linear. By fitting each section itself single Parameter could be extracted more certain. \\
-The division took place after 0.7$\e{\mu s}$. The second area gives a linear function, its lowest point is interpreted as the offset, originated by random noises in the detector. With knowledge of this offset the next fit in exponential shape could be done. Therefore the first area is used and the parameters K and $\e{\tau}$ were calculated. After these steps K, $\e{\tau}$ and the offset are known and \ref{n(t)} reduces to three unknown parameters. The last step fits the remaining ones over the whole dataset. All fits and results are deployed in image \ref{method2}. The errors inside the image are results of the fitting methode and the datarange missing the uncertainity in the other parameters aswell as in time. To calculate the real error an errorpropagation has to be made wich results in a slightly different result in $\tau$ and the same error in $\omega$:
+The division took place after 7$\e{\mu s}$. The second area gives a linear function, its lowest point is interpreted as the background noie. This offset will be added on the next two fits. With knowledge of this offset the next fit in exponential shape could be done. Therefore the first area is used and the parameters K and $\e{\tau}$ were calculated. After these two fits shown in the second subplot in image \ref{method2} K, $\e{\tau}$ and offset are known and \ref{n(t)} reduces to three unknown parameters. The last step fits the remaining parameters over the whole dataset, shown in the last subplot in image \ref{method2}. For further interest are the results and errors in $\tau$ and $\omega$, their errors shown inside the image are results of the fitting methode itself and the datarange. Still missing is the uncertainity from the other parameters aswell as in the error in time. To calculate the real error in $\tau$ and $\omega$ an errorpropagation has to be made wich results in a slightly different result in $\tau$ and the same error in $\omega$. The Landé-factor is calculated via formular \ref{lande}. Therefore the results of method two are:
 \begin{align}
-&\e{Lifetime} &\tau=(0.1997\pm 0.0012)\e{\mu s}\\
-&\e{Landé-factor} &g=(a\pm b)
+&\e{Lifetime} &\tau=(1.997\pm 0.0012)\e{\mu s}\\
+&\e{Landé-factor} &g=0.7236 \pm 0.0395
 \end{align}
+\subsection{Results}
+The results aswell as the literature value and the deviations per methode are shown in table \ref{tablö}.\\
+\begin{center}
+\begin{tabular}{c|c|c}
+ & $\tau /\mu s$ & g \\ 
+\hline 
+literature value $\quad$& 2.197 & 2.002 \\ 
+\hline 
+methode one & $11 \pm 22$ & $33 \pm 44$ \\ 
+\hline 
+deviation & 100\% & 200\% \\ 
+\hline 
+methode two & $\quad 1.997 \pm 0.0012 \quad$ & $\quad 0.7236 \pm 0.0395 \quad$ \\ 
+\hline 
+deviation & 100\% & 100\%  
+\label{tablö}
+\end{tabular} 
+\end{center}
 
 %\chapter{Experiment and Analysis}
 
