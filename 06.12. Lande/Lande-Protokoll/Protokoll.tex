@@ -86,7 +86,9 @@ With a magnetic field applied, the muon precess around the direction of $B$ with
 \[ \gamma = g \frac{\mu_B}{\hbar}, ~~~\mu_B = \frac{e\hbar}{2m}\]
 For the muon, the Bohr magneton is equivalent to $\mu_B = 4.5\cc10^{-26}\e{\frac{J}{T}}$ and $g$ is the Landé factor of the muon.
 This factor can be measured through measurement of the precession frequency of a free particle in a magnetic field, such that
-\[ g = \frac{\hbar \omega}{\mu_B B}\]\label{lande}
+\begin{equation} g = \frac{\hbar \omega}{\mu_B B}
+\label{lande}
+\end{equation}
 
 \section{Principle of measurement}
 By observing the differenz in time of the muon decellerating in the observer and the appearence of the positron the mean lifetime can be calculated
@@ -99,51 +101,85 @@ For the Landé factor the precission frequency has to be measuered. Therefore th
 N(t)=K\cdot e^{ -t/\tau } \cdot [ 1+\bar A \cdot \cos(\omega t + \delta )]\label{n(t)}
 \end{equation}
 
-\section{Analysis}
-\begin{figure}[hb]
+\chapter{Analysis}
+Due to the low event rate in the used detector, a dataset gathered in the last two years was used. 
+This data set consists of over 200000 events assumed to be lifetime signatures of the muons.
+\section{Time calibration}
+As the detector is categorizing the time differences in terms of channels firstly a time calibration had to be done.
+The result is show in figure \ref{time}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 0.8\textwidth]{images/cali_fit.pdf}
+\caption{\label{time}\textbf{Time calibration.} To calibrate the channel numbers to the measured time differences an artificial time delay of $1\e{\mu s}$ to $20\e{\mu s}$ in steps of $1\e{\mu s}$ were intruduced in the wiring. The active channel was then recorded and used for the calibration. The resulting calibration is then given by the linear fit.}
+\end{figure}
+The data then was linearly rescaled with following function which rescales the channel number $ch$ to a time difference $t(ch)$
+\[ t(ch) = (30.90 \pm 0.02)\cc 10^{-3} \e{\mu s} \cc ch - ( 487 \pm 5) \cc 10^{-3} \e{\mu s}\]
+The resulting data with errors is shown in figure \ref{raw}. The errors in time were calculated with gaussian error propagation through the errors in the time calibration. The errors in the number of registered muons $N$ was assumed to be poisson distributed with an uncernaity of $\sqrt{N}$.
+
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.75\textwidth]{images/raw.pdf}
-		\caption{Rawdata, counted muons over time, data collected since octobre 2014}
-		\label{raw}
+		\includegraphics[width=0.75\textwidth]{images/errors.pdf}
+		\caption{\label{raw}\textbf{Rescaled data with errors.} Shown is the rescaled data with the number of detected muon events over the measured time differences corresponding to the muon lifetimes. To increase the readability of following plots, the errorsbars are only shown in this figure.}
 	\end{center}
 \end{figure}
-The data used to calculate are measurements taken over the last two years. After adding them together the rawdata is plottet in image \ref{raw}.
+The data should follow a distribution as given in equation \ref{n(t)} plus a constant background. 
+To fit this function it is possible to fit all six parameters at once to the data(section \ref{first}) or to split the data by time into two sets where the first set for smaller times clearly behaves exponential and the second one linear (section \ref{second}. By fitting each section on its own the separated parameters could be fitted more precise. 
+\section{First method: six parameter fit}
+\label{first}
+The data recorded in figure \ref{raw} describes an exponenial decay of the muon with lifetime $\tau$ superpositioned with an osscilating term from the precession of the muon spin with frequency $\omega$. 
+With the constant background $C$, the scaling of the exponential $K$, the scaling of the oscillation $\bar A$ and its phase $\delta$ these six parameters were fitted simultaneously onto the set of data. The results are shown in figure \ref{6pm}.
+\begin{figure}[H]
+\centering
+\includegraphics[width= 0.8 \textwidth]{images/6paramfit.pdf}
+\caption{\label{6pm}\textbf{Six parameter fit.} For this fit all six parameters were fitted simultaneously. Errors both in time and number were regarded in this fit.}
+\end{figure}
+The resulting lifetime of the muon can directly be read off the fit as the parameter $\tau$. 
+The Landé factor first has to be calculated with equation \ref{lande} from $\omega$.
+The uncernaity was propagated from $\omega$ to $g$ with gaussian error propagation.
+\begin{align}
+&\e{Lifetime} &\tau &=(1.94\pm 0.01)\e{\mu s}\\
+&\e{Landé~factor} &g &=3.2 \pm 0.1
+\end{align}
 
-To fit the function \ref{n(t)} it is possible to do a fit with six parameters (first methode) but also to split the data by time into two sets where the first set clearly behaves exponential and the second one linear. By fitting each section itself single Parameter could be extracted more certain. 
-\subsection{Methode one}
-%space just for u <3
-\subsection{Methode two}
-\begin{figure}[hb]
+
+\section{Second method: separate fits}
+\label{second}
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{images/plot.pdf}
+		\includegraphics[width=0.8\textwidth]{images/plot.pdf}
 		\caption{Rawdata and three fits via the second methond are displayed aswell as the fitted functions and parameters}
 		\label{method2}
 	\end{center}
 \end{figure}
 The division took place after 7$\e{\mu s}$. The second area gives a linear function, its lowest point is interpreted as the background noie. This offset will be added on the next two fits. With knowledge of this offset the next fit in exponential shape could be done. Therefore the first area is used and the parameters K and $\e{\tau}$ were calculated. After these two fits shown in the second subplot in image \ref{method2} K, $\e{\tau}$ and offset are known and \ref{n(t)} reduces to three unknown parameters. The last step fits the remaining parameters over the whole dataset, shown in the last subplot in image \ref{method2}. For further interest are the results and errors in $\tau$ and $\omega$, their errors shown inside the image are results of the fitting methode itself and the datarange. Still missing is the uncertainity from the other parameters aswell as in the error in time. To calculate the real error in $\tau$ and $\omega$ an errorpropagation has to be made wich results in a slightly different result in $\tau$ and the same error in $\omega$. The Landé-factor is calculated via formular \ref{lande}. Therefore the results of method two are:
 \begin{align}
-&\e{Lifetime} &\tau=(1.997\pm 0.0012)\e{\mu s}\\
-&\e{Landé-factor} &g=0.7236 \pm 0.0395
+&\e{Lifetime} &\tau &=(1.997\pm 0.0012)\e{\mu s}\\
+&\e{Landé factor} &g &=0.7236 \pm 0.0395
 \end{align}
-\subsection{Results}
-The results aswell as the literature value and the deviations per methode are shown in table \ref{tablö}.\\
+\section{Summary}
+The results aswell as the literature values and the deviations per methode are shown in table \ref{tablö}.\\
+
+\begin{table}[H]
+\caption{\label{tablö}Summarizing results of both fit methods in comparison with the literature values.}
 \begin{center}
-\begin{tabular}{c|c|c}
+\begin{tabular}{r|ll}
  & $\tau /\mu s$ & g \\ 
-\hline 
+\toprule
 literature value $\quad$& 2.197 & 2.002 \\ 
-\hline 
-methode one & $11 \pm 22$ & $33 \pm 44$ \\ 
-\hline 
-deviation & 100\% & 200\% \\ 
-\hline 
-methode two & $\quad 1.997 \pm 0.0012 \quad$ & $\quad 0.7236 \pm 0.0395 \quad$ \\ 
-\hline 
+\midrule
+methode one & $1.94 \pm 0.01$ & $3.2\pm 0.1$ \\ 
+deviation & $11.7$\% & $59.8$\% \\ 
+\midrule 
+methode two & $1.997 \pm 0.001$ & $ 0.72 \pm 0.04$ \\  
 deviation & 100\% & 100\%  
 \label{tablö}
 \end{tabular} 
 \end{center}
+\end{table}
 
-%\chapter{Experiment and Analysis}
+Summarizing, both methods yield good results for the lifetime of the muon, but differing values for the Landé factor. 
+The simultaneous fitting of all six parameters is judged to be less precise than the separate fit, because of the small amplitude of the oscillation.
+When fitting the parameters separately, firstly a parametrization the exponential can be fitted and then a more precise fit of the oscillation can be done.  
 
 \end{document}
