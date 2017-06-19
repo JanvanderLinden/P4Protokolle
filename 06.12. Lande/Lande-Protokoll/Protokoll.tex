@@ -1,7 +1,7 @@
 
 \documentclass{include/thesisclass3}
 
-\SelectLanguage{ngerman}
+\SelectLanguage{english}
 \usepackage{float}
 
 
@@ -48,17 +48,17 @@
 \chapter{Theoretical Background}
 
 In this experiment the lifetime of a muon is to be determined, as well as its Landé factor.
-\todo{...}% what is dat?
+For this, a coincidence trigger will be used, measuring the time difference between a muon coming into the apparatus and the decay particle, a positron being detected.
 
 \section{Cosmic muons}
-Primary cosmic radiation consists mainly of protons (85\%), $\alpha$ particles and photons.
+Primary cosmic radiation consists mainly of protons (85\%), alpha particles and photons.
 When entering the atmosphere secondary particles are induced by interacting with the matter in the atmoshpere.
 A strong interaction with air molecules induces the production of pions, protons and neutrons.
 Due to the short halflife of pions, they do not reach the earth, but rather convert either into a pair of photons (in the case of the neutral pion) or into a charged lepton and its corresponding anti-neutrino ($\pi^\pm ~\df~ \mu^\pm + \nu_\mu/\bar{\nu}_\mu$).
-The muons have a higher range in comparison with the electrons, because they are far heavier.
+The produced muons have a higher range in comparison with the electrons, because they are far heavier.
 Also, due to the high energies of the cosmic radiation, also the muons have very high energies and are therefore ultrarelativistic.
 As the mean lifetime of a muon is approximately $\tau = 2.2\cc10^{-6}\e{s}$ they should in gerneral not be able to reach earth.
-The muons are however ultrarelativistic, which enables them to reach earth, because the lifetime holds for the restframe of the muon, which translates to $\tau_E = \gamma \tau$ in an observers frame.
+The muons are however ultrarelativistic, which enables them to reach earth, because the lifetime is calculated for the restframe of the muon, which translates to $\tau_E = \gamma \tau$ in an observers frame.
 Therefore even muons with energies of $10\e{GeV}$ are able to travel over $60\e{km}$ or more.
 
 In matter, high energy muons lose energy mainly by bremsstrahlung; the emission of photons.
@@ -69,10 +69,10 @@ Thus, the lifetime of $\mu^-$ reduces a lot when passing through matter, which r
 At the end of the lifetime of the positive muons they usually convert into positrons via $\mu^+ ~\df~e^+ + \mu_e + \bar{\nu}_\mu$. 
 \section{Muon polarization}
 %In certain energy intervals, the momentum of muons is polarized, because of the parity violation of the weak interaction.
-As pions carry spin $0$ and the neutrino must have negative chirality due to its velocity/vanishing mass the antimuon is forced by conservation of spin and momentum to have negative chirality aswell (maximum parity violation of weak interaction only permits particles of negative and antiparticles of possitive chirality).
+As pions carry spin $0$ and it decay particle the neutrino must have negative chirality due to its velocity (or its vanishing mass) the antimuon is forced by conservation of spin and momentum to have negative chirality aswell (maximum parity violation of weak interaction only permits particles of negative and antiparticles of possitive chirality).
 Now, the muons also have different energies, depending on the direction of emission from the pion.
 If the muon is emitted in the direction of travel in the rest frame of the decaying pion, it has a higher energy than the muons emitted in the opposite direction. For a muon emitted against the direction of travel, a negative polarization is expected, whereas a positive polarization is expected for the muons emitted in the direction of travel.
-Observing a certain energy interval there are muons with equal energys but different polarization depending if it was emitted by low-energy pions in direction of travel or by high-energy pions in opposite direction. In a matter of fact there is a non-equal distribution of pions in different energy scales. Therefore, there will be a polarization of approximately $P=-\frac{1}{3}$ observable, if a energy sensitive measurement will be performed at purpendicular incidence angle.
+Observing a certain energy interval there are muons with equal energys but different polarization depending on if it was emitted by low-energy pions in direction of travel or by high-energy pions in the opposite direction. As a matter of fact there is a non-equal distribution of pions in different energy scales. Thus, there will be a polarization of approximately $P=-\frac{1}{3}$ observable, if an energy sensitive measurement will be performed at an angle purpendicular to the sincidence angle.
 
 \section{Evidence of muon decay}
 To measure a decaying muon the conversion into a positron $e^+$ and two invisible neutrinos has to be observed.
@@ -82,7 +82,7 @@ Here, $\eps$ denotes the relative energy $\eps = E/E_{max}$, where $E_{max} = m_
 The polarization of the muon is called $P$.
 
 \section{Landé factor of the muon}
-With a magnetic field applied, the muon precess around the direction of $B$ with frequency $\omega = \gamma B$ where $\gamma$ is the gyromagnetic ratio
+With a magnetic field applied, the muon precesses around the direction of $B$ with frequency $\omega = \gamma B$ where $\gamma$ is the gyromagnetic ratio
 \[ \gamma = g \frac{\mu_B}{\hbar}, ~~~\mu_B = \frac{e\hbar}{2m}\]
 For the muon, the Bohr magneton is equivalent to $\mu_B = 4.5\cc10^{-26}\e{\frac{J}{T}}$ and $g$ is the Landé factor of the muon.
 This factor can be measured through measurement of the precession frequency of a free particle in a magnetic field, such that
@@ -91,12 +91,12 @@ This factor can be measured through measurement of the precession frequency of a
 \end{equation}
 
 \section{Principle of measurement}
-By observing the differenz in time of the muon decellerating in the observer and the appearence of the positron the mean lifetime can be calculated
+By observing the time difference between the muon decellerating in the detector and the appearence of the positron the mean lifetime can be calculated by histogramming the time differences. The shape of the histogrammed events is expected to follow the distribution of an exponential decay.
 \begin{equation}
 N(t)=N_0\,e^{-t/\tau}
 \end{equation}
-Therefore three szintillators are layerd with a cupper absorber inbetween the last two. Each layer is about 2.5cm thick. With trigger hardware only muons passing through layer 1 and 2 but not through 3 are counted. 
-For the Landé factor the precission frequency has to be measuered. Therefore the absober material is penetrated with the magnetic field B and again the mean lifetime gets observed but just on a decent ancle $\theta$. The ratio of decaying myons is now modulated by the precission and the ancle transforms into $\omega t$ therefore the mean lifetime goes to 
+For the detection, three szintillators are layered with a copper absorber inbetween the last two layers. Each layer is about $2.5\e{cm}$ thick. With trigger hardware only muons passing through layer 1 and 2 but not through 3 are counted. 
+For the Landé factor the precession frequency has to be measuered. For this, the mean lifetime gets observed but just on a decent angle $\theta$. The ratio of decaying myons is now modulated by the precession and the angle is time dependant with $\theta = \omega t$, so the mean lifetime goes to 
 \begin{equation}
 N(t)=K\cdot e^{ -t/\tau } \cdot [ 1+\bar A \cdot \cos(\omega t + \delta )]\label{n(t)}
 \end{equation}
@@ -106,12 +106,12 @@ Due to the low event rate in the used detector, a dataset gathered in the last t
 This data set consists of over 200000 events assumed to be lifetime signatures of the muons.
 \section{Time calibration}
 As the detector is categorizing the time differences in terms of channels firstly a time calibration had to be done.
-The result is show in figure \ref{time}
+The result is show in figure \ref{time}.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width = 0.8\textwidth]{images/cali_fit.pdf}
-\caption{\label{time}\textbf{Time calibration.} To calibrate the channel numbers to the measured time differences an artificial time delay of $1\e{\mu s}$ to $20\e{\mu s}$ in steps of $1\e{\mu s}$ were intruduced in the wiring. The active channel was then recorded and used for the calibration. The resulting calibration is then given by the linear fit.}
+\caption{\label{time}\textbf{Time calibration.} To calibrate the channel numbers to the measured time differences an artificial time delay of $1\e{\mu s}$ to $20\e{\mu s}$ in steps of $1\e{\mu s}$ were introduced in the wiring. The active channel was then recorded and used for the calibration. The resulting calibration is then given by the linear fit.}
 \end{figure}
 The data then was linearly rescaled with following function which rescales the channel number $ch$ to a time difference $t(ch)$
 \[ t(ch) = (30.90 \pm 0.02)\cc 10^{-3} \e{\mu s} \cc ch - ( 487 \pm 5) \cc 10^{-3} \e{\mu s}\]
@@ -124,10 +124,10 @@ The resulting data with errors is shown in figure \ref{raw}. The errors in time 
 	\end{center}
 \end{figure}
 The data should follow a distribution as given in equation \ref{n(t)} plus a constant background. 
-To fit this function it is possible to fit all six parameters at once to the data(section \ref{first}) or to split the data by time into two sets where the first set for smaller times clearly behaves exponential and the second one linear (section \ref{second}. By fitting each section on its own the separated parameters could be fitted more precise. 
+To fit this function it is possible to fit all six parameters at once to the data (section \ref{first}) or to split the data into two sets where the first set for smaller times behaves exponential and the second one linear (section \ref{second}). By fitting each section on its own the separated parameters can be fitted more precise. 
 \section{First method: six parameter fit}
 \label{first}
-The data recorded in figure \ref{raw} describes an exponenial decay of the muon with lifetime $\tau$ superpositioned with an osscilating term from the precession of the muon spin with frequency $\omega$. 
+The data recorded in figure \ref{raw} describes an exponential decay of the muon with lifetime $\tau$ modulated with an osscilating term from the precession of the muon spin with frequency $\omega$. 
 With the constant background $C$, the scaling of the exponential $K$, the scaling of the oscillation $\bar A$ and its phase $\delta$ these six parameters were fitted simultaneously onto the set of data. The results are shown in figure \ref{6pm}.
 \begin{figure}[H]
 \centering
@@ -148,7 +148,7 @@ The uncernaity was propagated from $\omega$ to $g$ with gaussian error propagati
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{images/plot.pdf}
-		\caption{Rawdata and three fits via the second methond are displayed aswell as the fitted functions and parameters}
+		\caption{Raw data and three fits via the second methond are displayed aswell as the fitted functions and parameters}
 		\label{method2}
 	\end{center}
 \end{figure}
