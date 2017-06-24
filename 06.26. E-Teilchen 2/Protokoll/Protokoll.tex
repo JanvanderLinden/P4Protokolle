@@ -1,0 +1,143 @@
+
+\documentclass{include/thesisclass3}
+
+\SelectLanguage{ngerman}
+\usepackage{float}      
+
+% Titlepage settings
+\newcommand{\praktikum}{Praktikum moderne Physik}
+\newcommand{\autora}{Jens Schäfer}
+\newcommand{\autorb}{Jan van der Linden}
+\newcommand{\maila}{ugecd@student.kit.edu}
+\newcommand{\mailb}{jan.vdlinden95@gmail.com}
+\newcommand{\topic}{Elementarteilchen}
+\newcommand{\ptime}{26. Mai 2017}
+
+
+% Shortcuts
+\newcommand{\cc}{\cdot}
+\newcommand{\rk}{\rangle}
+\newcommand{\lk}{\langle}
+\newcommand{\df}{\rightarrow}
+\newcommand{\la}{\lambda}
+\newcommand{\dd}{{\rm d}}
+\newcommand{\ehm}{\mathbbm{1}}
+\newcommand{\p}{\partial}
+\newcommand{\soll}{\overset{!}{=}}
+\newcommand{\D}{\Delta}
+\newcommand{\eps}{\epsilon}
+\newcommand{\vektor}[3]{\begin{pmatrix} #1 \\ #2 \\ #3 \end{pmatrix}}
+\newcommand{\vektorz}[2]{\begin{pmatrix} #1 \\ #2 \end{pmatrix}}
+\newcommand{\Mat}[9]{\begin{pmatrix}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{pmatrix}}
+\newcommand{\Matz}[4]{\begin{pmatrix}#1&#2\\#3&#4\end{pmatrix}}
+\newcommand{\e}[1]{\,\si{#1}}
+\newcommand{\listb}[1]{[$#1^- $,\,$#1^+ $];\quad}
+\newcommand{\listx}[1]{[$#1^- $,\,$#1^+ $]\quad}
+\newcommand{\listc}[1]{[$\nu_{#1} $,\,$\bar{\nu_{#1}}];\quad $}
+\newcommand{\listd}[1]{[$\nu_{#1} $,\,$\bar{\nu_{#1}}]$}
+\newcommand{\lista}[3]{\listb{#1 }\listb{#2 }\listb{#3 }\listc{#1}\listc{#2}\listd{#3}}
+\newcommand{\listf}[1]{[$#1$,\,$\bar{#1} $];\quad}
+\newcommand{\listg}[1]{[$#1$,\,$\bar{#1} $]}
+\newcommand{\listq}[5]{\listf{#1 }\listf{#2 }\listf{#3 }\listf{#4}\listg{#5}}
+
+
+\begin{document}
+
+	\FrontMatter
+	\input{include/titlepage}
+	\tableofcontents                  
+	\newpage
+	\MainMatter
+
+%Protokollstart
+
+\chapter{Theoretische Grundlagen}
+
+\section{Das Standardmodell}
+Das Standardmodell der Teilchenphysik ist das bisher vollständigste Modell zur Beschreibung der Teilchen und Wechselwirkungen auf elementarer Ebene.
+Im Standardmodell werden alle bekannten Wechselwirkungen bis auf die Gravitation sehr genau beschrieben.
+Dies ermöglicht eine präzise theoretische Berechnung und Vorhersage teilchenphysikalischer Prozesse, welche sehr häufig durch verschiedenste experimentelle Messungen bestätigt werden.
+\\
+Materie besteht auf elementarer Ebene aus wenigen verschiedenen Gruppen an Teilchen.
+Eine der Gruppen sind die Quarks, sie können in drei Generationen angeordnet werden, wobei jeder Generation zwei Quarks zugeordnet werden. 
+Eine weitere Gruppe, die Leptonen, lassen sich ebenso in drei Generationen anordnen, wobei eine Generation jeweils aus einem geladenen Lepton und einem neutralen Neutrino besteht.
+Quarks, sowie Leptonen sind Fermionen mit halbzahligem Spin-$\frac{1}{2}$. 
+Zu jedem der Quarks und Leptonen gibt es ein Antiteilchen mit gleicher Masse und entgegengesetzter Ladung.\\
+Alle Quarks und Leptonen unterliegen der schwachen Wechselwirkung, die geladenen Leptonen und alle Quarks unterliegen ebenso der elektromagnetischen Wechselwirkung.
+Da Leptonen keine Farbladung tragen, interagieren sie nicht über die starke Wechselwirkung, dies wird allein bei Quarks beobachtet.\\
+Die Austauschteilchen der Wechselwirkungen sind Eichbosonen mit Spin-$1$.
+Das Photon~$\gamma$ ist das Austauschteilchen für die elektromagnetische Wechselwirkung, für die starke Wechselwirkung sind dies die acht Gluonen $g$ und für die geladenen Ströme der schwachen Wechselwirkung die $W^\pm$-Bosonen sowie für die neutralen Ströme das $Z$-Boson.
+Zusätzlich existiert noch ein weiteres Boson, das Higgs-Boson mit Spin-$0$.
+
+
+\section{LEP und DELPHI}
+Der LEP (Large Elektron-Positron-Collider) ist ein am CERN befindliches Synchrotron für Elektron-Positron Kollisionen mit einem Umfang von fast 28km. Nach einem Umbau ist die Anlage heute als LHC bekannt und ist auf Hadronen ausgelegt. Durch Vorbeschleuniger werden die Leptonen in das Synchrotron eingeführt, wo sie durch Hochfrequenzkavitäten auf Schwerpunktsenergien von bis zu $\sqrt{s}=209\e{GeV}$ weiter beschleunigt werden. Dabei werden die entgegengesetzt und gleichschweren Positronen und Elektronen in entgegengesetzter Richtung beschleunigt. Dadurch können die selben Magnete zur Spurhaltung eingesetzt werden. Durch Ablenkmagnete werden die Strahlen schließlich in Detektoren wie dem DELPHI (Detector with Lepton, Photon and Hadron Identification) zur kollision gebracht. 
+Der Kern des Detektors ist von einem supraleitenden Solenoid eingefasst, der das Detektorinnere in ein starkes, homogenes Magnetfeld einschließt. 
+Geladene Teilchen werden darin durch die Lorentzkraft auf gekrümmte Bahnen gelenkt. 
+Über die Vermessung der gekrümmten Trajektorie erhält man Informationen über Ladung und Impuls der Teilchen. 
+Dazu dient der im Inneren installierte Spurdetektor (en. \textit{tracker}). 
+Zwischen Spurdetekor und Solenoid befinden sich das elektromagnetische und das hadronische Kaloriemeter in denen die meisten Teilchen destruktiv nach ihrer Energie analysiert werden. 
+Außerhalb des Solenoids befinden sich Myonenkammern und ein Rückführjoch aus Eisen für das Magnetfeld. 
+
+Die untersuchten Kollision zwischen Elektronen mit ihren Antiteilchen resultiert in abzählbaren Kanälen, wobei folgende Bedingungen erfüllt sein müssen:
+\begin{itemize}
+\item Ladungszahlerhaltung\\
+Da das Elektron und das Positron entgegengesetzt geladen sind, müssen die Edukte in Summe eine verschwindende Ladung haben. Dadurch ist als virtuelles Teilchen das $W^+-$ sowie das $W^-$-Boson nicht erlaubt. 
+
+\item Leptonenfamilienzahlerhaltung\\
+Die Leptonenzahl ist wie die Ladungszahl in Summe verschwindend, ebenso muss diese Zahl in den Edukten in Summe Null sein. Damit und mit der Ladungserhaltungsbedingung reduzieren sich die leptonischen Ausgänge auf ein Lepton mit seinem zugehörigen Antilepton. 
+
+\item Energieerhaltung\\
+Zunächst ist es erlaubt, dass der Zerfall des Z-Bosons auch in Kanälen endet, die aus mehreren Kanälen zusammengesetzt sind, solange keiner der Erhaltungssätze verletzt wird. Zum Beispiel kann ein vielfaches an \listb{e} entstehen. Das ist allerdings durch die Energieerhaltung begrenzt. 
+
+\item Impulserhaltung\\
+Dies bedingt nicht direkt die Zerfallskanäle, jedoch die Richtungen, indenen die Edukte emitiert werden.
+
+\item Erhaltung der Farbladung\\
+Da die Produkte farbneutral sind, müssen die Edukte entweder im einzelnen farbneutral also Leptonen oder Photonen sein. Alternativ können sie auch in ihrer Summe farbneutral bleiben, was die Kanäle über die Quarks eröffnet. 
+\end{itemize}
+Die erlaubten Kanäle lauten somit:\\
+\lista{e}{\mu}{\tau};$ \quad [ \gamma ]; $\\
+\listx{u}{d}{s}{c}{b}
+
+Die Edukte können nach den selben Regeln selbst weiter zerfallen. So eröffnen sich für den Kanal \listc{ \tau } weiterführende geladene Kanäle die durch die hohe Energie des Lepton eine große Zerfallsbreite haben. Zerfälle in Top-Quarks sind durch die zu große Ruhemasse nicht erlaubt.
+\chapter{Versuch}
+In diesem Versuch sollen 1000 Detektorereignisse des DELPHI-Detektors analysiert und klassifiziert werden. 
+Mit diesen klassifizierten Ereignissen sollen verschiedene Größen ermittelt werden.
+
+\section{Verzweigungsverhältnis und Anzahl der Farbladungen}
+Die Detektorereignisse sollen als $2$-, $3$- und Mehr-Jet-Ereignisse und leptonische Ereignisse klassifiziert werden. Bei den leptonischen Ereignissen soll zusätzlich die Leptonenfamilie bestimmt werden.\\
+Aus dieser Klassifizierung kann das Verzweigungsverhältnis $R$ zwischen hadronischer und leptonischer Zerfallsbreite bestimmt werden
+\[ R = \frac{ \Gamma_{had}}{\Gamma_{l\bar l}}\]
+Die Zerfallsbreite ist allgemein proportional zur Ereignisanzahl.\\
+Weiterhin soll die Leptonenuniversalität überprüft werden, wonach die Zerfallsbreiten der verschiedenen Leptonen gleich groß ist
+\[ \Gamma_{ee} = \Gamma_{\mu\mu} = \Gamma_{\tau\tau}\]
+Mit dem Verzweigungsverhältnis $R$ kann die Anzahl der verschiedenen Farbladungen $N_c$ über
+\[ \Gamma_{had} = N_c \left( N_u \cc \Gamma_{u\bar u}^{SM} + N_d \cc \Gamma_{d \bar d}^{SM}\right)\]
+berechnet werden, wobei $N_d = 3$ und $N_u = 2$ gilt, da ein Zerfall nach $t \bar t$ nicht erlaubt ist. 
+
+\section{Kopplungskonstante der starken Wechselwirkung}
+Aus der Rate der $3$-Jet-Ereignisse kann die Kopplungskonstante der starken Wechselwirkung approximiert werden. Als ein $3$-Jet-Ereignis wird hier ein Ereignis bezeichnet dessen invariante Masse der Parton-Paare eine Grenze $y_{cut}$ der Schwerpunktsenergie $\sqrt{s}$ übersteigt. Es ist $y_{cut}\cc \sqrt{s} = 0.02 \cc \sqrt{s}$ anzunehmen. Der Zusammenhang zwischen der Anzahl der $3$-Jet-Ereignisse und der Kopplungskonstante $\alpha_s$ ergibt sich dann aus
+\[ \frac{N_3(y > y_{cut})}{N_{had}} \approx C(y > y_{cut} \cc \alpha_s(m_z)\]
+Die Poportionalitätskonstante für $y_{cut} = 0.02$ ergibt sich zu $C = 2.72$. Da die Kopplungskonstante der starken Wechselwirkung laufend ist, das heißt mit der Masse skaliert, kann diese hier nur für die invariante Masse des $Z$-Bosons $m_Z$ untersucht werden.
+
+\section{Anzahl der Neutrinofamilie}
+Durch die Breite der $Z$-Resonanz $\Gamma_{tot}$ kann die Anzahl der Neutrinogenerationen $N_\nu$ bestimmt werden, da diese sich aus $\Gamma_{tot} = \Gamma_{had} + 3 \cc \Gamma_{l \bar l} + N_\nu \cc \Gamma_{\nu \bar \nu}$ zusammensetzt. Hierzu geht man vor wie folgt:\\
+\begin{itemize}
+\item Berechnen des hadronischen Wikrungsquerschnitts\\
+$N_{had}=L\cdot \sigma_{had}$
+
+\item Korrektur des Wirkungsquerschnitts durch Photonenemission\\
+$\sigma_{had}'=\sigma_{had}\cdot(1-0,263) $
+
+\item Berechnen der totalen Zerfallsbreite\\
+$\sigma_{had}'=\frac{12 \pi \cdot \Gamma_{l\bar{l}}\cdot \Gamma_{had}}{m_Z^2\cdot \Gamma_{tot}^2}$\\
+\item Berechnen  der unsichtbaren Zerfälle\\
+$\Gamma_{tot} = \Gamma_{had} + 3 \cc \Gamma_{l \bar l} + \Gamma_{inv}$
+
+\item  Berechnen der Leptonenfamilienzahl\\
+$N_\nu=\frac{\Gamma_{inv}}{\Gamma_{\nu_e\bar{\nu_e}}^{SM}}$
+\end{itemize}
+Der letzte Punkt ist wieder unter der Annahme der Leptonenuniversalität. Damit ist die Zerfallsbreite jeder Neutrinofamilie gleich groß. Der Quotient der verbleibenden unsichtbaren Zerfälle durch die Zerfallsbreite der gut bekannten Elektroneutrinos ergibt die gesuchte Anzahl der Leptonenfamilien.
+
+\end{document}
