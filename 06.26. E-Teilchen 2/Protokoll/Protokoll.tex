@@ -101,6 +101,9 @@ Die erlaubten Kanäle lauten somit:\\
 \listx{u};\listx{d}; \listx{s}; \listx{c}; \listx{b};
 
 Die Edukte können nach den selben Regeln selbst weiter zerfallen. So eröffnen sich für den Kanal \listc{ \tau } weiterführende geladene Kanäle die durch die hohe Energie des Lepton eine große Zerfallsbreite haben. Zerfälle in Top-Quarks sind durch die zu große Ruhemasse nicht erlaubt.
+
+
+
 \chapter{Versuch}
 In diesem Versuch sollen 1000 Detektorereignisse des DELPHI-Detektors analysiert und klassifiziert werden. 
 Mit diesen klassifizierten Ereignissen sollen verschiedene Größen ermittelt werden.
@@ -109,35 +112,101 @@ Mit diesen klassifizierten Ereignissen sollen verschiedene Größen ermittelt we
 Die Detektorereignisse sollen als $2$-, $3$- und Mehr-Jet-Ereignisse und leptonische Ereignisse klassifiziert werden. Bei den leptonischen Ereignissen soll zusätzlich die Leptonenfamilie bestimmt werden.\\
 Aus dieser Klassifizierung kann das Verzweigungsverhältnis $R$ zwischen hadronischer und leptonischer Zerfallsbreite bestimmt werden
 \[ R = \frac{ \Gamma_{had}}{\Gamma_{l\bar l}}\]
-Die Zerfallsbreite ist allgemein proportional zur Ereignisanzahl.\\
+Da die Zerfallsbreiten direkt nicht bestimmbar sind aber allgemein proportional zur Ereignisanzahl sind, kann das Verhältnis der Zerfallsbreiten aus den Ereigniszahlen bestimmt werden.\\
 Weiterhin soll die Leptonenuniversalität überprüft werden, wonach die Zerfallsbreiten der verschiedenen Leptonen gleich groß ist
-\[ \Gamma_{ee} = \Gamma_{\mu\mu} = \Gamma_{\tau\tau}\]
+\[ \Gamma_{l\bar l} = \Gamma_{ee} = \Gamma_{\mu\mu} = \Gamma_{\tau\tau}\]
 Mit dem Verzweigungsverhältnis $R$ kann die Anzahl der verschiedenen Farbladungen $N_c$ über
-\[ \Gamma_{had} = N_c \left( N_u \cc \Gamma_{u\bar u}^{SM} + N_d \cc \Gamma_{d \bar d}^{SM}\right)\]
-berechnet werden, wobei $N_d = 3$ und $N_u = 2$ gilt, da ein Zerfall nach $t \bar t$ nicht erlaubt ist. 
+\begin{equation}
+ \Gamma_{had} = N_c \left( N_u \cc \Gamma_{u\bar u}^{SM} + N_d \cc \Gamma_{d \bar d}^{SM}\right)
+\label{farbe}
+\end{equation}
+berechnet werden, wobei $N_d = 3$ und $N_u = 2$ gilt, da ein Zerfall nach $t \bar t$ nicht erlaubt ist und damit nur der Zerfall in zwei up-artige Quarks möglich ist. 
 
 \section{Kopplungskonstante der starken Wechselwirkung}
-Aus der Rate der $3$-Jet-Ereignisse kann die Kopplungskonstante der starken Wechselwirkung approximiert werden. Als ein $3$-Jet-Ereignis wird hier ein Ereignis bezeichnet dessen invariante Masse der Parton-Paare eine Grenze $y_{cut}$ der Schwerpunktsenergie $\sqrt{s}$ übersteigt. Es ist $y_{cut}\cc \sqrt{s} = 0.02 \cc \sqrt{s}$ anzunehmen. Der Zusammenhang zwischen der Anzahl der $3$-Jet-Ereignisse und der Kopplungskonstante $\alpha_s$ ergibt sich dann aus
-\[ \frac{N_3(y > y_{cut})}{N_{had}} \approx C(y > y_{cut} \cc \alpha_s(m_z)\]
+Aus der Rate der $3$-Jet-Ereignisse im Verhältnis zu allen Jet-Ereignissen kann die Kopplungskonstante der starken Wechselwirkung approximiert werden. Als ein $3$-Jet-Ereignis wird hier ein Ereignis bezeichnet dessen invariante Masse der Parton-Paare eine Grenze $y_{cut}$ der Schwerpunktsenergie $\sqrt{s}$ übersteigt. Es ist $y_{cut}\cc \sqrt{s} = 0.02 \cc \sqrt{s}$ anzunehmen. Der Zusammenhang zwischen der Anzahl der $3$-Jet-Ereignisse und der Kopplungskonstante $\alpha_s$ ergibt sich dann aus
+\[ \frac{N_3(y > y_{cut})}{N_{had}} \approx C(y > y_{cut}) \cc \alpha_s(m_z)\]
+da für ein 3-Jet-Ereigniss eine zusätzliche Gluonenabstrahlung nötig ist und dieser Endzustand damit mit $\alpha_s$ unterdrückt ist.
 Die Poportionalitätskonstante für $y_{cut} = 0.02$ ergibt sich zu $C = 2.72$. Da die Kopplungskonstante der starken Wechselwirkung laufend ist, das heißt mit der Masse skaliert, kann diese hier nur für die invariante Masse des $Z$-Bosons $m_Z$ untersucht werden.
 
 \section{Anzahl der Neutrinofamilien}
-Durch die Breite der $Z$-Resonanz $\Gamma_{tot}$ kann die Anzahl der Neutrinogenerationen $N_\nu$ bestimmt werden, da diese sich aus $\Gamma_{tot} = \Gamma_{had} + 3 \cc \Gamma_{l \bar l} + N_\nu \cc \Gamma_{\nu \bar \nu}$ zusammensetzt. Hierzu geht man vor wie folgt:\\
+Durch die Breite der $Z$-Resonanz $\Gamma_{tot}$ kann die Anzahl der Neutrinogenerationen $N_\nu$ bestimmt werden, da sich die gesamte Breite aus $\Gamma_{tot} = \Gamma_{had} + 3 \cc \Gamma_{l \bar l} + N_\nu \cc \Gamma_{\nu \bar \nu}$ zusammensetzt. Hierzu geht man vor wie folgt:\\
 \begin{itemize}
-\item Berechnen des hadronischen Wikrungsquerschnitts $\Gamma_{had}$ aus der Luminosität $L$\\
+\item Berechnen des hadronischen Wikrungsquerschnitts $\sigma_{had}$ aus der Luminosität $L$\\
 $N_{had}=L\cdot \sigma_{had}$
 
 \item Korrektur des Wirkungsquerschnitts durch Photonenemission\\
-$\sigma_{had}'=\sigma_{had}\cdot(1-0.263) $
+$\sigma_{had}'=\frac{\sigma_{had}}{1-0.263} $
 
 \item Berechnen der totalen Zerfallsbreite $\Gamma_{tot}$\\
 $\sigma_{had}'=\dfrac{12 \pi \cdot \Gamma_{l\bar{l}}\cdot \Gamma_{had}}{m_Z^2\cdot \Gamma_{tot}^2}$
 \item Berechnen der Zerfallsbreite der unsichtbaren Neutrino-Zerfälle $\Gamma_{inv}$\\
 $\Gamma_{tot} = \Gamma_{had} + 3 \cc \Gamma_{l \bar l} + \Gamma_{inv}$
 
-\item Berechnen der Leptonenfamilienzahl\\
+\item  Berechnen der Leptonenfamilienzahl\\
 $N_\nu=\dfrac{\Gamma_{inv}}{\Gamma_{\nu_e\bar{\nu_e}}^{SM}}$
 \end{itemize}
-Der letzte Punkt gilt wieder unter der Annahme der Leptonenuniversalität. Damit ist die Zerfallsbreite jeder Neutrinofamilie gleich groß. Der Quotient der verbleibenden unsichtbaren Zerfälle durch die Zerfallsbreite der gut bekannten Elektroneutrinos ergibt die gesuchte Anzahl der Leptonenfamilien.
+Im letzen Schritt wurde Leptonenuniversalität angenommen, daduch besteht die unsichtbare Zerfallsbreite zu gleichen Teilen aus den Zerfallsbreiten der einzelnen Neutrino-Paare. 
+
+
+\chapter{Auswertung}
+Die im vorigen Kapitel beschriebenen Verhältnisse werden nun mit den Werten aus den klassifizierten Ereignissen berechnet. Die Klassifikation der Zerfallskanäle der DELPHI-Ereignisse sind in Tabelle \ref{rohdaten} dargestellt.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{   r | r| r | r | r | r | l   }
+	Sheet & $e^-e^+$ & $\mu\bar{\mu}$ & $\tau\bar{\tau}$ & 2-Jet & 3-Jet & Total \\\hline
+	1 & 10 & 4 & 11 & 47 & 28 & 100 \\ 
+	2 & 5 & 4 & 7 & 58 & 26 & 100 \\ 
+	3 & 7 & 2 & 2 & 55 & 34 & 100 \\ 
+	4 & 6 & 8 & 6 & 50 & 30 & 100 \\ 
+	5 & 5 & 3 & 6 & 52 & 34 & 100 \\ 
+	6 & 7 & 7 & 5 & 53 & 28 & 100 \\ 
+	7 & 8 & 4 & 4 & 46 & 38 & 100 \\ 
+	8 & 7 & 2 & 9 & 52 & 30 & 100 \\ 
+	9 & 5 & 3 & 6 & 51 & 35 & 100 \\ 
+	10 & 10 & 5 & 5 & 50 & 30 & 100 \\ \hline
+	Total &$N_{e \bar e} = 70$ & $N_{\mu \bar \mu} = 42$ &$N_{\tau \bar \tau} = 61$ & $N_2 = 514$ & $N_ 3 = 313$ & 1000
+	\label{rohdaten}
+\end{tabular}
+\end{center}
+\caption{Tabellarische Darstellung der klassifizierten Detektor-Ereignisse des DELPHI-Detektors. Die Ereignisse sind in Gruppen zu je 100 Ereignissen aufgeteilt.}
+\end{table}
+Da es sich bei den Werten um Zählvariablen handelt besitzen sie poissonverteilte Unsicherheiten $\sigma_{x_i}=\sqrt{x_i}$.\\
+Die auftretenden Abweichungen der berechneten Werte zu den Literaturwerten sind bedingt durch etwaige Interpretationsfehler einzelner Events sowie der Tatsache, dass bei nur 1000 Ereignissen durchaus hohe Fluktuationen möglich sind.
+\section{Verzweigungsverhältnis}
+Zur Bestimmung des Verzweigungsverhältnisses zwischen hadronischem und leptonischem Zerfall wird die durchschnittliche Anzahl der leptonischen Zerfälle pro Familie benötigt. Mit den klassifizierten Ereignissen ergibt sich dies zu
+\[ N_{l \bar l} = \frac{N_{e\bar e} + N_{\mu \bar\mu} + N_{\tau \bar \tau}}{3} = 57.66 \pm 7.59 \pm 14.30\]
+Die beiden angegebenen Unsicherheiten ergeben sich jeweils aus der Fortpflanzung der poissonischen Fehler der einzelnen Zählraten, sowie der Standardabweichung der Zählraten. 
+Dieser zweite Fehler wurde explizit wegen der geforderten Leptonenuniversaltiät hinzugezogen, da in der Theorie gleiche Zählraten für die drei Leptonenfamilien zu erwarten wären.
+Da jedoch ein signifikantes Defizit an $\mu \bar \mu$-Ereignissen im Vergleich zu den beiden anderen Ereignistypen besteht, konnte die Leptonenuniversalität mit dieser Klassifikation nicht direkt bestätigt werden.
+Für eine Sinnvolle Fehlerbetrachtung und Fehlerfortpflanzung wurde daher der zweite Fehler eingeführt, um den Zählratenunterschied auszugleichen.\\
+Aus den Zählraten des hadronischen Jet-Ereignisse $N_{had} = 827\pm 28.76$ und der durchschnittlichen Zählrate der drei Leptonenfamilien $N_{l \bar l}$ ergibt sich nun das Verzweigungsverhältnis
+\[ 
+R = \frac{ N_{had}}{N_{l \bar l}} = 14.34 \pm 4.06\]
+Der angegebene Fehler setzt sich aus der Gaussschen Fehlerfortpflanzung der Poissonfehler der Zählraten und der zusätzlichen Unsicherheit der Leptonenzählrate zusammen.
+
+\section{Anzahl der Farbladungen}
+Mmit dem gegebenen Theoriewert $\Gamma^{SM}_{l \bar l} = 83.83\e{MeV}$ des Standardmodells kann aus dem Verzweigungsverhältnis die hadronische Zerfallsbreit bestimmt werden
+\[\Gamma_{had} = R \cc \Gamma^{SM}_{l \bar l} =  (1202.21 \pm 340.03)\e{MeV}\]
+Dieser Wert wird benötigt um die Anzahl der Farbladung mit Gleichung \ref{farbe} zu bestimmen:
+\[ N_c = \frac{\Gamma_{had}}{2\cc \Gamma^{SM}_{u\bar u} + 3 \cc \Gamma^{SM}_{d \bar d}} = 2.07 \pm 0.59\]
+Hier wurden die gegebenen Theoriewerte $\Gamma_{u\bar u}^{SM}=98.88\e{MeV}$ und $\Gamma_{d \bar d}^{SM}=127.48\e{MeV}$ des Standardmodells verwendet. Der wahre Wert $N_c^{SM} = 3$ liegt im $2\sigma$-Intervall des hier bestimmten Wertes. Grund für die hohe Abweichung könnte die Fehlklassifizierung einiger Ereignisse sein, als auch statistische Anomalien im betrachteten Datensatz von 1000 Ereignissen.
+
+\section{Kopplungskonstante der starken Wechselwirkung}
+Aus dem Verhältnis der klassifizierten $3$- und Mehr-Jet-Ereignissen $N_3 = 313 \pm 17.69$ zu allen hadronischen Ereignissen $N_had = 827 \pm 28.76$ kann mit der gegebenen Konstante $C = 2.72$ die Kopplungskonstante der starken Wechselwirkung $\alpha_s$ an der $Z$-Resonanz von $m_Z = 91.19\e{GeV}$ approximiert werden:
+\[ \alpha_s = \frac{ N_3}{N_{had} \cc C} = 0.139\pm 0.009 \]
+Der eigentliche Wert des Standardmodells\footnote{Quelle: Particle Data Group, \url{pdg.lpl.gov}} liegt bei $\alpha_s^{SM}(m_Z) = 0.118$ und ist damit über $2\sigma$ von dem hier bestimmten Wert entfernt.
+
+\section{Anzahl der Neutrinofamilie}
+Der betrachtete Datensatz entpsicht einer Luminosität von $L = 28.48\e{nb^{-1}}$, damit beträgt der hadronische Wirkungsquerschnitt
+\[\sigma_{had} = \frac{ N_{had}}{L} = (29.04 \pm 5.39)\e{nb}\]
+Mit dem angegebenen Faktor von $26.3\e{\%}$ für die Korrektur des Wirkungsquerschnittes auf Grund der Photonenemission erhöht sich der tatsächliche Wirkungsquerschnitt zu
+\[\sigma_{had} = (39.40 \pm 6.28)\e{nb}\]
+Damit kann die totale Zerfallsbreite des $Z$-Bosons berechnet werden
+\[\Gamma_{tot} = \sqrt{ \frac{ 12 \pi \cc \Gamma_{l \bar l} \Gamma_{had}}{\sigma_{had} m_Z^2}} = (2.127 \pm 0.345)\e{GeV}\]
+Da somit die hadronische, die leptonische als auch die totale Zerfallsbreite bekannt sind kann auf die unsichtbare Zerfallsbreite der Neutrinos geschlossen werden
+\[\Gamma_{inv} = \Gamma_{tot} - \Gamma_{had} - 3 \Gamma_{l\bar l} = (673.2\pm 484.5)\e{MeV}\]
+Unter der Annahme der Leptonenuniversalität und der gegebene Zerfallsbreite des Elektronenneutrino-Kanals $\Gamma^{SM}_{\nu_e \bar \nu_e}=166.1\e{MeV}$ des Standardmodells ist somit die Anzahl der Neutrinofamilien berechenbar
+\[N_\nu = \frac{\Gamma_{inv}}{\Gamma_{\nu_e \bar \nu_e}^{SM}} = 4.05\pm 2.92\]
+
 
 \end{document}
