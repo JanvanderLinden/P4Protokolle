@@ -147,15 +147,16 @@ The uncernaity was propagated from $\omega$ to $g$ with gaussian error propagati
 \label{second}
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{images/plot.pdf}
+		\includegraphics[width=0.8\textwidth]{images/plot2.pdf}
 		\caption{Raw data and three fits via the second method are displayed aswell as the fitted functions and parameters}
 		\label{method2}
 	\end{center}
 \end{figure}
-The division took place after 7$\e{\mu s}$. The second area gives a linear function, its lowest point is interpreted as the background noise. This offset will be added on the next two fits. With knowledge of this offset the next fit in exponential shape could be done. For this, the first area is used and the parameters K and $\e{\tau}$ were calculated. After these two fits shown in the second subplot in figure \ref{method2}, K, $\e{\tau}$ and offset are known and equation \ref{n(t)} reduces to three unknown parameters. The last step fits the remaining parameters on the whole dataset, shown in the last subplot in figure \ref{method2}. For further interest are the results and errors in $\tau$ and $\omega$, their errors shown next to the plot are results of the fitting methode itself at the data range. Still missing is the uncertainity from the other parameters aswell as the error in time. To calculate the real error in $\tau$ and $\omega$ an error propagation has to be made which results in a slightly different result in $\tau$ and the same error in $\omega$. The Landé-factor is calculated via formula \ref{lande}. The results of this fitting method are:
+The meassurement was splittet from 3$\e{\mu s}$ to 15$\e{\mu s}$ to fit the exponential part and from 10$\e{\mu s}$ to 15$\e{\mu s}$ for the linear fit.
+The second area gives a linear function, its lowest point is interpreted as the background noise. This offset will be added on the next two fits. With knowledge of this offset the next fit in exponential shape could be done. For this, the first area is used and the parameters K and $\e{\tau}$ were calculated. After these two fits shown in the second subplot in figure \ref{method2}, K, $\e{\tau}$ and offset are known and equation \ref{n(t)} reduces to three unknown parameters. The last step fits the remaining parameters on the whole dataset, shown in the last subplot in figure \ref{method2}. For further interest are the results and errors in $\tau$ and $\omega$, their errors shown next to the plot are results of the fitting methode itself at the data range. Still missing is the uncertainity from the other parameters aswell as the error in time. To calculate the real error in $\tau$ and $\omega$ an error propagation has to be made which results in a slightly different result in $\tau$ and the same error in $\omega$. The Landé-factor is calculated via formula \ref{lande}. The results of this fitting method are:
 \begin{align}
-&\e{Lifetime} &\tau &=(1.997\pm 0.0012)\e{\mu s}\\
-&\e{Landé factor} &g &=0.7236 \pm 0.0395
+&\e{Lifetime} &\tau &=(2.16\pm 0.003)\e{\mu s}\\
+&\e{Landé factor} &g &=0.77 \pm 0.05
 \end{align}
 \section{Summary}
 The results aswell as the literature values and the deviations per method are shown in table \ref{tablö}.\\
@@ -169,10 +170,10 @@ The results aswell as the literature values and the deviations per method are sh
 literature value $\quad$& 2.197 & 2.002 \\ 
 \midrule
 methode one & $1.94 \pm 0.01$ & $3.2\pm 0.1$ \\ 
-deviation & $11.7$\% & $59.8$\% \\ 
+deviation & $-11.7$\% & $59.8$\% \\ 
 \midrule 
-methode two & $1.997 \pm 0.001$ & $ 0.72 \pm 0.04$ \\  
-deviation & 9.1\% & -64.0\%  
+methode two & $2.16 \pm 0.003$ & $ 0.77 \pm 0.05$ \\  
+deviation & -1.8\% & -61.4\%  
 \label{tablö}
 \end{tabular} 
 \end{center}
