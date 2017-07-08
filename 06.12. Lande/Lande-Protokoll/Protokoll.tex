@@ -132,14 +132,14 @@ With the constant background $C$, the scaling of the exponential $K$, the scalin
 \begin{figure}[H]
 \centering
 \includegraphics[width= 0.8 \textwidth]{images/6paramfit.pdf}
-\caption{\label{6pm}\textbf{Six parameter fit.} For this fit all six parameters were fitted simultaneously. Errors both in time and number were regarded in this fit.}
+\caption{\label{6pm}\textbf{Six parameter fit.} For this fit all six parameters were fitted simultaneously. Errors both in time and number were regarded in this fit. The values for zero time difference were not regarded in this fit.}
 \end{figure}
 The resulting lifetime of the muon can directly be read off the fit as the parameter $\tau$. 
-The Landé factor first has to be calculated with equation \ref{lande} from $\omega$.
+The Landé factor first has to be calculated with equation \ref{lande} from $\omega$. The magnetic field had a value of $B = 3.617\e{mT}$
 The uncernaity was propagated from $\omega$ to $g$ with gaussian error propagation.
 \begin{align}
 &\e{Lifetime} &\tau &=(1.94\pm 0.01)\e{\mu s}\\
-&\e{Landé~factor} &g &=3.2 \pm 0.1
+&\e{Landé~factor} &g = \frac{\hbar \omega}{\mu_B B} &=3.2 \pm 0.1
 \end{align}
 
 
@@ -147,7 +147,7 @@ The uncernaity was propagated from $\omega$ to $g$ with gaussian error propagati
 \label{second}
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{images/plot2.pdf}
+		\includegraphics[width=0.7\textwidth]{images/plot2.pdf}
 		\caption{Raw data and three fits via the second method are displayed aswell as the fitted functions and parameters}
 		\label{method2}
 	\end{center}
@@ -156,7 +156,7 @@ The meassurement was splittet from 3$\e{\mu s}$ to 15$\e{\mu s}$ to fit the expo
 The second area gives a linear function, its lowest point is interpreted as the background noise. This offset will be added on the next two fits. With knowledge of this offset the next fit in exponential shape could be done. For this, the first area is used and the parameters K and $\e{\tau}$ were calculated. After these two fits shown in the second subplot in figure \ref{method2}, K, $\e{\tau}$ and offset are known and equation \ref{n(t)} reduces to three unknown parameters. The last step fits the remaining parameters on the whole dataset, shown in the last subplot in figure \ref{method2}. For further interest are the results and errors in $\tau$ and $\omega$, their errors shown next to the plot are results of the fitting methode itself at the data range. Still missing is the uncertainity from the other parameters aswell as the error in time. To calculate the real error in $\tau$ and $\omega$ an error propagation has to be made which results in a slightly different result in $\tau$ and the same error in $\omega$. The Landé-factor is calculated via formula \ref{lande}. The results of this fitting method are:
 \begin{align}
 &\e{Lifetime} &\tau &=(2.16\pm 0.003)\e{\mu s}\\
-&\e{Landé factor} &g &=0.77 \pm 0.05
+&\e{Landé factor} &g = \frac{\hbar \omega}{\mu_B B}&=0.77 \pm 0.05
 \end{align}
 \section{Summary}
 The results aswell as the literature values and the deviations per method are shown in table \ref{tablö}.\\
@@ -169,10 +169,10 @@ The results aswell as the literature values and the deviations per method are sh
 \toprule
 literature value $\quad$& 2.197 & 2.002 \\ 
 \midrule
-methode one & $1.94 \pm 0.01$ & $3.2\pm 0.1$ \\ 
+method one & $1.94 \pm 0.01$ & $3.2\pm 0.1$ \\ 
 deviation & $-11.7$\% & $59.8$\% \\ 
 \midrule 
-methode two & $2.16 \pm 0.003$ & $ 0.77 \pm 0.05$ \\  
+method two & $2.16 \pm 0.003$ & $ 0.77 \pm 0.05$ \\  
 deviation & -1.8\% & -61.4\%  
 \label{tablö}
 \end{tabular} 
