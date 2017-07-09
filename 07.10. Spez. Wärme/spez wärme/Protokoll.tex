@@ -44,53 +44,53 @@
 	\MainMatter
 
 %Protokollstart
-\chapter{Theoretical background: Thermodynamics}
-Thermodynamic systemes governed by the three main laws, the first given:
+\chapter{Theoretical background}
+Thermodynamic systems are governed by the three laws of thermodynamics, where the first one is given as:
 \begin{equation}
 \dd U = \del Q + \del W = T\dd S - p \dd V
 \end{equation} 
-A system is completely described in an equation of state. Variables are for example p, V and T. An example is given by the ideal gas equation:
+A system is completely described in an equation of state. The variables neccesary to describe such a states fully are the pressure $p$, the volume $V$ and the temperature $T$. An example is given by the ideal gas equation:
 \begin{equation}
 pV=nRT
 \end{equation}
-\section{Spezific heat}
-The partial derivation of the heat by temperature on a fix variable of state is called spezific heat, it is constant for a material. 
+\section{Specific heat}
+The partial derivation of the heat by temperature on a fix variable of state is called specific heat.
 \begin{align}
 c_p &=\left(\frac{\del Q}{\del T}\right)_p\\
 c_V &=\left(\frac{\del Q}{\del T}\right)_V = \left(\frac{\del U}{\del T}\right)_V\label{cv}
 \end{align}
 The last equality comes from the first law of thermodynamics with constant volume.\\
-With the expansion coeffizient $\alpha = \frac{1}{V} \cdot \left(\frac{\del V}{\del T}\right)$ 
+With the expansion coefficient $\alpha = \frac{1}{V} \cdot \left(\frac{\del V}{\del T}\right)$ 
 and the compression module $K=\frac{1}{\alpha}\cdot \left(\frac{\del p}{\del T}\right)_V$ 
-the differenc in spezific heat for a solid is given by: 
+the difference between the two different types of specific heat for a solid is given by: 
 \begin{equation}
 c_p-c_V=T\alpha ^2 K
 \end{equation}
-In this experiment we observe Dysprosium in solid temperatures. In a matter of fact the difference between $c_p$ and $c_V$ appear to be zero in solids so we see both capacitys as equal.
+In this experiment we observe Dysprosium as a solid. The difference between the two specific heats for solids is in the range of $3\%$ and can thus mostly be neglected.
 \section{Debye-Modell}
-The Debye-Modell gives a theretical derivation for $c_V$.
+The Debye-Modell gives a theoretical derivation for $c_V$.
 
-At first the density of states $z(\omega)$ as derivation function of natural frequencies of phonons in a crystall is discussed.
-To calculate it Debye hold to the following adoptions:
+At first the density of states $z(\omega)$ as derivation function of natural frequencies of phonons in a crystall are discussed.
+To calculate it, the following adoptions were made:
 \begin{itemize}
-\item each atom has three degrees of freedom in motion. A crystal with $N_a$ atoms therefore has $3N_A$ phonons.\\
-\item the known linear dispersion relation for low frequencies $\omega=ck$ is valid for higher frequencies too.\\
-\item the highest possible natural frequency is given by $\omega_D=\nu^3\sqrt{\frac{6 \pi ^2 N_A}{V}}$
+\item Each atom has three degrees of freedom in motion. A crystal with $N_a$ atoms therefore has $3N_A$ phonons.
+\item The known linear dispersion relation for low frequencies $\omega=ck$ is valid for higher frequencies too.
+\item The highest possible natural frequency is given by $\omega_D=\nu^3\sqrt{\frac{6 \pi ^2 N_A}{V}}$
 \end{itemize}
-Therefore the density of states is given by
+Thus, the density of states is given by
 \begin{equation}
 \int \limits_{0}^{\omega_D} \! z(\omega) \, \dd\omega = 3N_A
 \end{equation}
-wich results in:
+which results in
 \begin{equation}
-z(\omega)= \frac{9N_A}{\omega_D^3}\omega^2;\qquad 0\leq  \omega \leq \omega_D
+z(\omega)= \frac{9N_A}{\omega_D^3}\omega^2,\qquad 0\leq  \omega \leq \omega_D
 \end{equation}
 
 The inner energy in a crystall is given by
 \begin{equation}
 U= \int \limits_{\omega}^{}\! \frac{\hbar \omega}{e^{\frac{\hbar \omega}{k_B T}}-1} z(\omega)\dd \omega
 \end{equation}
-With it and equation \ref{cv} the specific heat can be calculated. The resulting integral is solfed numerically by Dulong-Petit, therefore he used $\Theta_D=\frac{\hbar \omega_D}{k_B}$. With high temperatures and n as number of atoms in the base of a solid it follows
+With this and equation \ref{cv} the specific heat can be calculated. The resulting integral was solved numerically by Dulong-Petit, for this he used $\Theta_D=\frac{\hbar \omega_D}{k_B}$. With high temperatures and $n$ as number of atoms in the base of a solid it follows
 \begin{equation}
 c_v(T\gg\Theta_D)=c_{DP}=n\cdot 3N_Ak_b\approx 25\e{\frac{J}{mol\cdot K}}
 \end{equation}
@@ -100,23 +100,66 @@ c_v=9N_Ak_B\frac{4\pi^4}{15}\left(\frac{T}{\Theta_D} \right)^3
 \end{equation}
 
 \section{Phaseshifts}
-In general a phaseshift is defined with its behavior of the derivatins of the free energy for temperature. 
-If the n-th derivation is not static and the (n-1)-th is static the material has a n-th degree phaseshift. 
-This is quanitially described in scaling laws like\begin{equation}
+In general a phaseshift is defined with its behavior of the derivations of the free energy for temperature. 
+If the n-th derivation is not static and the (n-1)-th is static, the material has a n-th degree phaseshift. 
+This is quanitially described in scaling laws like
+\begin{equation}
 C=(A^{\pm}/\alpha)\|t|^{-\alpha}+Et+B
+\label{phase}
 \end{equation}
 with the reduced temperature $t=(T-T_c)/T_c$. The last term gives the behavior of c outside of critical temperatures $T_c$. $A^{\pm}$ has different values for temperatures higher and lower than the critical. 
 
-\chapter{Dysprosium and its magnetic characteristics}
-rare earths 2 6s and 10 4f shell
-magnetic moment of 10.6 mubohr 
-Dy is an element of the rare earths and has an electronic configuration of $4f^{10}6s^2$. By the Hunds rules it has a magnetic momentum of $10\mu_B$ but the real momentum is about $10.6\mu_B$ caused by higher terms.
-Coming from deep temperatures the atom is in a colinear ferromagnetic order. AT the curie temperature of $T_C=90\e{K}$ Dy changes its structure to a helical antiferromagnetic wich indicaes a phase shift. In fact it is a phase shift first order with a latent heat. Dy has a second phase shift at the Neél-temperature $T_N=180\e{K}$ of second order where the atom shapes helical antiferromagnetic.
+\section{Dysprosium and its magnetic characteristics}
+Dy is an element of the rare earths and has an electronic configuration of $4f^{10}6s^2$. After the rules set up by Hund, it has a magnetic momentum of $10\mu_B$, but the real momentum is about $10.6\mu_B$ caused by higher terms of higher order.
+Coming from low temperatures, the atom is in a colinear ferromagnetic order. At the curie temperature of $T_C=90\e{K}$ Dy changes its structure to a helical antiferromagnetic wich indicates a phase shift. In fact it is a phase shift of first odrer with a latent heat. Dy has a second phase shift at the Neél temperature $T_N=180\e{K}$ of second order where the atom shapes helical antiferromagnetic.
 
 The factors for Dysprosium of the scaling law at the phaseshift second order are:
 \begin{align*}
 E=25\e{J/mol K}\qquad \qquad B=16\e{J/mol K}
 \end{align*}
+
+
+\chapter{The experiment}
+In this experiment a heating curve of Dysprosium will be recorded. 
+With this heating curve the magnetic properties of Dysprosium can be examined.
+First, the latent heat of Dysprosium at the Curie temperature $T_C = 90 \e{K}$ is supposed to be measured.
+Then, the specific heat of Dysprosium in proximity to this Curie temperature is to be determined.
+Lastly, the whole heating curve of Dysprosium will be recorded from the lowest possible temperature of $77\e{K}$ which is the temperature of the coolant, namely liquid helium, up to $250\e{K}$.
+
+\section{Latent heat of Dysprosium at the Curie temperature}
+After cooling down the cryostat to a temperature of $77\e{K}$ and evacuating the cryostat to a pressures below $p < 10^{-4}\e{mbar}$ the experiment is supposed to be heated to a temperature of $87\e{K}$. 
+When a stable temperature is reached, the temperature curve of the Dysprosium is to be recorded with a constant heating power of $2\e{mW}$. 
+At the Curie temperature of $90\e{K}$ a phase transition of first degree from ferromagnetic to helically antiferromagnetic phases is exhibited.
+Thus, the energy supplied by constant heating will be used for the phase transition instead of the heating of the Dysprosium.
+Therefore, a plateau of equal temperature is expected to appear in the heating curve.
+The latent heat then can be calculated by calculating the amount of power suppiled to the sample that did not heat the sample.
+
+
+\section{Specific heat of Dysprosium at the Curie temperature}
+In a second measurement the specific heat of Dysprosim close to the Curie temperature will be recorded. 
+For this  measurement of the specific heat ranging from temperatures below the Curie temperature to temperatures higher then the Curie temperatures will be recorded. 
+Because the energy $U$ supplied to the system and the amount of substance $n$ is known, the specific heat can be calculated at every temperature with
+\[
+c_V = \frac{1}{n} \frac{\Delta U}{\Delta T}
+\]
+It is impossible to perform the measurments at constant volume with the given conditions in the lab. The experiment can, however be conducted at constant pressure and therefore a measurement of $c_p$ is possible. Due to the small difference between $c_V$ and $c_p$ for solids the difference can be neglected.
+Because the phase transition of Dysprosium is a transition of first degree, the specific heat will diverge at the temperature of the phase transition, namely the Curie temperature.
+Then the latent heat then can be caluclated in a second method by calculating the area under the curve of the specific heat measurements relative to the linear background.\\
+Additionally, the entropy $S = \frac{\Delta Q}{T}$, related to the phase transision can be calculated.
+This entropy can be compared to the spin entropy $S = R \ln (2 J + 1)$.
+
+
+\section{Specific heat curve}
+In the last part of the experiment a curve of the specific heat will be recorded up to temperatures of $250\e{K}$.
+Again, only the specific heat at constant pressure can be measured.
+From this measurement the critical exponent $\alpha$ can be calculated, aswell as the critical temperature $T_N$ at which a phase transition of second order takes place.\\
+To determine the critical exponent two separate fits can be performed, one for temperatures below the critical temperature and one for temperatures higher than this critical temperature $T_N$.
+The specific heat should show the following behaviours:
+\[ C_p(T) = \frac{ A^\pm |t|^{-\alpha}}{\alpha} + Et + B, ~~~~ t = \frac{T-T_N}{T_N}\]
+The factors $A^+$ and $A^-$ are not necessarily equal for temperatures higher and lower than the observed critical temperature $T_N$\\
+The linear background is parametrizised with the factors $E = 25 \e{\frac{J}{mol\cc K}}$ and $B = 16\e{\frac{J}{mol \cc K}}$ which is only valid for $|t| < 0.2$ at the crtitical temperature of the Dysprosium, where a phase shift from being paramagnetic to being helical antiferromagnetic occurs.
+
+
 \chapter{Experiment}
 Ziel des Experimentes ist es uns kräftig zu langweilen, obgleich relevante Themen für die kommende mündliche Prüfung vertieft werden. bimboenglisch
 \chapter{Calculation}
