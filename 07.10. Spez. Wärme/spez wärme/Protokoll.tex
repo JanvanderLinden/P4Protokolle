@@ -160,17 +160,43 @@ The factors $A^+$ and $A^-$ are not necessarily equal for temperatures higher an
 The linear background is parametrizised with the factors $E = 25 \e{\frac{J}{mol\cc K}}$ and $B = 16\e{\frac{J}{mol \cc K}}$ which is only valid for $|t| < 0.2$ at the crtitical temperature of the Dysprosium, where a phase shift from being paramagnetic to being helical antiferromagnetic occurs.
 
 
-\chapter{Experiment}
-Ziel des Experimentes ist es uns kräftig zu langweilen, obgleich relevante Themen für die kommende mündliche Prüfung vertieft werden. bimboenglisch
-\chapter{Calculation}
+\chapter{Analysis}
 
 
-\begin{figure}[ht]
-	\begin{center}
-		%\includegraphics{images/Aufbau.png}
-		\caption{Experimenteller Aufbau}
-		\label{aufbau}
-	\end{center}
+\section{Recorded data}
+In the experiment, two sets of data were recorded.
+The first one was used to calculate the latent heat at the Curie temperature.
+The second set of data was a measurement of the specific heat of the Dysporium at temperatures between $80\e{K}$ and $200\e{K}$. This raw set of data is shown in figure \ref{data}.
+\begin{figure}[H]
+\includegraphics[width = 0.9\textwidth]{fig/data.pdf}
+\caption{\label{data}\textbf{Raw set of data for the measurements of the specific heat.} This set of data was recorded while the Dysporium was slowly heated with constant power.}
+\end{figure}
+
+
+\section{Measurements of the latent heat}
+\subsection{Method one}
+
+\subsection{Method two}
+In the second method, the data shown in figure \ref{data} was used. 
+At the Curie temperature, the specific heat has a peak which corresponds to the excess heat needed for the phase transition of first order.
+The latent heat then corresponds to the integral amount of specific heat, thus a background fit was performed, to determine the excess amount.
+The specific heat in the background should show a linear behaviour in time, thus a linear fit of the side band regions next to the signal peak at the Curie temperature was performed.
+The then resulting excess area in the signal region was calculated.
+The results are shown in figure \ref{area}.
+\begin{figure}[H]
+\includegraphics[width = 0.9\textwidth]{fig/latentheat_area.pdf}
+\caption{\label{area}\textbf{Specific heat at the Curie temperature.} Shown is the specific heat at temperatures around the Curie temperature. Black corresponds to the background data and blue to the data at the excess peak. The background data was fitted linearly. The calculated area $A$ corresponds to the latent heat needed for the phase shift of first order. The error on the area was propagated from the errors of the background fit.}
+
+\end{figure}
+
+
+\section{Measurements at the Neel temperature}
+
+
+
+
+\begin{figure}[H]
+\includegraphics[width = 0.9\textwidth]{fig/loglogfit.pdf}
 \end{figure}
 
 \end{document}
