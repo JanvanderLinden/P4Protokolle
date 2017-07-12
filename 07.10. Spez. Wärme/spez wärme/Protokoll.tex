@@ -150,6 +150,7 @@ This entropy can be compared to the spin entropy $S = R \ln (2 J + 1)$.
 
 
 \section{Specific heat curve}
+\label{neel}
 In the last part of the experiment a curve of the specific heat will be recorded up to temperatures of $250\e{K}$.
 Again, only the specific heat at constant pressure can be measured.
 From this measurement the critical exponent $\alpha$ can be calculated, aswell as the critical temperature $T_N$ at which a phase transition of second order takes place.\\
@@ -188,15 +189,77 @@ The results are shown in figure \ref{area}.
 \caption{\label{area}\textbf{Specific heat at the Curie temperature.} Shown is the specific heat at temperatures around the Curie temperature. Black corresponds to the background data and blue to the data at the excess peak. The background data was fitted linearly. The calculated area $A$ corresponds to the latent heat needed for the phase shift of first order. The error on the area was propagated from the errors of the background fit.}
 
 \end{figure}
+The resultung signal area corresponding to the latent heat was calculated to
+\[ A = 29.0 \pm 2,9 \e{\frac{J}{mol}}\]
 
+\subsection{Comparison of methods}
 
+\begin{table}[H]
+\centering
+\caption{\label{latentheattable}\textbf{Summary of the latent heat calculations.}}
+\begin{tabular}{r|l}
+ & latent heat / $\e{\frac{J}{mol}}$\\
+\midrule
+method one & \\
+method two & $29,0 \pm 2,9$\\
+\midrule
+\end{tabular}
+\end{table}
 \section{Measurements at the Neel temperature}
 
+The phase transition of second order at the Neel temperature was also recorded in the data shown in figure \ref{data}.
+From this data, the value of the Neel temperature was calculated to be at
+\[T_N = 179,7\e{K}\]
+
+As described in section \ref{neel}, the specific heat at the Neel temperature should follow the following laws
+\[ C_p(T) = \frac{ A^\pm |t|^{-\alpha}}{\alpha} + Et + B, ~~~~ t = \frac{T-T_N}{T_N}\] 
+where $t$ is the reduced temperature, relative to the Neel temperature $T_N$. The coefficient $\alpha$ should be the same for positive and negative $t$, the scaling factors $A^+$ and $A^-$ for the positive and negative $t$ respectively may be different.\\
+For further analysis the known background $E t + B$ was substracted. 
+The fits of the both ranges for positive and negative $t$ were performed in two ways; firstly the functions were fitted directly to the data and secondly the data was rescaled logarithmically on both axes and then the functions
+\[ \ln(C(t)) = \ln \left( \frac{A^\pm}{\alpha}\right) - \alpha \ln (t) \]
+were fitted.
+
+\subsection{Direct fit}
+\todo{first method}.
+
+
+
+
+
+
+\subsection{Double logarithmic fit}
+For the second fit method with the double logarithmic fits, the reduced temperatures close the the Neel temperature are shown in figure \ref{neelplot}.
 
 
 
 \begin{figure}[H]
 \includegraphics[width = 0.9\textwidth]{fig/loglogfit.pdf}
+\caption{\label{neelplot}\textbf{Reduced temperatures close to the Neel temperature with double logarithmic fit.} Additionally to the data the two double logarithmic fits are shown. The red one was performed for $t < 0$ and the blue one for $t > 0$. From the data, the linear background $Et +B$ was substracted before fitting.} 
 \end{figure}
+The fit values resulting from the double logarithmic fits are the following
+\begin{align*}
+A^- &= 4,03 \pm 0,04 \e{\dfrac{J}{K\cc mol}}\\
+A^+ &= 2,05 \pm 0,05 \e{\dfrac{J}{K\cc mol}}\\
+\alpha^- &= 0,132 \pm 0,002\\
+\alpha^+ &= 0,121 \pm 0,005\\
+\end{align*}
+The equality of $\alpha^+$ and $\alpha^-$ can with this fit not be confirmed as both values have a distance of least $2\sigma$ .
 
+\subsection{Comparison of fitting methods}
+
+
+\begin{table}[H]
+\centering
+\caption{\label{neeltable}\textbf{Comparison of fit values for both fit methods.}}
+\begin{tabular}{rr|ll}
+ 			& 		&$A$ / $\e{\frac{J}{K \cc mol}}$ & $\alpha$ \\
+\midrule
+direct fit 	&$A^-$	& 			& 				\\
+ 			&$A^+$	& 			&	 			\\
+\midrule
+double logarithmic fit	&$A^-$ 	& $4,03 \pm 0,04$ 	& $0,132 \pm 0,002$\\
+ 						&$A^+$	& $2,05 \pm 0,05$ 	& $0,121 \pm 0,005$\\
+\midrule
+\end{tabular}
+\end{table}
 \end{document}
