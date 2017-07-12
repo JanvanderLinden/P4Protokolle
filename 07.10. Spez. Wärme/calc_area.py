@@ -2,10 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.optimize as sci
 
-data = np.genfromtxt("SW_test.txt", skip_header=2)
+data = np.genfromtxt("SW_18", skip_header=2)
 T = data[:100,0]
 sw = data[:100,1]
-
+plt.plot(data[:,0],data[:,1])
+plt.show()
 def cut_area(arr, min, max, arg):
 	i = 0
 	while T[i] < min:
