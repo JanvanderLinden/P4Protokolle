@@ -97,6 +97,7 @@ c_v(T\gg\Theta_D)=c_{DP}=n\cdot 3N_Ak_b\approx 25\e{\frac{J}{mol\cdot K}}
 The law of Dulong-Petit says that the specific heat of all solids with the same amount of atoms in its base leads to the same constant for high temperatures. For temperatures below  $T=0.1\Theta_D$ the integral gives
 \begin{equation}
 c_v=9N_Ak_B\frac{4\pi^4}{15}\left(\frac{T}{\Theta_D} \right)^3
+\label{lowtemp}
 \end{equation}
 
 \section{Phaseshifts}
@@ -168,19 +169,20 @@ The linear background is parametrizised with the factors $E = 25 \e{\frac{J}{mol
 In the experiment, two sets of data were recorded.
 The first one was used to calculate the latent heat at the Curie temperature, as show in figure \ref{latent_raw_j}.
 The second set of data was a measurement of the specific heat of the Dysporium at temperatures between $80\e{K}$ and $200\e{K}$. This raw set of data is shown in figure \ref{data}.
-\begin{figure}[ht]
+\begin{figure}[h]
 \includegraphics[width = 0.8\textwidth]{fig/latent_raw_j.pdf}
 \caption{\label{latent_raw_j}\textbf{Measurement of the temperature around Curie temperature of cup and sample.} A heater was attached to the sample of $0.056\e{mol}$ Dysposioum, which constantly supplied $10.7\e{mW}$ of power.}
 \end{figure}
-\begin{figure}[ht]
+\begin{figure}[h]
 \includegraphics[width = 0.8\textwidth]{fig/data.pdf}
 \caption{\label{data}\textbf{Raw set of data for the measurements of the specific heat.} This set of data was recorded while the Dysporium was slowly heated with constant power.}
 \end{figure}
 
 
 \section{Measurements of the latent heat}
+The latent heat was measured with two different methods. In the first method the temperature of the sample was measured over time, while heating it with constant power. In the second method the specific heat was measured at different temperatures and the resulting excess heat at the Curie temperature was evaluated.
 \subsection{Method one}
-\begin{figure}[H]
+\begin{figure}[h]
 \includegraphics[width = 0.9\textwidth]{fig/latent_j.pdf}
 \caption{\label{latent_j}\textbf{Measurement of the latent heat around Curié-Temperature.} Two linear fits (red and green) with its ranges of Rawdata used to fit in matching colors. Latent heat corresponds to the stored energy in the sample while heating between t1 and t2 (black).}
 \end{figure}
@@ -200,14 +202,13 @@ The latent heat then corresponds to the integral amount of specific heat, thus a
 The specific heat in the background should show a linear behaviour in temperature, thus a linear fit of the side band regions next to the signal peak at the Curie temperature was performed.
 The then resulting excess area in the signal region was calculated.
 The results are shown in figure \ref{area}.
-\begin{figure}[H]
-\includegraphics[width = 0.8\textwidth]{fig/latentheat_area.pdf}
-\caption{\label{area}\textbf{Specific heat at the Curie temperature.} Shown is the specific heat at temperatures around the Curie temperature. Black corresponds to the background data and blue to the data at the excess peak. The background data was fitted linearly. The calculated area $A$ corresponds to the latent heat needed for the phase shift of first order. The error on the area was propagated from the errors of the background fit.}
 
-\end{figure}
 The resultung signal area corresponding to the latent heat was calculated to
 \[ A = 29.0 \pm 2.9 \e{\frac{J}{mol}}\]
-
+\begin{figure}[h]
+\includegraphics[width = 0.8\textwidth]{fig/latentheat_area.pdf}
+\caption{\label{area}\textbf{Specific heat at the Curie temperature.} Shown is the specific heat at temperatures around the Curie temperature. Black corresponds to the background data and blue to the data at the excess peak. The background data was fitted linearly. The calculated area $A$ corresponds to the latent heat needed for the phase shift of first order. The error on the area was propagated from the errors of the background fit.}
+\end{figure}
 \subsection{Comparison of methods}
 
 \begin{table}[H]
@@ -222,33 +223,51 @@ method two & $29.0 \pm 2.9$ & -26 \%\\
 \midrule
 \end{tabular}
 \end{table}
+
+Both measured values of the latent heat for the first phase transitions have a deviation of more than $3\sigma$ to the value measured in the paper by Jayasuriya et al.\\
+The results of the second method are closer to the measurements of the paper, but also have a higher uncernaity. 
+
+\subsection{Entropy}
+The weighted average of the measured values of the latent heat is $Q = 23.4 \pm 3.0 \e{\frac{J}{mol}}$. 
+With this value the entropy of the phase transition at the measured Curie temperature $T = 89.55\e{K}$ was calculated
+\[S = \frac{Q}{T} = 0.261 \pm 0.03\e{\frac{J}{mol}}\]
+Dysporium has an angular momentum of $J = 8$. Therefore its spin entropy is given as
+\[S_{spin} = R \ln (2J + 1) = 23.54\e{\frac{J}{mol}}, ~~~~ R = 8.31 \e{\frac{J}{mol}}\]
+It becomes apparent, that the entropy gained by the phase transition is very small in comparison with the already present spin entropy. 
 \section{Measurements at the Neel temperature}
 
 The phase transition of second order at the Neel temperature was also recorded in the data shown in figure \ref{data}.
 From this data, the value of the Neel temperature was calculated to be at
 \[T_N = 179,7\e{K}\]
-
 As described in section \ref{neel}, the specific heat at the Neel temperature should follow the following laws
-\[ C_p(T) = \frac{ A^\pm |t|^{-\alpha}}{\alpha} + Et + B, ~~~~ t = \frac{T-T_N}{T_N}\] 
+\begin{equation}
+\label{fitfunc}
+ C_p(T) = \frac{ A^\pm |t|^{-\alpha}}{\alpha} + Et + B, ~~~~ t = \frac{T-T_N}{T_N}
+\end{equation}
 where $t$ is the reduced temperature, relative to the Neel temperature $T_N$. The coefficient $\alpha$ should be the same for positive and negative $t$, the scaling factors $A^+$ and $A^-$ for the positive and negative $t$ respectively may be different.\\
 For further analysis the known background $E t + B$ was substracted. 
-The fits of the both ranges for positive and negative $t$ were performed in two ways; firstly the functions were fitted directly to the data and secondly the data was rescaled logarithmically on both axes and then the functions
+The fits of the both ranges for positive and negative $t$ were performed in two ways. In the first method, the functions were fitted directly to the data and in the second method, the data was rescaled logarithmically on both axes and then fitted via the following function:
 \[ \ln(C(t)) = \ln \left( \frac{A^\pm}{\alpha}\right) - \alpha \ln (t) \]
-were fitted.
 
 \subsection{Direct fit}
-\begin{figure}[H]
+\begin{figure}[h]
 \includegraphics[width = 0.9\textwidth]{fig/specheat_j.pdf}
-\caption{\label{specH}\textbf{Reduced temperatures close to the Neel temperature with double logarithmic fit.} Fittet with function shown in (1.11).}  
+\caption{\label{specH}\textbf{Reduced temperatures close to the Neel temperature with direct fit.} Both fits were preformed with the function shown in equation \ref{fitfunc}.}  
 \end{figure}
-Reducing the raw data from figure \ref{data} by the linear underground as given by formular (1.11) and plot it in respect to the reduced temperature t for $|t|> 0.2$ gives the so called raw data in figure \ref{specH}. Fitting the mentioned function leads to the values printed in the figure aswell.
+Reducing the raw data from figure \ref{data} by the linear background $E + Bt$ and plotting it in respect to the reduced temperature t for $|t|> 0.2$, yields the data shown in figure \ref{specH}. Fitting the mentioned function from equation \ref{fitfunc} leads to the values results shown in the plot.
+\begin{align*}
+A^- &= 4,04 \pm 0,04 \e{\dfrac{J}{K\cc mol}}\\
+A^+ &= 2,54 \pm 0,04 \e{\dfrac{J}{K\cc mol}}\\
+\alpha^- &= 0,136 \pm 0,002\\
+\alpha^+ &= 0,182 \pm 0,007\\
+\end{align*}
 In this method a direct fit does not lead to the same value for $\alpha$ on both sides of the phase shift.
 \subsection{Double logarithmic fit}
 For the second fit method with the double logarithmic fits, the reduced temperatures close the the Neel temperature are shown in figure \ref{neelplot}.
 
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 \includegraphics[width = 0.9\textwidth]{fig/loglogfit.pdf}
 \caption{\label{neelplot}\textbf{Reduced temperatures close to the Neel temperature with double logarithmic fit.} Additionally to the data the two double logarithmic fits are shown. The red one was performed for $t < 0$ and the blue one for $t > 0$. From the data, the linear background $Et +B$ was substracted before fitting.} 
 \end{figure}
@@ -259,27 +278,38 @@ A^+ &= 2,05 \pm 0,05 \e{\dfrac{J}{K\cc mol}}\\
 \alpha^- &= 0,132 \pm 0,002\\
 \alpha^+ &= 0,121 \pm 0,005\\
 \end{align*}
-The equality of $\alpha^+$ and $\alpha^-$ can with this fit not be confirmed as both values have a distance of least $2\sigma$ .
+The equality of $\alpha^+$ and $\alpha^-$ can not be confirmed with these fits, as both values have a deviation of at least $2\sigma$.
 
 \subsection{Comparison of fitting methods}
-To compere our results with the existing paper it is to mention, that we used a fixed Temperature for the second phase shift at $T_N = 179.92\e{C^{\circ}}$ and fixed values $E$ and $B$ as described before. In table \ref{neeltable} the values for left- and right handed values of $\alpha$ and $A$ from the paper for the polycrystalline sample and our results from both used methodes in respect to the paper are deploted. The paper itself used a different critical Temperature and different values of the offset B for each side of the phase shift (refering to TABLE III, Column 3) and caluclated a single result for $\alpha$.
+In table \ref{neeltable} the values of $\alpha$ and $A$ for fits at negative and positive $t$ are shown. The results of the both fit methods performed in this experiment were compared with the values shown in TABLE III, Column 3 in the paper. To compare the results with the results of the paper it is to mention, that the the neel temperature determined in this experiment and the paper are not exactly the same. Also  the offset $B$ of the linear background was not constrained in the fits in the paper. Furthermore both fits were performed simultaneously in the paper and thus, only one value for $\alpha$ was calculated, as the fit was constrained to $\alpha^+ = \alpha ^-$.
 
 \begin{table}[H]
 \centering
-\caption{\label{neeltable}\textbf{Comparison of fit values for both fit methods.}}
-\begin{tabular}{rr|ll}
- 	& 	&$A$ / $\e{\frac{J}{K \cc mol}}$ & $\alpha$ \\
+\caption{\label{neeltable}\textbf{Comparison of fit values for both fit methods and the paper.}}
+\begin{tabular}{r|lll}
+
+\toprule
+Method & direct fit & double log fit & paper \\
 \midrule
-paper & \textit{left}  &$3.5 \pm  $&$0.15 \pm 0.04$\\
- & \textit{right}  &$1.47 \pm 0.16$&$0.15 \pm 0.04$ \\
+$\alpha^+$ 						&						&	$0.132 \pm 0.002$&	$0.15\pm 0.04$	\\		
+derivation						&						&	$-12.0\e{\%}$		&\\
 \midrule
-direct fit & \textit{left} &$4.04 \pm 0.04$&$0.136 \pm 0.002$\\
- & \textit{right} & $2.54 \pm 0.04$&$0.182 \pm 0.007$ \\
+$\alpha^-$ 						&	$0.136 \pm 0.002$	&	$0.121 \pm 0.005$&	$0.15\pm 0.04$	\\
+derivation 						&						&	$-19.3\e{\%}$	&\\
 \midrule
-double logarithmic fit & \textit{left} & $4.03 \pm 0.04$ & $0.132 \pm 0.002$\\
- & \textit{right} & $2.05 \pm 0.05$ & $0.121 \pm 0.005$\\
+$A$ / $\e{\frac{J}{K \cc mol}}$ 	&						&	$2.05 \pm 0.05$	&	$1.47\pm 0.16$	\\
+derivation 						&						&	$39.5\e{\%}$		&\\
+\midrule
+$A^+/A^-$ 						&						&	$0.509 \pm 0.013$&	$0.42\pm 0.05$	\\
+derivation						&						&	$21.2\e{\%}$		&\\
 \midrule
 \end{tabular}
 \end{table}
 
+\section{Discussion of the specific heat curve}
+In the measurements of the specific heat relative to the temperature in figure \ref{rawdata}, both phase transitions could easily be identified. 
+Additionally, the specific heat rises with a constant slope at lower temperatures between $80\e{K}$ and about $130\e{K}$. 
+At higher temperatures the power law belonging to the phase shift at the Neel temperature interferes with the constant slope.\\
+Accodring to the laws of Dulong-Petit, the specific heat should be constant at high temperatures, which could not be confirmed with the measured data, because only data up to temperatures of $200\e{K}$ were recorded.\\
+With equation \ref{lowtemp}, the specific heat should follow a distribution proportional to $T^3$ at temperatures below $\Theta_D$, which could not be observed in the measured data, presumably, because the Debye temperature $\Theta_D$ is lower than the lowest recorded temperature of $77\e{K}$.
 \end{document}
