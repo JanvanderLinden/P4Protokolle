@@ -217,8 +217,8 @@ The resultung signal area corresponding to the latent heat was calculated to
  & latent heat / $\e{\frac{J}{mol}}$ & deviation\\
 \midrule
 paper & $39.1 \pm 1.5$ & \\
-method one & $21,8 \pm 0.8$ & -40 \%\\
-method two & $29.0 \pm 2.9$ & -15 \%\\
+method one & $21,8 \pm 0.8$ & -44 \%\\
+method two & $29.0 \pm 2.9$ & -26 \%\\
 \midrule
 \end{tabular}
 \end{table}
@@ -241,12 +241,8 @@ were fitted.
 \includegraphics[width = 0.9\textwidth]{fig/specheat_j.pdf}
 \caption{\label{specH}\textbf{Reduced temperatures close to the Neel temperature with double logarithmic fit.} Fittet with function shown in (1.11).}  
 \end{figure}
-Reducing the raw data from figure \ref{data} by the linear underground as given by formular (1.11) and plot it over the reduced temperature t for $|t|\gg 0.2$ gives the so called raw data in figure \ref{specH}. Fitting the mentioned function 
-
-
-
-
-
+Reducing the raw data from figure \ref{data} by the linear underground as given by formular (1.11) and plot it in respect to the reduced temperature t for $|t|> 0.2$ gives the so called raw data in figure \ref{specH}. Fitting the mentioned function leads to the values printed in the figure aswell.
+In this method a direct fit does not lead to the same value for $\alpha$ on both sides of the phase shift.
 \subsection{Double logarithmic fit}
 For the second fit method with the double logarithmic fits, the reduced temperatures close the the Neel temperature are shown in figure \ref{neelplot}.
 
@@ -266,27 +262,24 @@ A^+ &= 2,05 \pm 0,05 \e{\dfrac{J}{K\cc mol}}\\
 The equality of $\alpha^+$ and $\alpha^-$ can with this fit not be confirmed as both values have a distance of least $2\sigma$ .
 
 \subsection{Comparison of fitting methods}
-
+To compere our results with the existing paper it is to mention, that we used a fixed Temperature for the second phase shift at $T_N = 179.92\e{C^{\circ}}$ and fixed values $E$ and $B$ as described before. In table \ref{neeltable} the values for left- and right handed values of $\alpha$ and $A$ from the paper for the polycrystalline sample and our results from both used methodes in respect to the paper are deploted. The paper itself used a different critical Temperature and different values of the offset B for each side of the phase shift (refering to TABLE III, Column 2. Other methods on the polycrystaline sample results in parameters closer to ours but a comparisation doesnt make sense. 
 
 \begin{table}[H]
 \centering
 \caption{\label{neeltable}\textbf{Comparison of fit values for both fit methods.}}
 \begin{tabular}{rr|ll}
- 			& 		&$A$ / $\e{\frac{J}{K \cc mol}}$ & $\alpha$ \\
+ 	& 	&$A$ / $\e{\frac{J}{K \cc mol}}$ & $\alpha$ \\
 \midrule
-direct fit 	&$A^-$	& 			& 				\\
- 			&$A^+$	& 			&	 			\\
+paper & \textit{left}  &$5.28 \pm 1.46 $&$0.07 \pm 0.05$\\
+ & \textit{right}  &$1.69 \pm 0.2$&$0.09 \pm 0.04$ \\
 \midrule
-double logarithmic fit	&$A^-$ 	& $4,03 \pm 0,04$ 	& $0,132 \pm 0,002$\\
- 						&$A^+$	& $2,05 \pm 0,05$ 	& $0,121 \pm 0,005$\\
+direct fit & \textit{left} &$17.65 \pm 0.05$&$0.136 \pm 0.002$\\
+ & \textit{right} & $9.64 \pm 0.08$&$0.182 \pm 0.07$ \\
+\midrule
+double logarithmic fit & \textit{left} & $4.03 \pm 0.04$ & $0.132 \pm 0.002$\\
+ & \textit{right} & $2.05 \pm 0.05$ & $0.121 \pm 0.005$\\
 \midrule
 \end{tabular}
 \end{table}
-
-Todo für Protokoll:
-- Entropie berechnen und mit Spinentropie vergleichen
-%- alpha und A± mit direktem Fit bestimmen
-- mit anderem Fit und Paper vergleichen
-- Kurvenverlauf diskutieren
 
 \end{document}
