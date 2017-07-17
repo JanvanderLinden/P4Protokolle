@@ -85,9 +85,9 @@ plt.text(xpos,(p-p0*c),r'$\alpha^- = 0.136 \pm  0.002$',fontsize=siz)
 c=c+1
 plt.text(xpos,(p-p0*c),r'$\alpha^+ = 0.182 \pm  0.007$',fontsize=siz)
 c=c+1
-plt.text(xpos,(p-p0*c),(r'$A^- = (17.65 \pm 0.05)\,\rm{\frac{J}{mol\cdot K}}$'),fontsize=siz)
+plt.text(xpos,(p-p0*c),(r'$A^- = (4.04 \pm 0.04)\,\rm{\frac{J}{mol\cdot K}}$'),fontsize=siz)
 c=c+1
-plt.text(xpos,(p-p0*c),r'$A^+ = (9.64 \pm 0.08)\,\rm{\frac{J}{mol\cdot K}}$',fontsize=siz)
+plt.text(xpos,(p-p0*c),r'$A^+ = (2.54 \pm 0.04)\,\rm{\frac{J}{mol\cdot K}}$',fontsize=siz)
 c=c+1
 
 ###########################################
