@@ -168,12 +168,12 @@ The linear background is parametrizised with the factors $E = 25 \e{\frac{J}{mol
 In the experiment, two sets of data were recorded.
 The first one was used to calculate the latent heat at the Curie temperature, as show in figure \ref{latent_raw_j}.
 The second set of data was a measurement of the specific heat of the Dysporium at temperatures between $80\e{K}$ and $200\e{K}$. This raw set of data is shown in figure \ref{data}.
-\begin{figure}[H]
+\begin{figure}[ht]
 \includegraphics[width = 0.8\textwidth]{fig/latent_raw_j.pdf}
-\caption{\label{latent_raw_j}\textbf{Measurement of the temperature around Curié-Temperature of cup and sample.} A heating with $10.7\e{mW}$ was attached to the sample of $0.056\e{Mol}$ Dysposioum.}
+\caption{\label{latent_raw_j}\textbf{Measurement of the temperature around Curie temperature of cup and sample.} A heater was attached to the sample of $0.056\e{mol}$ Dysposioum, which constantly supplied $10.7\e{mW}$ of power.}
 \end{figure}
-\begin{figure}[H]
-\includegraphics[width = 0.9\textwidth]{fig/data.pdf}
+\begin{figure}[ht]
+\includegraphics[width = 0.8\textwidth]{fig/data.pdf}
 \caption{\label{data}\textbf{Raw set of data for the measurements of the specific heat.} This set of data was recorded while the Dysporium was slowly heated with constant power.}
 \end{figure}
 
@@ -184,24 +184,24 @@ The second set of data was a measurement of the specific heat of the Dysporium a
 \includegraphics[width = 0.9\textwidth]{fig/latent_j.pdf}
 \caption{\label{latent_j}\textbf{Measurement of the latent heat around Curié-Temperature.} Two linear fits (red and green) with its ranges of Rawdata used to fit in matching colors. Latent heat corresponds to the stored energy in the sample while heating between t1 and t2 (black).}
 \end{figure}
-With the LABView-VI latent.vi the temperature of the cub and the sample was measured while heating up slowly around the Curié-temperauture. The rawdata is shown in figure \ref{latent_raw_j}. To analyze the latent heat at the phase shift, the drop of the curve was measured. It indicates a lesser rise in temperature over time by the same amount of heat energy. Thats why two linear fits where done on the temperature curve of the sample. One before the other after the phase shift, as seen in figure \ref{latent_j} in red and green. The areas of data used to fit these straigths are visualized too as well as the raw data. 
+With the LABView-VI latent.vi the temperature of the cup and the sample was measured while heating up slowly around the Curie temperauture. The raw data is shown in figure \ref{latent_raw_j}. To analyze the latent heat at the phase shift, the drop of the curve was measured. It indicates a lesser rise in temperature over time by the same amount of heat energy. That's why two linear fits where done on the temperature curve of the sample. One before the other after the phase shift, as seen in figure \ref{latent_j} in red and green. The areas of data used to fit these functions are visualized too, as well as the raw data. 
 
-The offset in time of both fits indicates the latent heat. The heating took this time to heat the sample without rising the temperature. The mathematics are plottet too in the image and led us to
+The offset in time of both fits indicates the latent heat, because during this time, the energy of the supplied heat was not used to heat the sample, but rather to enable the phase transformation. The results are the following:
 \begin{align}
 \Delta t &= t_2-t_1=(114\pm 4)\e{s}\\
-\textrm{latent heat} &= P \cdot t / matter=10.7\e{mW}\cdot 114\e{s}/0.056\e{mol} \\
+\textrm{latent heat} &= P \cdot t / M=10.7\e{mW}\cdot 114\e{s}/0.056\e{mol} \\
 \textrm{latent heat} &= (21.8 \pm 0.8)\e{\frac{J}{mol}}
 \end{align}
-In fact both straigths should have the same slope wich does not really appear. This is caused by a too small dataset above the phaseshift. The second curve is influenced by the falling data in the phase shift results in a too less slope. To compensate, the offset of these slopes where measured as high as possible.
+In fact both linear fits should have the same slope which cannot be confirmed by this measurement. This might be caused by the fact, that only a few measurements at temperatures above the phaseshift were recorded. To compensate this, the offset of these slopes where measured at temperatures as high as possible.
 \subsection{Method two}
 In the second method, the data shown in figure \ref{data} was used. 
 At the Curie temperature, the specific heat has a peak which corresponds to the excess heat needed for the phase transition of first order.
 The latent heat then corresponds to the integral amount of specific heat, thus a background fit was performed, to determine the excess amount.
-The specific heat in the background should show a linear behaviour in time, thus a linear fit of the side band regions next to the signal peak at the Curie temperature was performed.
+The specific heat in the background should show a linear behaviour in temperature, thus a linear fit of the side band regions next to the signal peak at the Curie temperature was performed.
 The then resulting excess area in the signal region was calculated.
 The results are shown in figure \ref{area}.
 \begin{figure}[H]
-\includegraphics[width = 0.9\textwidth]{fig/latentheat_area.pdf}
+\includegraphics[width = 0.8\textwidth]{fig/latentheat_area.pdf}
 \caption{\label{area}\textbf{Specific heat at the Curie temperature.} Shown is the specific heat at temperatures around the Curie temperature. Black corresponds to the background data and blue to the data at the excess peak. The background data was fitted linearly. The calculated area $A$ corresponds to the latent heat needed for the phase shift of first order. The error on the area was propagated from the errors of the background fit.}
 
 \end{figure}
