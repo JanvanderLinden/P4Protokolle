@@ -5,7 +5,7 @@ from scipy.optimize import curve_fit
 import matplotlib
 matplotlib.rcParams.update({"font.size": 14})
 
-data = np.genfromtxt("SW_18.txt", skip_header=2)
+data = np.genfromtxt("SW_18", skip_header=2)
 T = data[400:,0]
 sw = data[400:,1]
 

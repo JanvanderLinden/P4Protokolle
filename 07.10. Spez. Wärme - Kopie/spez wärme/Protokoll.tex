@@ -166,12 +166,8 @@ The linear background is parametrizised with the factors $E = 25 \e{\frac{J}{mol
 
 \section{Recorded data}
 In the experiment, two sets of data were recorded.
-The first one was used to calculate the latent heat at the Curie temperature, as show in figure \ref{latent_raw_j}.
+The first one was used to calculate the latent heat at the Curie temperature.
 The second set of data was a measurement of the specific heat of the Dysporium at temperatures between $80\e{K}$ and $200\e{K}$. This raw set of data is shown in figure \ref{data}.
-\begin{figure}[H]
-\includegraphics[width = 0.8\textwidth]{fig/latent_raw_j.pdf}
-\caption{\label{latent_raw_j}\textbf{Measurement of the temperature around Curié-Temperature of cup and sample.} A heating with $10.7\e{mW}$ was attached to the sample of $0.056\e{Mol}$ Dysposioum.}
-\end{figure}
 \begin{figure}[H]
 \includegraphics[width = 0.9\textwidth]{fig/data.pdf}
 \caption{\label{data}\textbf{Raw set of data for the measurements of the specific heat.} This set of data was recorded while the Dysporium was slowly heated with constant power.}
@@ -180,19 +176,7 @@ The second set of data was a measurement of the specific heat of the Dysporium a
 
 \section{Measurements of the latent heat}
 \subsection{Method one}
-\begin{figure}[H]
-\includegraphics[width = 0.9\textwidth]{fig/latent_j.pdf}
-\caption{\label{latent_j}\textbf{Measurement of the latent heat around Curié-Temperature.} Two linear fits (red and green) with its ranges of Rawdata used to fit in matching colors. Latent heat corresponds to the stored energy in the sample while heating between t1 and t2 (black).}
-\end{figure}
-With the LABView-VI latent.vi the temperature of the cub and the sample was measured while heating up slowly around the Curié-temperauture. The rawdata is shown in figure \ref{latent_raw_j}. To analyze the latent heat at the phase shift, the drop of the curve was measured. It indicates a lesser rise in temperature over time by the same amount of heat energy. Thats why two linear fits where done on the temperature curve of the sample. One before the other after the phase shift, as seen in figure \ref{latent_j} in red and green. The areas of data used to fit these straigths are visualized too as well as the raw data. 
 
-The offset in time of both fits indicates the latent heat. The heating took this time to heat the sample without rising the temperature. The mathematics are plottet too in the image and led us to
-\begin{align}
-\Delta t &= t_2-t_1=(114\pm 4)\e{s}\\
-\textrm{latent heat} &= P \cdot t / matter=10.7\e{mW}\cdot 114\e{s}/0.056\e{mol} \\
-\textrm{latent heat} &= (21.8 \pm 0.8)\e{\frac{J}{mol}}
-\end{align}
-In fact both straigths should have the same slope wich does not really appear. This is caused by a too small dataset above the phaseshift. The second curve is influenced by the falling data in the phase shift results in a too less slope. To compensate, the offset of these slopes where measured as high as possible.
 \subsection{Method two}
 In the second method, the data shown in figure \ref{data} was used. 
 At the Curie temperature, the specific heat has a peak which corresponds to the excess heat needed for the phase transition of first order.
@@ -206,19 +190,18 @@ The results are shown in figure \ref{area}.
 
 \end{figure}
 The resultung signal area corresponding to the latent heat was calculated to
-\[ A = 29.0 \pm 2.9 \e{\frac{J}{mol}}\]
+\[ A = 29.0 \pm 2,9 \e{\frac{J}{mol}}\]
 
 \subsection{Comparison of methods}
 
 \begin{table}[H]
 \centering
 \caption{\label{latentheattable}\textbf{Summary of the latent heat calculations.}}
-\begin{tabular}{r|l|l}
- & latent heat / $\e{\frac{J}{mol}}$ & deviation\\
+\begin{tabular}{r|l}
+ & latent heat / $\e{\frac{J}{mol}}$\\
 \midrule
-paper & $39.1 \pm 1.5$ & \\
-method one & $21,8 \pm 0.8$ & -40 \%\\
-method two & $29.0 \pm 2.9$ & -15 \%\\
+method one & \\
+method two & $29,0 \pm 2,9$\\
 \midrule
 \end{tabular}
 \end{table}
@@ -237,11 +220,8 @@ The fits of the both ranges for positive and negative $t$ were performed in two 
 were fitted.
 
 \subsection{Direct fit}
-\begin{figure}[H]
-\includegraphics[width = 0.9\textwidth]{fig/specheat_j.pdf}
-\caption{\label{specH}\textbf{Reduced temperatures close to the Neel temperature with double logarithmic fit.} Fittet with function shown in (1.11).}  
-\end{figure}
-Reducing the raw data from figure \ref{data} by the linear underground as given by formular (1.11) and plot it over the reduced temperature t for $|t|\gg 0.2$ gives the so called raw data in figure \ref{specH}. Fitting the mentioned function 
+\todo{first method}.
+
 
 
 
@@ -282,11 +262,4 @@ double logarithmic fit	&$A^-$ 	& $4,03 \pm 0,04$ 	& $0,132 \pm 0,002$\\
 \midrule
 \end{tabular}
 \end{table}
-
-Todo für Protokoll:
-- Entropie berechnen und mit Spinentropie vergleichen
-%- alpha und A± mit direktem Fit bestimmen
-- mit anderem Fit und Paper vergleichen
-- Kurvenverlauf diskutieren
-
 \end{document}

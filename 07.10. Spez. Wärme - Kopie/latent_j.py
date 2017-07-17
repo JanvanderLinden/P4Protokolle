@@ -30,16 +30,16 @@ def cut(arr,up,to):
 
 lin = lambda x,a,b: a*x+b
 
-def getf(up,to,name):
+def getf(up,to,name,c):
     x=cut(time,up,to)
     y=cut(f,up,to)
     erg,pcov=sc.curve_fit(lin,x,y)
     perr = np.sqrt(np.diag(pcov))
     print 'erg',name, erg
     print 'err',name, perr
-    plt.plot(time2,lin(time2,*erg),label=name+';  m*x+b')
-    plt.plot((1000,2300),(up,up),color='black')
-    plt.plot((1000,2300),(to,to),color='black')
+    plt.plot(time2,lin(time2,*erg),label=name+';  m*x+b', color=c)
+    plt.plot((1000,2300),(up,up),color=c,linewidth=.5)
+    plt.plot((1000,2300),(to,to),color=c,linewidth=0.5)
     plt.text(1200,up+0.1,'limit for '+name+': '+str(up),fontsize=siz)
     plt.text(1200,to+0.1,'limit for '+name+': '+str(to),fontsize=siz)
     return erg, perr
@@ -49,9 +49,6 @@ def gauss(val,a,ad,b,bd):
     return np.sqrt(s1 + s2 )
 
 siz=8
-###########################################
-#getting raw data in relevant ranges, index = 580
-###########################################
 
 ###########################################
 #getting raw data in relevant ranges, index = 580
@@ -63,9 +60,10 @@ tp2 = tp[580:]
 ###########################################
 #getting  fits and plot them
 ###########################################
-f1, f1e = getf(85,88,'fit 1')
-f2, f2e = getf(90.5,f[-1],'fit 2')
-
+f1, f1e = getf(85,88,'fit 1','red')
+f2, f2e = getf(90.5,f[-1],'fit 2','green')
+plt.text(1880,90,'f1',fontsize=siz)
+plt.text(1840,88.5,'f2',fontsize=siz)
 ###########################################
 #get distance and plot it
 ###########################################
@@ -121,7 +119,7 @@ plt.text(xpos,(p-p0*c),(r'$t_2-t_1=(114 \pm 3.9)s$'),fontsize=siz)
 #plot general settings
 ###########################################
 plt.plot(time,tb,label="cup temperature")
-plt.plot(time,tp,label='sample temperature')
+#plt.plot(time,tp,label='sample temperature')
 
 plt.legend(loc=8,fontsize=siz)
 plt.subplots_adjust(top=0.7,right=0.99)
@@ -130,5 +128,5 @@ plt.ylabel('Temperature in K', fontsize=siz)
 plt.xlim(1080,2700)
 plt.ylim(84.5,92)
 #plt.grid()
-plt.savefig("plot.pdf")
+plt.savefig("latent_j.pdf")
 plt.show()
